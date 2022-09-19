@@ -1,0 +1,19 @@
+{TODO: Testear si funciona}
+programa sol-2.3.1.2
+areas
+  ciudad: AreaC(1, 1, 100, 100)
+robots
+  robot robot1
+  comenzar
+    Pos(17, 31) {Posicionar al robot en la Avenida 17, Calle 31}
+    repetir 2 {Girar el robot a la derecha 2 veces para que empiece a bajar por la avenida 17}
+      derecha
+    repetir 6 {Mover al robot por la avenida 17 6 veces}
+      mover
+  fin
+variables
+  R-info: robot1
+comenzar
+  AsignarArea(R-info, ciudad)
+  Iniciar(R-info, 1, 1)
+fin
