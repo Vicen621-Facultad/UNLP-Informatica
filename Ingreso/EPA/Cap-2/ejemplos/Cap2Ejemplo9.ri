@@ -1,15 +1,13 @@
-programa Sol-2.3.2.1
+programa Cap2Ejemplo9
 areas
   ciudad: AreaC(1,1,100,100)
 robots
   robot robot1
   comenzar
-    mover
-    si HayPapelEnLaBolsa
-      depositarPapel
-    mover
-    si HayFlorEnLaBolsa
-      depositarFlor
+    Pos(7,1)
+    mientras HayFlorEnLaEsquina
+      mover
+    Informar(PosCa)      
   fin
 variables
   R-info: robot1

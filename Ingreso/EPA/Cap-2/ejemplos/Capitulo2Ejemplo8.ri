@@ -1,0 +1,21 @@
+programa Cap2Ejemplo8
+areas
+  ciudad: AreaC(1,1,100,100)
+robots
+  robot robot1
+  comenzar
+    Pos(1, 4)
+    derecha
+    repetir 99 {Repetir desde la esquina 1 hasta la 99, Falta poner la flor en la esquina 100}
+      si HayFlorEnLaBolsa
+        depositarFlor
+      mover
+    si HayFlorEnLaBolsa {Este if esta por fuera del for para que no se vuelva a mover ya que se encuentra en la esquina 100, 4}
+      depositarFlor    
+  fin
+variables
+  R-info: robot1
+comenzar
+  AsignarArea(R-info,ciudad)
+  Iniciar(R-info,1,1)
+fin
