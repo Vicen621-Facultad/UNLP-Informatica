@@ -5,8 +5,8 @@
  </div>
 <br>
 
-<h2 align="center"> 📝 Materias </h2>
+<h2 align="center"> 📝 Materias Ingreso </h2>
 
-*  [EPA](https://github.com/vicen621/Curso-Ingreso-UNLP-Informatica/tree/main/EPA)
-*  [COC](https://github.com/vicen621/Curso-Ingreso-UNLP-Informatica/tree/main/COC)
-*  [MAT0](https://github.com/vicen621/Curso-Ingreso-UNLP-Informatica/tree/main/Mat0)
+*  [EPA](https://github.com/vicen621/Curso-Ingreso-UNLP-Informatica/tree/main/Ingreso/EPA)
+*  [COC](https://github.com/vicen621/Curso-Ingreso-UNLP-Informatica/tree/main/Ingreso/COC)
+*  [MAT0](https://github.com/vicen621/Curso-Ingreso-UNLP-Informatica/tree/main/Ingreso/Mat0)
