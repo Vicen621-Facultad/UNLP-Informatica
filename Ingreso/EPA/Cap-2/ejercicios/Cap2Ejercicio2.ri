@@ -1,0 +1,26 @@
+programa Cap2Ejercicio2
+areas
+  ciudad: AreaC(1,1,100,100)
+robots
+  robot robot1
+  comenzar
+    Pos(65,50)
+    repetir 3 {Posicionar para caminar hacia la izquierda}
+      derecha
+    
+    mientras PosAv > 23
+      si HayPapelEnLaBolsa
+        depositarPapel
+      mover
+
+    si HayPapelEnLaBolsa {Depositar papel en la esquina (23,50)}
+        depositarPapel
+    
+    Informar(PosAv, PosCa)
+  fin
+variables
+  R-info: robot1
+comenzar
+  AsignarArea(R-info,ciudad)
+  Iniciar(R-info,1,1)
+fin

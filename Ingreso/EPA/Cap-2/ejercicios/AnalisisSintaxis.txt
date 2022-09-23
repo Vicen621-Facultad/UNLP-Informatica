@@ -1,0 +1,13 @@
+1. La funcion iniciar lo que hace es iniciar a ejecutar el bloque de codigo "robots"
+
+2. Ya que sin esta instruccion no se puede empezar a ejecutar el codigo dentro de ese bloque
+
+3. PosAv: Devuelve el numero de avenida en la que esta posicionado el robot
+   PosCa: Devuelve el numero de la calle en la que esta posicionado el robot
+   Pos: Tiene 2 argumentos de tipo 'int' y situa al robot en la esquina dada
+
+4. No, no es posible resolverlo de esa manera, la manera correcta de resolverlo seria Pos(3,4)
+
+5. Es posible, pero si al intentar depositarla no tiene la flor en la bolsa tira un error y se detiene la ejecucion
+
+6. No, pero podes fijarte si hay un papel varias veces y asi podrias "crear" esa instruccion

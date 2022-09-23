@@ -1,0 +1,22 @@
+programa Cap2Ejercicio7
+areas
+  ciudad: AreaC(1,1,100,100)
+robots
+  robot robot1
+  comenzar
+    Pos(10,1)
+    mientras PosCa < 100
+      si HayFlorEnLaBolsa
+        depositarFlor
+      mover
+    
+    si HayFlorEnLaBolsa {Depositar flor en la esquina (10,100)}
+      depositarFlor
+    Informar(PosAv, PosCa) 
+  fin
+variables
+  R-info: robot1
+comenzar
+  AsignarArea(R-info,ciudad)
+  Iniciar(R-info,1,1)
+fin

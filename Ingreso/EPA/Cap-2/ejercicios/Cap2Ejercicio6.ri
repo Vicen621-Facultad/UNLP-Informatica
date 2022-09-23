@@ -1,0 +1,26 @@
+programa Cap2Ejercicio6
+areas
+  ciudad: AreaC(1,1,100,100)
+robots
+  robot robot1
+  comenzar
+    Pos(75,45)
+    repetir 2 {Posicionar para que camine hacia abajo}
+      derecha
+    
+    mientras PosCa > 15
+      si HayFlorEnLaEsquina
+        tomarFlor
+      mover
+    
+    si HayFlorEnLaEsquina {Agarrar flor de la esquina (75,15)}
+      tomarFlor
+    
+    Informar(PosAv, PosCa)
+  fin
+variables
+  R-info: robot1
+comenzar
+  AsignarArea(R-info,ciudad)
+  Iniciar(R-info,1,1)
+fin
