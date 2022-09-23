@@ -4,15 +4,16 @@ areas
 robots
   robot robot1
   comenzar
-    {TODO: Testear a ver si funciona}
     Pos(1, 17)
     derecha {Posicionar mirando a la derecha}
     mientras PosAv < 99
-      repetir 2
-        mover
       si HayPapelEnLaBolsa
         depositarPapel
-    mover {Dejar el robot en 100,17}
+      repetir 2
+        mover
+    si HayPapelEnLaBolsa {Fijarse si hay papel en (99,17)}
+      depositarPapel
+    mover {Dejar el robot en (100,17)}
   fin
 variables
   R-info: robot1
