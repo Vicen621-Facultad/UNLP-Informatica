@@ -4,16 +4,15 @@ areas
 robots
   robot robot1
   comenzar
-    {TODO: Ver porque no funciona en la parte en la que se 
-    fija si la calle es par o impar}
+    {TODO: Testear a ver si funciona}
     Pos(1, 17)
     derecha {Posicionar mirando a la derecha}
-    mientras PosAv < 100
-      si ~(PosAv / 2 * 2 == PosAv) & HayPapelEnLaBolsa
+    mientras PosAv < 99
+      repetir 2
+        mover
+      si HayPapelEnLaBolsa
         depositarPapel
-      mover
-
-    {No hace falta fijarse la esquina (100,17) ya que 100 es un numero par}
+    mover {Dejar el robot en 100,17}
   fin
 variables
   R-info: robot1
