@@ -15,7 +15,6 @@ robots
       si ~HayPapelEnLaEsquina & ~HayFlorEnLaEsquina & HayPapelEnLaBolsa
           depositarPapel
       Pos(1, PosCa +1)
-      derecha {Posicionar mirando a la derecha}
 
     {Recorrer la calle 100}
     mientras PosAv < 100
