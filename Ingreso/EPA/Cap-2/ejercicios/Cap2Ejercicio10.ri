@@ -4,9 +4,8 @@ areas
 robots
   robot robot1
   comenzar
-    {TODO: Testear si funciona}
     mientras PosAv <= 5
-      mientras posCa < 100
+      mientras PosCa < 100
         si HayFlorEnLaEsquina
           tomarFlor
         si HayPapelEnLaEsquina

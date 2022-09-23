@@ -4,27 +4,26 @@ areas
 robots
   robot robot1
   comenzar
-    {TODO: Testear si funciona}
     derecha {Posicionar mirando a la derecha}
-    mientras PosCa < 99
-      mientras PosAv < 99
+    mientras PosCa < 100
+      mientras PosAv < 100
         si ~HayPapelEnLaEsquina & ~HayFlorEnLaEsquina & HayPapelEnLaBolsa
           depositarPapel
         mover
 
-      {Depositar papel en PosAv 100)
+      {Depositar papel en PosAv 100}
       si ~HayPapelEnLaEsquina & ~HayFlorEnLaEsquina & HayPapelEnLaBolsa
           depositarPapel
       Pos(1, PosCa +1)
       derecha {Posicionar mirando a la derecha}
 
     {Recorrer la calle 100}
-    mientras PosAv < 99
+    mientras PosAv < 100
       si ~HayPapelEnLaEsquina & ~HayFlorEnLaEsquina & HayPapelEnLaBolsa
         depositarPapel
       mover
 
-    {Depositar papel en PosAv 100)
+    {Depositar papel en PosAv 100}
     si ~HayPapelEnLaEsquina & ~HayFlorEnLaEsquina & HayPapelEnLaBolsa
       depositarPapel
   fin
