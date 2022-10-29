@@ -169,7 +169,7 @@
    Jujuy ∈ {x: x es provincia Argentina}\
    2 ∈ {1, 2} ∪ {1, 6} = {1, 2, 6}\
    a ∉ {{a}}\
-   {a} ∈ {{a}}\
+   {a} ∈ {{a}}
 
 5. | Leyes de morgan      | Teoria de conjuntos                                            |
    | -------------------- | -------------------------------------------------------------- |
@@ -180,7 +180,7 @@
    ∃x (x ∈ A ∧ x ∉ B) = Falso: Es imposible que algun elemento de A no pertenezca a B\
    ∃x (x ∈ B ∧ x ∉ A) = Verdadero: Si x pertenece a B no tiene la obligacion de pertenecer a A, ya que no todos los elementos de B pertenecen a A\
    ∀x (x ∉ B → x ∉ A) = Verdadero: Si x no pertenece a B es imposible que pertenezca a A ya que todos los elementos de A pertenecen a B\
-   ∀x (x ∉ A → x ∉ B) = Falso: Es falso ya que si x no pertenece a A no es obligatorio que este no pertenezca a B, por ejemplo el 1 no pertenece a A y si pertenece a B\
+   ∀x (x ∉ A → x ∉ B) = Falso: Es falso ya que si x no pertenece a A no es obligatorio que este no pertenezca a B, por ejemplo el 1 no pertenece a A y si pertenece a B
 
 7. Sean A, B y C conjuntos tales que A ⊆ B y B ⊆ C. Sabiendo que a ∈ A, b ∈ B, c ∈ C, d ∉ A, e ∉ B y f ∉ C, ¿cuáles de las siguientes informaciones son ciertas?\
    A = {a}, B = {a, b} C ={a, b, c}\
@@ -195,4 +195,4 @@
    c ∈ C − B = ✔️\
    a ∈ C ∩ B = ✔️\
    b ∈ C<sub>B</sub>A = ✔️\
-   d ∉ A ∩ C = ✔️\
+   d ∉ A ∩ C = ✔️
