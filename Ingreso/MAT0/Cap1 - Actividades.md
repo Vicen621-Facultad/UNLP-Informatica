@@ -135,7 +135,7 @@
 
 1. A = {f, a, c, u, l, t, a, d}\
    B = {3,5,0,2}\
-   C = {}\
+   C = {}
 
 2. A = {1, 2, 3} | B = {1, 2, 4, 5} | C = {2, 4}\
    A ∩ B = {1, 2}\
@@ -146,7 +146,7 @@
    A ∩ B ∩ C = {2}\
    A - (B - C) = {2, 3}\
    (A - B) - C = {3}\
-   B - C = {1, 5}\
+   B - C = {1, 5}
 
 3. A={a, e, i, o, u} | B={a, e, o} | C={i, u} | D={m, u, r, c, i, e, l, a, g, o}
    E={b, c, d, f, g, h, j, k, l ,m ,n, ñ, p, q, r, s, t, v, w, x, y, z}
@@ -157,7 +157,8 @@
    A − B = {i, u}\
    C ∪ D = {m, u, r, c, i, e, l, a, g, o}\
    E − A = {b, c, d, f, g, h, j, k, l ,m ,n, ñ, p, q, r, s, t, v, w, x, y, z}\
-   E − D = {b, d, f, h, j, k, n, ñ, p, q, s, t, v, w, x, y, z}\
+   E − D = {b, d, f, h, j, k, n, ñ, p, q, s, t, v, w, x, y, z}
+ 
 4. 2 ∉ {1, 3, 5, 7}\
    5 ∈ {2, 4, 5, 6}\
    2 ∉ {4, 5, 6, 7}\
