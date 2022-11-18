@@ -1,0 +1,37 @@
+programa Cap5Ejercicio6
+procesos
+  proceso HacerLadoCorto
+  comenzar
+    repetir 3
+      mover
+  fin
+  proceso HacerLadoLargo
+  comenzar
+    repetir 5
+      mover
+  fin
+  proceso HacerRectangulo
+  comenzar
+    repetir 2
+      HacerLadoLargo
+      derecha
+      HacerLadoCorto
+      derecha
+  fin
+areas
+  ciudad: AreaC(1,1,100,100)
+robots
+  robot robot1
+  comenzar
+    repetir 3
+      HacerRectangulo
+      Pos(PosAv + 1, PosCa + 1)
+  fin
+variables
+  R-info: robot1
+comenzar
+  AsignarArea(R-info,ciudad)
+  Iniciar(R-info,1,1)
+fin
+
+{Si, cambia la implementacion de los ejercicis anteriores}

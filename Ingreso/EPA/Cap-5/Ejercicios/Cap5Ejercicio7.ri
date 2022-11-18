@@ -1,0 +1,75 @@
+programa Cap5Ejercicio7.B
+procesos
+  proceso LimpiarEsquina
+  comenzar
+    mientras HayPapelEnLaEsquina
+      tomarPapel
+    mientras HayFlorEnLaEsquina
+      tomarFlor
+  fin
+areas
+  ciudad: AreaC(1,1,100,100)
+robots
+  robot robot1
+  comenzar
+    Pos(89, 1)
+    repetir 99
+      LimpiarEsquina
+      mover
+    LimpiarEsquina
+  fin
+variables
+  R-info: robot1
+comenzar
+  AsignarArea(R-info,ciudad)
+  Iniciar(R-info,1,1)
+fin
+
+{=====================}
+
+programa Cap5Ejercicio7.D
+procesos
+  proceso LimpiarEsquina
+  comenzar
+    mientras HayPapelEnLaEsquina
+      tomarPapel
+    mientras HayFlorEnLaEsquina
+      tomarFlor
+  fin
+  proceso HacerLadoCorto
+  comenzar
+    repetir 3
+      LimpiarEsquina
+      mover
+  fin
+  proceso HacerLadoLargo
+  comenzar
+    repetir 5
+      LimpiarEsquina
+      mover
+  fin
+  proceso HacerRectangulo
+  comenzar
+    repetir 2
+      HacerLadoLargo
+      derecha
+      HacerLadoCorto
+      derecha
+  fin
+areas
+  ciudad: AreaC(1,1,100,100)
+robots
+  robot robot1
+  comenzar
+    Pos(1, 4)
+    derecha
+    repetir 3
+      HacerRectangulo
+      Pos(PosAv + 1, PosCa + 1)
+  fin
+variables
+  R-info: robot1
+comenzar
+  AsignarArea(R-info,ciudad)
+  Iniciar(R-info,1,1)
+fin

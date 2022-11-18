@@ -1,0 +1,96 @@
+programa Cap5Ejercicio4.A
+procesos
+  proceso HacerRectangulo
+  comenzar
+    repetir 2
+      repetir 3
+        mover
+      derecha
+      repetir 5
+        mover
+      derecha
+  fin
+areas
+  ciudad: AreaC(1,1,100,100)
+robots
+  robot robot1
+  comenzar
+    repetir 3
+      HacerRectangulo
+      Pos(PosAv, PosCa + 4)
+  fin
+variables
+  R-info: robot1
+comenzar
+  AsignarArea(R-info,ciudad)
+  Iniciar(R-info,1,1)
+fin
+
+{=================}
+
+programa Cap5Ejercicio4.B
+procesos
+  proceso HacerRectangulo
+  comenzar
+    repetir 2
+      repetir 3
+        mover
+      derecha
+      repetir 5
+        mover
+      derecha
+  fin
+areas
+  ciudad: AreaC(1,1,100,100)
+robots
+  robot robot1
+  comenzar
+    repetir 3
+      HacerRectangulo
+      Pos(PosAv + 1, PosCa + 1)
+  fin
+variables
+  R-info: robot1
+comenzar
+  AsignarArea(R-info,ciudad)
+  Iniciar(R-info,1,1)
+fin
+
+{=================}
+
+programa Cap5Ejercicio4.C
+procesos
+  proceso izquierda
+  comenzar
+    repetir 3
+      derecha
+  fin
+  proceso HacerRectangulo
+  comenzar
+    repetir 2
+      repetir 3
+        mover
+      derecha
+      repetir 5
+        mover
+      derecha
+  fin
+areas
+  ciudad: AreaC(1,1,100,100)
+robots
+  robot robot1
+  comenzar
+    repetir 2
+      HacerRectangulo
+      Pos(PosAv + 6, PosCa + 5)
+      derecha
+      HacerRectangulo
+      Pos(PosAv + 4, 1)
+      izquierda
+  fin
+variables
+  R-info: robot1
+comenzar
+  AsignarArea(R-info,ciudad)
+  Iniciar(R-info,1,1)
+fin

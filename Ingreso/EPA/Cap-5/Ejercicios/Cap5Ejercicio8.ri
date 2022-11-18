@@ -1,0 +1,54 @@
+programa Cap5Ejercicio8
+procesos
+  proceso izquierda
+  comenzar
+    repetir 3
+      derecha
+  fin
+  proceso JuntarPapeles
+  comenzar
+    mientras HayPapelEnLaEsquina
+      tomarPapel
+  fin
+  proceso JuntarFlores
+  comenzar
+    mientras HayFlorEnLaEsquina
+      tomarFlor
+  fin
+  proceso RecorrerAvenida
+  comenzar
+    repetir 99
+      JuntarFlores
+      mover
+    JuntarFlores
+  fin
+  proceso RecorrerCalle
+  comenzar
+    derecha
+    repetir 99
+      JuntarPapeles
+      mover
+    JuntarPapeles
+    izquierda
+  fin
+areas
+  ciudad: AreaC(1,1,100,100)
+robots
+  robot robot1
+  variables
+    pos: numero
+  comenzar
+    pos := 1 {58}
+    repetir 99
+      Pos(pos, 1)
+      RecorrerAvenida
+      Pos(1, pos)
+      RecorrerCalle
+      pos := pos + 1
+  fin
+variables
+  R-info: robot1
+comenzar
+  AsignarArea(R-info,ciudad)
+  Iniciar(R-info,1,1)
+fin

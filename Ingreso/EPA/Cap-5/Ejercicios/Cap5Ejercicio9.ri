@@ -1,0 +1,38 @@
+programa Cap5Ejercicio9
+procesos
+  proceso Juntar30Flores
+  variables
+    flores: numero
+  comenzar
+    flores := 0
+
+    repetir 99
+      si flores < 30
+        mientras HayFlorEnLaEsquina
+          flores := flores + 1
+          tomarFlor
+        mover
+    
+    
+    si flores < 30
+      mientras HayFlorEnLaEsquina
+        flores := flores + 1
+        tomarFlor
+  fin
+areas
+  ciudad: AreaC(1,1,100,100)
+robots
+  robot robot1
+  comenzar
+    repetir 99
+      Juntar30Flores
+      Pos(PosAv + 1, 1)
+    
+    Juntar30Flores
+  fin
+variables
+  R-info: robot1
+comenzar
+  AsignarArea(R-info,ciudad)
+  Iniciar(R-info,1,1)
+fin
