@@ -1,0 +1,25 @@
+programa Capitulo6Ejercicio3
+procesos
+  proceso HacerRectangulo (E Alto : numero; E Ancho : numero)
+  comenzar
+    repetir 2
+      repetir Alto
+        mover
+      derecha
+      repetir Ancho
+        mover
+      derecha
+  fin
+areas
+  ciudad: AreaC(1, 1, 100, 100)
+robots
+  robot robot1
+  comenzar
+    HacerRectangulo(3, 5)
+  fin
+variables
+  R-info: robot1
+comenzar
+  AsignarArea(R-info, ciudad)
+  Iniciar(R-info, 1, 1)
+fin

@@ -1,0 +1,59 @@
+programa Cap6Ejercicio2.A
+procesos
+  proceso HacerCuadrado (E Lado : numero)
+  comenzar
+    repetir 4
+      repetir Lado
+        mover
+      derecha
+  fin
+areas
+  ciudad: AreaC(1,1,100,100)
+robots
+  robot robot1
+  variables
+    lado : numero
+  comenzar
+    Pos(2, 1)
+    lado := 1
+    repetir 4
+      HacerCuadrado(lado)
+      lado := lado + 1
+  fin
+variables
+  R-info: robot1
+comenzar
+  AsignarArea(R-info,ciudad)
+  Iniciar(R-info,1,1)
+fin
+
+{ =================== }
+
+programa Cap6Ejercicio2.B
+procesos
+  proceso HacerCuadrado (E Lado : numero)
+  comenzar
+    repetir 4
+      repetir Lado
+        mover
+      derecha
+  fin
+areas
+  ciudad: AreaC(1,1,100,100)
+robots
+  robot robot1
+  variables
+    lado : numero
+  comenzar
+    lado := 1
+    repetir 5
+      HacerCuadrado(lado)
+      Pos(PosAv + lado, 1)
+      lado := lado + 1
+  fin
+variables
+  R-info: robot1
+comenzar
+  AsignarArea(R-info,ciudad)
+  Iniciar(R-info,1,1)
+fin

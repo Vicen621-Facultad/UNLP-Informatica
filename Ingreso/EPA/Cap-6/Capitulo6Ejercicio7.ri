@@ -1,0 +1,26 @@
+{TODO: Terminar}
+programa Cap6Ejercicio7
+procesos
+  proceso CalleFlor( E Calle : numero; E Flores : numero)
+  variables
+    floresAgarradas : numero
+  comenzar
+    floresAgarradas := 0
+    mientras PosAv < 99
+      mientras HayFlorEnLaEsquina & (floresAgarradas < Flores)
+        tomarFlor
+      mover
+  fin
+areas
+  ciudad: AreaC(1,1,100,100)
+robots
+  robot robot1
+  comenzar
+      
+  fin
+variables
+  R-info: robot1
+comenzar
+  AsignarArea(R-info,ciudad)
+  Iniciar(R-info,1,1)
+fin

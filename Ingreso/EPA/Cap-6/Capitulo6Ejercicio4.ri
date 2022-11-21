@@ -1,0 +1,65 @@
+programa Capitulo6Ejercicio4.A
+procesos
+  proceso HacerRectangulo (E Alto : numero; E Ancho : numero)
+  comenzar
+    repetir 2
+      repetir Alto
+        mover
+      derecha
+      repetir Ancho
+        mover
+      derecha
+  fin
+areas
+  ciudad: AreaC(1, 1, 100, 100)
+robots
+  robot robot1
+  variables
+    ancho : numero
+  comenzar
+    ancho := 5
+    repetir 3
+      HacerRectangulo(1, ancho)
+      Pos(PosAv + 1, PosCa + 2)
+      ancho := ancho - 2
+  fin
+variables
+  R-info: robot1
+comenzar
+  AsignarArea(R-info, ciudad)
+  Iniciar(R-info, 1, 1)
+fin
+
+{ ======================== }
+
+programa Capitulo6Ejercicio4.B
+procesos
+  proceso HacerRectangulo (E Alto : numero; E Ancho : numero)
+  comenzar
+    repetir 2
+      repetir Alto
+        mover
+      derecha
+      repetir Ancho
+        mover
+      derecha
+  fin
+areas
+  ciudad: AreaC(1, 1, 100, 100)
+robots
+  robot robot1
+  variables
+    alto : numero
+  comenzar
+    alto := 15
+    repetir 4
+      HacerRectangulo(alto, 1)
+      Pos(PosAv + 1, PosCa + 2)
+      alto := alto - 4
+  fin
+variables
+  R-info: robot1
+comenzar
+  AsignarArea(R-info, ciudad)
+  Iniciar(R-info, 1, 1)
+fin

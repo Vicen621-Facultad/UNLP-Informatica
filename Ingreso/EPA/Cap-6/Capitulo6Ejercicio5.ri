@@ -1,0 +1,161 @@
+programa Capitulo6Ejercicio5.A
+procesos
+  proceso izquierda
+  comenzar
+    repetir 3
+      derecha
+  fin
+  proceso HacerEscalon ( E altura : numero; E ancho : numero)
+  comenzar
+    repetir altura
+      mover
+    derecha
+    repetir ancho
+      mover
+    izquierda
+  fin
+areas
+  ciudad: AreaC(1, 1, 100, 100)
+robots
+  robot robot1
+  variables
+    lado : numero
+  comenzar
+    lado := 4
+    repetir 3
+      HacerEscalon(lado, lado)
+      lado := lado - 1
+  fin
+variables
+  R-info: robot1
+comenzar
+  AsignarArea(R-info, ciudad)
+  Iniciar(R-info, 1, 1)
+fin
+
+{ =================== }
+
+programa Cap6Ejercicio5.B
+procesos
+  proceso izquierda
+  comenzar
+    repetir 3
+      derecha
+  fin
+  proceso HacerEscalon ( E altura : numero; E ancho : numero)
+  comenzar
+    repetir altura
+      mover
+    derecha
+    repetir ancho
+      mover
+    izquierda
+  fin
+areas
+  ciudad: AreaC(1,1,100,100)
+robots
+  robot robot1
+  comenzar
+    repetir 3
+      HacerEscalon(2, 2)
+  fin
+variables
+  R-info: robot1
+comenzar
+  AsignarArea(R-info,ciudad)
+  Iniciar(R-info,1,1)
+fin
+
+{ =================== }
+
+programa Cap6Ejercicio5.
+procesos
+  proceso izquierda
+  comenzar
+    repetir 3
+      derecha
+  fin
+  proceso HacerEscalon ( E altura : numero; E ancho : numero)
+  comenzar
+    repetir altura
+      mover
+    derecha
+    repetir ancho
+      mover
+    izquierda
+  fin
+areas
+  ciudad: AreaC(1,1,100,100)
+robots
+  robot robot1
+  variables
+    altura : numero
+    ancho : numero
+  comenzar
+    altura := 3
+    ancho := 2
+    repetir 3
+      HacerEscalon(altura, ancho)
+      altura := altura - 1
+      ancho := ancho + 1
+  fin
+variables
+  R-info: robot1
+comenzar
+  AsignarArea(R-info,ciudad)
+  Iniciar(R-info,1,1)
+fin
+
+{ =================== }
+
+programa Cap6Ejercicio5.D
+procesos
+  proceso izquierda
+  comenzar
+    repetir 3
+      derecha
+  fin
+  proceso HacerEscalon ( E altura : numero; E ancho : numero)
+  comenzar
+    repetir altura
+      mover
+    derecha
+    repetir ancho
+      mover
+    izquierda
+  fin
+  proceso HacerEscalonDescendiente (E altura : numero; E ancho : numero)
+  comenzar
+    repetir 2
+      derecha
+    
+    repetir altura
+      mover
+    izquierda
+    repetir ancho
+      mover
+    derecha
+  fin
+areas
+  ciudad: AreaC(1,1,100,100)
+robots
+  robot robot1
+  variables
+    ancho : numero
+  comenzar
+    Pos(1, 5)
+    ancho := 4
+    HacerEscalon(2, ancho)
+    ancho := ancho + 2
+    HacerEscalon(2, ancho)
+    ancho := ancho - 2
+    HacerEscalonDescendiente(ancho, 2)
+    repetir 4
+      mover
+  fin
+variables
+  R-info: robot1
+comenzar
+  AsignarArea(R-info,ciudad)
+  Iniciar(R-info,1,1)
+fin
