@@ -1,7 +1,8 @@
 PROGRAM Ejer8P1P2;
 
 VAR
-    day, sellsDay, total, value: integer;    
+    day: integer;
+    sellsDay, total, value: real;    
 
 BEGIN
     total := 0;
@@ -12,14 +13,16 @@ BEGIN
         readln(value);
         sellsDay := 0;
 
+        sellsDay := 0;
+
         while (value <> 0) do BEGIN
             sellsDay := sellsDay + value;
             total := total + value;
-            
-            writeln('Ventas para el dia ', day, ': ', sellsDay);
 
             readln(value);
         END;
+
+        writeln('Ventas del dia ', day, ': ', sellsDay);
     END;
 
     writeln('Ventas totales: ', total);
