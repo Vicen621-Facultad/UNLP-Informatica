@@ -4,4 +4,6 @@
  </div>
 <br>
 
-|Materias|Año cursada|Nota final|
+| Materia | Inicio Cursada | Finalización Cursada | Nota final |
+| ------- | -------------- | -------------------- | ---------- |
+| []        |                |                      |            |

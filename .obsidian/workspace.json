@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "1er Semestre/OC/Teoria/Exceso.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "1er Semestre/OC/Teoria/Exceso.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "1er Semestre/OC/Teoria/Exceso.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -141,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "1er Semestre/OC/Teoria/Exceso.md"
               }
             }
           }
@@ -162,9 +162,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "c9b50c5ba1198d21",
+  "active": "de71279917bb012a",
   "lastOpenFiles": [
+    "().md",
     "1er Semestre/OC/Teoria/Exceso.md",
+    "README.md",
     "Shadow's End/Cambios/Days 10-19.md",
     "Shadow's End/Cambios/Day 0-9.md",
     "Regalo de fin de año para Martu.md",
@@ -191,8 +193,6 @@
     "30 Days of Python",
     "30 Days of Python/Untitled",
     "Daily/23-03-27.md",
-    "Templates/Movies template.md",
-    "Templates/Game Template.md",
-    "Series y películas 2023.md"
+    "Templates/Movies template.md"
   ]
 }

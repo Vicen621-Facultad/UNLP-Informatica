@@ -1,0 +1,10 @@
+{
+  "findText": "[[Binario Sin Signo]]",
+  "replaceText": "[Binario Sin Signo]()",
+  "useRegEx": false,
+  "selOnly": false,
+  "caseInsensitive": false,
+  "processLineBreak": false,
+  "processTab": false,
+  "prefillFind": false
+}

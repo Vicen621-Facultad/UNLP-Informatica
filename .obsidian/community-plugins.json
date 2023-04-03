@@ -6,5 +6,6 @@
   "cm-editor-syntax-highlight-obsidian",
   "nldates-obsidian",
   "obsidian-git",
-  "obsidian-linter"
+  "obsidian-linter",
+  "obsidian-regex-replace"
 ]
