@@ -40,6 +40,7 @@ $$\begin{eqnarray}
 &=& 1000_{2\ Ca1} \\
 &=& 1001_{2\ Ca2}
 \end{eqnarray}$$
+
 #### Otra manera de representar mas facil
 
 1. Pasas el decimal a [Binario Sin Signo](Binario%20Sin%20Signo.md)
@@ -47,10 +48,10 @@ $$\begin{eqnarray}
 3. Das vuelta los dígitos restantes
 
 $$\begin{eqnarray}
+-7_{10} &=& 0111_{2\ BSS} \\
 
+&=& \color{aquamarine}---\color{lightgreen}1 \color{lightgray}\text{ (Escribis hasta el primer 1)}\\
+
+&=& \color{aquamarine}100\color{lightgreen}1\color{lightgray}_{2\ Ca2} \text{ (Das vuelta el resto de bits)}
 \end{eqnarray}$$
-
-$-7_{10}=0111_{2\ BSS}$
-         $= \color{aquamarine}---\color{lightgreen}1$ (Escribís hasta el primer 1)
-         $= \color{aquamarine}100\color{lightgreen}1\color{gray}_{2\ Ca2}$ (Das vuelta los demás bits)
  

@@ -33,9 +33,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1er Semestre/OC/Teoria/Complemento a 2.md",
+                "file": "1er Semestre/OC/Teoria/Exceso.md",
                 "mode": "source",
-                "source": true
+                "source": false
               }
             }
           }
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1er Semestre/OC/Teoria/Complemento a 2.md",
+                "file": "1er Semestre/OC/Teoria/Exceso.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1er Semestre/OC/Teoria/Complemento a 2.md",
+                "file": "1er Semestre/OC/Teoria/Exceso.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1er Semestre/OC/Teoria/Complemento a 2.md"
+                "file": "1er Semestre/OC/Teoria/Exceso.md"
               }
             }
           }
@@ -186,11 +186,11 @@
   },
   "active": "c6f1e73abf8cc25c",
   "lastOpenFiles": [
-    "1er Semestre/OC/Teoria/Exceso.md",
     "1er Semestre/OC/Teoria/Complemento a 2.md",
     "1er Semestre/OC/Teoria/Complemento a 1.md",
-    "1er Semestre/OC/Teoria/Binario Con Signo.md",
     "1er Semestre/OC/Teoria/Binario Sin Signo.md",
+    "1er Semestre/OC/Teoria/Binario Con Signo.md",
+    "1er Semestre/OC/Teoria/Exceso.md",
     "README.md",
     "1er Semestre/OC/Teoria/Representar e interpretar entre los diferentes sistemas.md",
     "_assets/DecimalToBinaryEx.png",

@@ -22,6 +22,8 @@ $$E=2^{n-1}$$
 1. Se interpreta el numero en [Binario Sin Signo](Binario%20Sin%20Signo.md)
 2. Se le resta el Exceso
 
+%%TODO: Pasar a formato multiline de MatJax%%
+
 Ejemplo:
 0100<sub>2 Ex2</sub> = -4<sub>10</sub>
 
