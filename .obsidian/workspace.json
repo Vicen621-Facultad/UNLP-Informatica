@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1er Semestre/OC/Teoria/Binario Codificado Decimal.md",
+                "file": "1er Semestre/OC/Teoria/Complemento a 2.md",
                 "mode": "source",
                 "source": false
               }
@@ -33,7 +33,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1er Semestre/OC/Teoria/Representar e interpretar entre los diferentes sistemas.md",
+                "file": "1er Semestre/OC/Teoria/Sistemas de representacion en binario.md",
                 "mode": "source",
                 "source": false
               }
@@ -52,7 +52,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -196,8 +196,9 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "c6f1e73abf8cc25c",
+  "active": "de71279917bb012a",
   "lastOpenFiles": [
+    "1er Semestre/MAT1",
     "1er Semestre/OC/Teoria/Complemento a 2.md",
     "1er Semestre/OC/Teoria/Complemento a 1.md",
     "1er Semestre/MAT1/Teoria/Plano de coordenadas.md",
@@ -209,13 +210,9 @@
     "1er Semestre/OC/Teoria/Binario Con Signo.md",
     "1er Semestre/OC/Teoria/Binario Sin Signo.md",
     "1er Semestre/OC/Teoria/Exceso.md",
-    "1er Semestre/OC/Teoria/Complemento a 2.md",
-    "1er Semestre/OC/Teoria/Binario Sin Signo.md",
     "README.md",
     "_assets/DecimalToBinaryEx.png",
     "_assets",
-    "1er Semestre/OC/Teoria/Binario Codificado Decimal.md",
-    "1er Semestre/OC/Teoria/Flags.md",
     "Ingreso/COC.md",
     "Binario Sin Signo..md",
     "().md",
@@ -232,7 +229,6 @@
     "Falcon.md",
     "Martu.md",
     "Juegos jugados en 2023.md",
-    "Series y películas/The Truman Show.md",
     "30 Days of Python",
     "30 Days of Python/Untitled"
   ]
