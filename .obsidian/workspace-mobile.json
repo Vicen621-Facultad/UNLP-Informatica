@@ -1,19 +1,19 @@
 {
   "main": {
-    "id": "3d0e511ea6dd1150",
+    "id": "e81d23e27b17027c",
     "type": "split",
     "children": [
       {
-        "id": "46cefd4b4c071a7a",
+        "id": "b7127d9f0f3046e5",
         "type": "tabs",
         "children": [
           {
-            "id": "4151068e139c3af9",
+            "id": "8968db907174dc99",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1er Semestre/OC/Teoria/Representar e interpretar entre los diferentes sistemas.md",
+                "file": "1er Semestre/OC/Teoria/Exceso.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,11 +25,11 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "5907fda106e4c0cd",
+    "id": "9109adcc78f962e6",
     "type": "mobile-drawer",
     "children": [
       {
-        "id": "fa9bc767e1f67146",
+        "id": "7d384334580ad7c8",
         "type": "leaf",
         "state": {
           "type": "file-explorer",
@@ -39,7 +39,7 @@
         }
       },
       {
-        "id": "962d5a23ef29be5d",
+        "id": "e985357824689e12",
         "type": "leaf",
         "state": {
           "type": "search",
@@ -54,7 +54,7 @@
         }
       },
       {
-        "id": "81882716dcf84836",
+        "id": "0b6464cf73cd70fd",
         "type": "leaf",
         "state": {
           "type": "tag",
@@ -65,7 +65,7 @@
         }
       },
       {
-        "id": "a51aeebf5fdee733",
+        "id": "d55b00d758c7ffbd",
         "type": "leaf",
         "state": {
           "type": "starred",
@@ -76,16 +76,16 @@
     "currentTab": 0
   },
   "right": {
-    "id": "de0170bb33b47ba2",
+    "id": "f2256670bc6fd74c",
     "type": "mobile-drawer",
     "children": [
       {
-        "id": "cbfe137c2aa72239",
+        "id": "2bbd8c1483a02e14",
         "type": "leaf",
         "state": {
           "type": "backlink",
           "state": {
-            "file": "1er Semestre/OC/Teoria/Representar e interpretar entre los diferentes sistemas.md",
+            "file": "1er Semestre/OC/Teoria/Exceso.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -97,29 +97,29 @@
         }
       },
       {
-        "id": "564245c0169caaf9",
+        "id": "483fdd2d42a6f971",
         "type": "leaf",
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "1er Semestre/OC/Teoria/Representar e interpretar entre los diferentes sistemas.md",
+            "file": "1er Semestre/OC/Teoria/Exceso.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
         }
       },
       {
-        "id": "655a04021d171eb7",
+        "id": "607d3afb81e8df1d",
         "type": "leaf",
         "state": {
           "type": "outline",
           "state": {
-            "file": "1er Semestre/OC/Teoria/Representar e interpretar entre los diferentes sistemas.md"
+            "file": "1er Semestre/OC/Teoria/Exceso.md"
           }
         }
       },
       {
-        "id": "aa7d1788f1027727",
+        "id": "00829883893cfb20",
         "type": "leaf",
         "state": {
           "type": "calendar",
@@ -139,37 +139,37 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4151068e139c3af9",
+  "active": "8968db907174dc99",
   "lastOpenFiles": [
-    "/1er Semestre/OC/Teoria/Exceso.md",
     "1er Semestre/OC/Teoria/Sistemas de representacion en binario.md",
-    "1er Semestre/CADP/Teoria/Estructuras de control.md",
-    "1er Semestre/CADP/Teoria/Estructura de Pascal.md",
-    "1er Semestre/CADP/Teoria/Tipos de datos.md",
-    "1er Semestre/OC/Teoria/Exceso.md",
-    "1er Semestre/OC/Teoria/Representar e interpretar entre los diferentes sistemas.md",
-    "1er Semestre/OC/Teoria/Flags.md",
     "README.md",
+    "1er Semestre/MAT1",
     "1er Semestre",
-    "1er Semestre/CADP",
-    "1er Semestre/CADP/Practicas/Practica 1/Parte 1/Ejer4P1P1.pas",
-    "1er Semestre/CADP/Practicas/Practica 1/Parte 1/Ejer5P1P1.pas",
-    "1er Semestre/CADP/Practicas/Practica 1/Parte 1/Ejer7P1P1.pas",
-    "1er Semestre/CADP/Practicas/Practica 1/Parte 1/Ejer6P1P1.pas",
-    "1er Semestre/CADP/Practicas/Practica 1/Parte 1/Ejer3P1P1.pas",
-    "1er Semestre/CADP/Practicas/Practica 1/Parte 1/Ejer2P1P1.pas",
-    "1er Semestre/CADP/Practicas/Practica 1/Parte 1/Ejer9P1P1.pas",
-    "1er Semestre/CADP/Practicas/Practica 1/Parte 1/Ejer1P1P1.pas",
-    "_assets/DecimalToBinaryEx.png",
-    "Ingreso/COC/Cap3/Practica.md",
-    "Ingreso/COC/Cap2/Teoria.md",
-    "Ingreso/COC/Cap2/Practica.md",
+    "1er Semestre/MAT1/Teoria/Plano coordenado.md",
+    "1er Semestre/MAT1/Teoria",
+    "Ingreso/EPA/Cap-5/Ejemplos/Cap5Ejemplo6/Cap5Ejemplo6.C.ri",
+    "Ingreso/EPA/Cap-5/Ejemplos/Cap5Ejemplo6/Cap5Ejemplo6.D.ri",
+    "Ingreso/EPA/Cap-2/ejemplos/Cap2Ejemplo11.ri",
+    "Ingreso/EPA/Cap-2/ejemplos/Sol-3.2.1.ri",
+    "Ingreso/EPA/Cap-2/ejemplos/Sol-3.1.2.ri",
+    "Ingreso/EPA/Cap-2/ejemplos/Cap2Ejemplo10.ri",
+    "Ingreso/EPA/Cap-2/ejemplos/Sol-3.2.2.ri",
     "Ingreso/MAT0/Cap1 - Actividades.md",
     "1er Semestre/OC/Teoria/Complemento a 1.md",
     "1er Semestre/OC/Teoria/Binario Con Signo.md",
+    "1er Semestre/OC/Teoria/Representar e interpretar entre los diferentes sistemas.md",
+    "1er Semestre/OC/Teoria/Flags.md",
     "1er Semestre/OC/Teoria/Binario Codificado Decimal.md",
     "1er Semestre/OC/Teoria/Binario Sin Signo.md",
+    "1er Semestre/OC/Teoria/Exceso.md",
     "1er Semestre/OC/Teoria/Complemento a 2.md",
-    "1er Semestre/CADP/Teoria/Maximos y minimos.md"
+    "1er Semestre/CADP/Teoria/Tipos de datos.md",
+    "1er Semestre/CADP/Teoria/Maximos y minimos.md",
+    "1er Semestre/CADP/Teoria/Estructura de Pascal.md",
+    "1er Semestre/CADP/Teoria/Estructuras de control.md",
+    "_assets/DecimalToBinaryEx.png",
+    "Ingreso/COC/Cap3/Practica.md",
+    "Ingreso/COC/Cap2/Teoria.md",
+    "Ingreso/COC/Cap2/Practica.md"
   ]
 }
