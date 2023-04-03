@@ -25,11 +25,13 @@ $$E=2^{n-1}$$
 %%TODO: Pasar a formato multiline de MathJax%%
 
 Ejemplo:
-0100<sub>2 Ex2</sub> = -4<sub>10</sub>
-
-0100<sub>2</sub> = 4<sub>10 BSS</sub>
-             = $4-8$ -> Exceso
-             = -4
+$$\begin{eqnarray}
+0100_{2\ Ex2} &=& -4_{10} \\
+\\
+0100_2 &=& 4_{10\ BSS} \\
+&=& 4 - 8 \Rightarrow \text{Exceso} \\
+&=& -4
+\end{eqnarray}$$
 
 ### Decimal a Binario
 

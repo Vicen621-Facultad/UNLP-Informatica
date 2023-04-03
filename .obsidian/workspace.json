@@ -57,7 +57,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1er Semestre/MAT1/Teoria/Plano coordenado.md",
+                "file": "1er Semestre/OC/Teoria/Exceso.md",
                 "mode": "source",
                 "source": false
               }
@@ -130,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1er Semestre/MAT1/Teoria/Plano coordenado.md",
+                "file": "1er Semestre/OC/Teoria/Exceso.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1er Semestre/MAT1/Teoria/Plano coordenado.md",
+                "file": "1er Semestre/OC/Teoria/Exceso.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -186,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1er Semestre/MAT1/Teoria/Plano coordenado.md"
+                "file": "1er Semestre/OC/Teoria/Exceso.md"
               }
             }
           }
@@ -210,12 +210,12 @@
   },
   "active": "8c0190e02f13c0ff",
   "lastOpenFiles": [
-    "1er Semestre/OC/Teoria/Exceso.md",
+    "1er Semestre/OC/Teoria/Complemento a 1.md",
+    "1er Semestre/OC/Teoria/Complemento a 2.md",
     "1er Semestre/MAT1/Teoria/Plano coordenado.md",
+    "1er Semestre/OC/Teoria/Exceso.md",
     "1er Semestre/MAT1/Teoria",
     "1er Semestre/MAT1",
-    "1er Semestre/OC/Teoria/Complemento a 2.md",
-    "1er Semestre/OC/Teoria/Complemento a 1.md",
     "1er Semestre/MAT1/Teoria/Plano de coordenadas.md",
     "1er Semestre/MAT1/Teoria",
     "1er Semestre/OC/Teoria/Sistemas de representacion en binario.md",
