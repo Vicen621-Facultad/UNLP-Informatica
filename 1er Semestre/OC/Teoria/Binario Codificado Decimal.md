@@ -7,8 +7,8 @@ abreviatura: BCD
 
 ## Desempaquetado
 
-Se usa para comunicaciones entre perfericos
-Cada digito ocupa un byte, se escribe `1111` adelante de cada digito, el digito se escribe en [Binario Sin SIgno](Binario)
+Se usa para comunicaciones entre periféricos
+Cada dígito ocupa un byte, se escribe `1111` adelante de cada dígito, el dígito se escribe en [Binario Sin Signo](Binario%20Sin%20Signo.md)
 
 ### Sin Signo
 
@@ -20,7 +20,7 @@ Cada digito ocupa un byte, se escribe `1111` adelante de cada digito, el digito 
 
 ### Con Signo
 
-Al ultimo digito se le agrega el simbolo adelante.
+Al ultimo dígito se le agrega el símbolo adelante.
 \+ -> C = 1100
 \- -> D = 1101
 
@@ -33,8 +33,8 @@ Al ultimo digito se le agrega el simbolo adelante.
 
 ## Empaquetado
 
-Se utiliza para hacer calculos
-Cada digito ocupa solo 4 bits, se escribe sin el relleno
+Se utiliza para hacer cálculos
+Cada dígito ocupa solo 4 bits, se escribe sin el relleno
 
 El signo se agrega despues del ultimo numero, no pueden quedar bytes incompletos
 

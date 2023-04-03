@@ -24,7 +24,7 @@ Ejemplo con un sistema de 4 bits:
 4<sub>10</sub> = 0100<sub>2 Ca1</sub>
 -4<sub>10</sub> = 1011<sub>2 Ca1</sub>
 
-Siguiendo esta formula tambien podemos pasar los numeros: $$Ca1=(2^n-1)-N$$
+Siguiendo esta formula tambien podemos pasar los números: $$Ca1=(2^n-1)-N$$
 $Ca1 = (2^4-1)-(-4) = 7+4)$
 $0111_2 + 0100_2 = 1011_2$ 
 
