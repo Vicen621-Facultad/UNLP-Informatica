@@ -11,8 +11,12 @@
             "id": "c9b50c5ba1198d21",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -134,7 +140,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "README.md"
+              }
             }
           }
         ],
@@ -156,6 +164,7 @@
   },
   "active": "c9b50c5ba1198d21",
   "lastOpenFiles": [
+    "1er Semestre/OC/Teoria/Exceso.md",
     "Shadow's End/Cambios/Days 10-19.md",
     "Shadow's End/Cambios/Day 0-9.md",
     "Regalo de fin de año para Martu.md",
@@ -184,7 +193,6 @@
     "Daily/23-03-27.md",
     "Templates/Movies template.md",
     "Templates/Game Template.md",
-    "Series y películas 2023.md",
-    "Daily/23-02-08.md"
+    "Series y películas 2023.md"
   ]
 }
