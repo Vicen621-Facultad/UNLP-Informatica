@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1er Semestre/MAT1/Teoria/Plano coordenado.md",
+                "file": "1er Semestre/OC/Teoria/Complemento a 2.md",
                 "mode": "preview",
                 "source": false
               }
@@ -85,7 +85,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "1er Semestre/MAT1/Teoria/Plano coordenado.md",
+            "file": "1er Semestre/OC/Teoria/Complemento a 2.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "1er Semestre/MAT1/Teoria/Plano coordenado.md",
+            "file": "1er Semestre/OC/Teoria/Complemento a 2.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -114,7 +114,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "1er Semestre/MAT1/Teoria/Plano coordenado.md"
+            "file": "1er Semestre/OC/Teoria/Complemento a 2.md"
           }
         }
       },
@@ -141,6 +141,9 @@
   },
   "active": "8968db907174dc99",
   "lastOpenFiles": [
+    "1er Semestre/OC/Teoria/Sistemas de representacion en binario.md",
+    "1er Semestre/OC/Teoria/Complemento a 2.md",
+    "1er Semestre/MAT1/Teoria/Plano coordenado.md",
     "1er Semestre/CADP/Teoria/Tipos de datos.md",
     "1er Semestre/CADP/Teoria/Maximos y minimos.md",
     "1er Semestre/CADP/Teoria/Estructura de Pascal.md",
@@ -152,11 +155,9 @@
     "1er Semestre/OC/Teoria/Binario Codificado Decimal.md",
     "1er Semestre/OC/Teoria/Exceso.md",
     "UNLP-Informatica.zip",
-    "1er Semestre/OC/Teoria/Sistemas de representacion en binario.md",
     "README.md",
     "1er Semestre/MAT1",
     "1er Semestre",
-    "1er Semestre/MAT1/Teoria/Plano coordenado.md",
     "1er Semestre/MAT1/Teoria",
     "Ingreso/EPA/Cap-5/Ejemplos/Cap5Ejemplo6/Cap5Ejemplo6.C.ri",
     "Ingreso/EPA/Cap-5/Ejemplos/Cap5Ejemplo6/Cap5Ejemplo6.D.ri",
@@ -166,7 +167,6 @@
     "Ingreso/EPA/Cap-2/ejemplos/Cap2Ejemplo10.ri",
     "Ingreso/MAT0/Cap1 - Actividades.md",
     "1er Semestre/OC/Teoria/Flags.md",
-    "1er Semestre/OC/Teoria/Complemento a 2.md",
     "_assets/DecimalToBinaryEx.png",
     "Ingreso/COC/Cap3/Practica.md",
     "Ingreso/COC/Cap2/Teoria.md",
