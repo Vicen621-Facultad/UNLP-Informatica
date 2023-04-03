@@ -25,21 +25,30 @@
 
 ## Binario a Decimal
 
-En este caso hay que usar la Teorema fundamental de la numeración $$N=\sum_{i=-d}^nX_i*B^i$$
+En este caso hay que usar el Teorema fundamental de la numeración $$N=\sum_{i=-d}^nX_i*B^i$$
 Por ejemplo: $10100101_2=1*2^7+0*2^6+1*2^5+0*2^4+0*2^3+1*2^2+0*2^1+1*2^0=165_{10}$
 $1011.011_2=1*2^3+0*2^2+1*2^1+1*2^0+0*2^{-1}+1*2^{-2}+1*2^{-3}=11.375_{10}$
 
 ## Hexadecimal a Decimal
 
-En este caso hay que usar la Teorema fundamental de la numeración $$N=\sum_{i=-d}^nX_i*B^i$$
+En este caso hay que usar el Teorema fundamental de la numeración $$N=\sum_{i=-d}^nX_i*B^i$$
 Por ejemplo: $9F7_{16}=9*16^2+15*16^1+7*16^0=2551_{10}$
 $10.2_{16}=1*16^1+0*16^0+2*16^{-1}=16.125_{10}$
 
 ## Decimal a Binario
 
-Para pasar un numero de decimal a binari
+Para pasar un numero de decimal a binario la parte entera y la decimal se pasan de maneras diferentes
 
 ### Parte Entera
+
+Hay 2 maneras de pasar la parte entera
+
+#### Dividiendo
+
+En esta manera lo que tenés que hacer es dividir la parte entera entre 2 hasta que el cociente sea 0
+
+Ejemplo:
+256 = 
 
 ## Binario a Hexadecimal
 
