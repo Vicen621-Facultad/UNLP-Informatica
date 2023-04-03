@@ -14,7 +14,7 @@ Los positivos empiezan con 0
 
 ## Como representar en este sistema:
 
-Los positivos se representan igual que en el sistema [[Binario Sin Signo]], los negativos por otro lado se escriben igual que [[Binario Sin Signo]] pero el bit mas significativo representa el signo, es decir se cambia por un 1.
+Los positivos se representan igual que en el sistema [Binario Sin Signo](Binario%20Sin%20Signo.md), los negativos por otro lado se escriben igual que [Binario Sin Signo](Binario%20Sin%20Signo.md) pero el bit mas significativo representa el signo, es decir se cambia por un 1.
 
 Ejemplo de 4 bits:
 

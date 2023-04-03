@@ -19,7 +19,7 @@ $$E=2^{n-1}$$
 
 ### Binario a Decimal
 
-1. Se interpreta el numero en [Binario Sin Signo]()
+1. Se interpreta el numero en [Binario Sin Signo](Binario%20Sin%20Signo.md)
 2. Se le resta el Exceso
 
 Ejemplo:
