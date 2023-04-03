@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "c6f1e73abf8cc25c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1er Semestre/OC/Teoria/Binario Codificado Decimal.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1er Semestre/OC/Teoria/Flags.md",
+                "file": "1er Semestre/OC/Teoria/Binario Codificado Decimal.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1er Semestre/OC/Teoria/Flags.md",
+                "file": "1er Semestre/OC/Teoria/Binario Codificado Decimal.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -141,7 +154,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1er Semestre/OC/Teoria/Flags.md"
+                "file": "1er Semestre/OC/Teoria/Binario Codificado Decimal.md"
               }
             }
           }
@@ -162,17 +175,18 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "c9b50c5ba1198d21",
+  "active": "c6f1e73abf8cc25c",
   "lastOpenFiles": [
+    "1er Semestre/OC/Teoria/Binario Con Signo.md",
+    "1er Semestre/OC/Teoria/Complemento a 1.md",
+    "1er Semestre/OC/Teoria/Binario Sin Signo.md",
+    "1er Semestre/OC/Teoria/Binario Codificado Decimal.md",
+    "1er Semestre/OC/Teoria/Flags.md",
     "1er Semestre/OC/Teoria/Complemento a 2.md",
     "1er Semestre/OC/Teoria/Exceso.md",
-    "1er Semestre/OC/Teoria/Flags.md",
     "README.md",
     "Ingreso/COC.md",
     "1er Semestre/OC/Teoria/Sistemas de representacion en binario.md",
-    "1er Semestre/OC/Teoria/Complemento a 1.md",
-    "1er Semestre/OC/Teoria/Binario Sin Signo.md",
-    "1er Semestre/OC/Teoria/Binario Con Signo.md",
     "Binario Sin Signo..md",
     "().md",
     "Shadow's End/Cambios/Days 10-19.md",
@@ -191,7 +205,6 @@
     "Series y películas/The Truman Show.md",
     "Series y películas/Saving Private Ryan.md",
     "Series y películas/Once Upon a Time in Hollywood.md",
-    "Series y películas/Kill Bill Vol. 1.md",
     "30 Days of Python",
     "30 Days of Python/Untitled"
   ]
