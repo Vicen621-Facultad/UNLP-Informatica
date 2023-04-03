@@ -13,9 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1er Semestre/OC/Teoria/Representar e interpretar entre los diferentes sistemas.md",
-                "mode": "source",
-                "source": false
+                "file": "1er Semestre/OC/Teoria/Sistemas de representacion en binario.md",
+                "mode": "preview",
+                "source": true
               }
             }
           }
@@ -85,7 +85,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "1er Semestre/OC/Teoria/Representar e interpretar entre los diferentes sistemas.md",
+            "file": "1er Semestre/OC/Teoria/Sistemas de representacion en binario.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "1er Semestre/OC/Teoria/Representar e interpretar entre los diferentes sistemas.md",
+            "file": "1er Semestre/OC/Teoria/Sistemas de representacion en binario.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -114,7 +114,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "1er Semestre/OC/Teoria/Representar e interpretar entre los diferentes sistemas.md"
+            "file": "1er Semestre/OC/Teoria/Sistemas de representacion en binario.md"
           }
         }
       },
@@ -141,6 +141,10 @@
   },
   "active": "4151068e139c3af9",
   "lastOpenFiles": [
+    "1er Semestre/CADP/Teoria/Tipos de datos.md",
+    "1er Semestre/OC/Teoria/Sistemas de representacion en binario.md",
+    "1er Semestre/OC/Teoria/Exceso.md",
+    "1er Semestre/OC/Teoria/Representar e interpretar entre los diferentes sistemas.md",
     "1er Semestre/OC/Teoria/Flags.md",
     "README.md",
     "1er Semestre",
@@ -160,13 +164,9 @@
     "Ingreso/MAT0/Cap1 - Actividades.md",
     "1er Semestre/OC/Teoria/Complemento a 1.md",
     "1er Semestre/OC/Teoria/Binario Con Signo.md",
-    "1er Semestre/OC/Teoria/Representar e interpretar entre los diferentes sistemas.md",
     "1er Semestre/OC/Teoria/Binario Codificado Decimal.md",
-    "1er Semestre/OC/Teoria/Sistemas de representacion en binario.md",
     "1er Semestre/OC/Teoria/Binario Sin Signo.md",
-    "1er Semestre/OC/Teoria/Exceso.md",
     "1er Semestre/OC/Teoria/Complemento a 2.md",
-    "1er Semestre/CADP/Teoria/Tipos de datos.md",
     "1er Semestre/CADP/Teoria/Maximos y minimos.md",
     "1er Semestre/CADP/Teoria/Estructura de Pascal.md",
     "1er Semestre/CADP/Teoria/Estructuras de control.md"
