@@ -45,10 +45,17 @@ Hay 2 maneras de pasar la parte entera
 
 #### Dividiendo
 
-En esta manera lo que tenés que hacer es dividir la parte entera entre 2 hasta que el cociente sea 0
+En esta manera lo que tenés que hacer es dividir la parte entera entre 2 hasta que el cociente sea 0 y se escriben los restos de atrás para adelante.
 
 Ejemplo:
-256 = 
+![Ejemplo de Decimal a Binario](_assets/DecimalToBinaryEx.png)
+
+#### Restando potencias de 2
+
+Esta forma es mas simple, tenés que restarle la potencia de 2 mas alta posible, el bit que de esa potencia va a ser 1.
+
+Ejemplo:
+319<sub>10</sub> = 256-
 
 ## Binario a Hexadecimal
 
