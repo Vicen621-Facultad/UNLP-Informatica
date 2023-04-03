@@ -86,9 +86,15 @@ $0.375_{10}=0.011_2$
 
 En este caso hay que usar la tabla de Binario Codificado Hexadecimal que es la siguiente:
 
-Lo que hay que hacer es dividir el numero en binario en bloques de 4 dígitos, empezando de derecha a izquierda, si el ultimo bloque tiene menos de 4 dígitos se le suman 0 adelante. Una vez tenés todos los bloques, lo buscas en la tabla y le pones el simbolo correspondiente.
+Lo que hay que hacer es dividir el numero en binario en bloques de 4 dígitos, empezando de derecha a izquierda, si el ultimo bloque tiene menos de 4 dígitos se le suman 0 adelante. Una vez tenés todos los bloques, lo buscas en la tabla y le pones el símbolo correspondiente.
 
 Ejemplo: 10100101<sub>2</sub> = A5<sub>16</sub>
 
-%% TODO %%
 ## Hexadecimal a Binario
+
+Para pasar un número hexadecimal a Binario hay que hacer lo mismo, pero al revés, que para pasar un número de [Binario a Hexadecimal](#binario%20a%20hexadecimal).
+Por cada dígito en hexadecimal se le asignan sus 4 bits correspondientes en binario.
+
+Ejemplo:
+$8FD_{16}=1000\ 1111\ 1101_2=2301_{10}$
+					8       F       D<sub>16</sub>

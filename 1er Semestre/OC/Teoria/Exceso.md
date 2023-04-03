@@ -25,6 +25,8 @@ $$E=2^{n-1}$$
 %%TODO: Pasar a formato multiline de MathJax%%
 
 Ejemplo:
+$$\start{}
+\end{}$$
 0100<sub>2 Ex2</sub> = -4<sub>10</sub>
 
 0100<sub>2</sub> = 4<sub>10 BSS</sub>
