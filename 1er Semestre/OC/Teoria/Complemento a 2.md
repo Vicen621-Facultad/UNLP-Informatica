@@ -35,6 +35,9 @@ $1000_2 + 0100_2 = 1100_2$
 3. Le sumas 1<sub>10</sub> (0001<sub>2</sub>) al numero
 
 Ejemplo:
+$$\begin{eqnarray}
+
+\end{eqnarray}$$
 $-7_{10}=0111_{2\ BSS}$
          $= 1000_{2\ Ca1}$
          $= 1001_{2\ Ca2}$

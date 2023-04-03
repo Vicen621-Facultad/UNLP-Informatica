@@ -23,7 +23,7 @@ $$E=2^{n-1}$$
 2. Se le resta el Exceso
 
 Ejemplo:
-$0100_{2\ Ex2}=-4_{10}$
+0100<sub>2 Ex2</sub> = -4<sub>10</sub>
 
 0100<sub>2</sub> = 4<sub>10 BSS</sub>
              = $4-8$ -> Exceso
