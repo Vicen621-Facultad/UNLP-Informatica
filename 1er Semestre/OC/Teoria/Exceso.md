@@ -32,7 +32,7 @@ Ejemplo:
 ### Decimal a Binario
 
 1. Se le suma el exceso
-2. El resultado se representa en [Binario Sin Signo](#1er%20Semestre%2OC%2Teoria%2Binario%20Sin%20Signo.md)
+2. El resultado se representa en [Binario Sin Signo](Binario%20Sin%20Signo.md)
 
 Ejemplo:
 -7<sub>10</sub> = 0001<sub>2 Ex2</sub>
