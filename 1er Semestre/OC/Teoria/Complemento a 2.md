@@ -46,6 +46,6 @@ Ejemplo:
 3. Das vuelta los digitos restantes
 
 -7<sub>10</sub> = 0111<sub>2 BSS</sub>
-        = $\color{red}---\color{}1$ (Escribis hasta el primer 1)
-        = 1001 <sub>2 Ca2</sub> (Das vuelta los demas bits)
+        = $\color{aquamarine}---\color{lightgreen}1$ (Escribis hasta el primer 1)
+        = $\color{aquamarine}100\color{lightgreen}1\color{gray}_{2\ Ca2}$(Das vuelta los demas bits)
  
