@@ -2,4 +2,4 @@
 
 ## Binario a Decimal
 
-En este caso hay que usar la Formula
+En este caso hay que usar la Teorema fundamental de la numeracion $$\Sigma_{i=-d}^n$$
