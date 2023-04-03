@@ -21,8 +21,8 @@ Los positivos se representan igual que en el sistema de [Binario Sin Signo](Bina
 
 Ejemplo con un sistema de 4 bits:
 
-4<sub>10</sub> = 0100<sub>2 Ca2</sub>
--4<sub>10</sub> = 1100<sub>2 Ca2</sub>
+$4_{10}=0100_{2\ Ca2}$
+$-4_{10}=1100_{2\ Ca2}$
 
 Siguiendo esta formula tambien podemos pasar los numeros: $$Ca2=2^n-N$$
 $Ca1 = 2^4-(-4) = 8+4$
@@ -35,17 +35,17 @@ $1000_2 + 0100_2 = 1100_2$
 3. Le sumas 1<sub>10</sub> (0001<sub>2</sub>) al numero
 
 Ejemplo:
--7<sub>10</sub> = 0111<sub>2 BSS</sub>
-        = 1000<sub>2 Ca1</sub>
-        = 1001<sub>2 Ca2</sub>
+$-7_{10}=0111_{2\ BSS}$
+         $= 1000_{2\ Ca1}$
+         $= 1001_{2\ Ca2}$
 
 #### Otra manera de representar mas facil
 
 1. Pasas el decimal a [Binario Sin Signo](Binario%20Sin%20Signo.md)
-2. Escribis los digitos de derecha a izquierda hasta escribir el primer 1 que aparezca
-3. Das vuelta los digitos restantes
+2. Escribís los dígitos de derecha a izquierda hasta escribir el primer 1 que aparezca
+3. Das vuelta los dígitos restantes
 
--7<sub>10</sub> = 0111<sub>2 BSS</sub>
-        = $\color{aquamarine}---\color{lightgreen}1$ (Escribis hasta el primer 1)
-        = $\color{aquamarine}100\color{lightgreen}1\color{gray}_{2\ Ca2}$(Das vuelta los demas bits)
+$-7_{10}=0111_{2\ BSS}$
+         $= \color{aquamarine}---\color{lightgreen}1$ (Escribís hasta el primer 1)
+         $= \color{aquamarine}100\color{lightgreen}1\color{gray}_{2\ Ca2}$ (Das vuelta los demás bits)
  

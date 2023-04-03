@@ -21,8 +21,8 @@ Los positivos se representan igual que en el sistema de [[Binario Sin Signo]], p
 
 Ejemplo con un sistema de 4 bits:
 
-4<sub>10</sub> = 0100<sub>2 Ca1</sub>
--4<sub>10</sub> = 1011<sub>2 Ca1</sub>
+$4_{10}=0100_{2\ Ca1}$
+$-4_{10}=1011_{2\ Ca1}$
 
 Siguiendo esta formula tambien podemos pasar los números: $$Ca1=(2^n-1)-N$$
 $Ca1 = (2^4-1)-(-4) = 7+4)$
