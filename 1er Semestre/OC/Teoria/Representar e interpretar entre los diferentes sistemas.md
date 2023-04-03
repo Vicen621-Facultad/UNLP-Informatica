@@ -1,5 +1,17 @@
 # Representar e interpretar entre los diferentes sistemas
 
+## Indice
+
+1. [Tabla de equivalencias](#Tabla%20de%20equivalencias)
+2. [Binario a Decimal](#Binario%20a%20decimal)
+3. [Hexadecimal a Decimal](#Hexadecimal%20a%20decimal)
+4. [Decimal a Binario](#decimal%20a%20binario)
+	1. [Parte Entera](#parte%20entera)
+		1. [Dividiendo](#dividiendo)
+		2. [Restando potencias de 2](#restando%20potencias%20de%202)
+	2. [Parte Decimal](#parte%20decimal)
+5. [Decimal a Hexadecimal](#decimal%20a%20hexadec) 
+
 ## Tabla de equivalencias
 
 |     Decimal     |     Binario      |  Hexadecimal   |
@@ -60,7 +72,12 @@ Ejemplo: $210_{10}=128+64+16+2=11010010_2$
 
 Para pasar la parte decimal es simple, tenés que multiplicar la parte decimal por 2 hasta que la misma sea 0 o se empiece a repetir. Tenes que anotar la parte entera del resultado, una vez lo anotes volves a multiplicar la **parte decimal** por 2 otra vez.
 
-Ej: $0.375_2=0.375*2=0.75*2=1.5*2=1.0$
+Ejemplo: 
+$0.375_2=0.375*2=0.75*2=1.5*2=1.0$
+$0.375_{10}=0.011_2$
+
+## Decimal a Hexadeciaml
+
 
 ## Binario a Hexadecimal
 
