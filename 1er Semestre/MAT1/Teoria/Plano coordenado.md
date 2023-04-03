@@ -1,13 +1,12 @@
 # Plano coordenado
 
-$$
-\documentclass{standalone}
-\usepackage{pgfplots}
-\begin{document}
-\begin{tikzpicture}
-\begin{axis}[axis lines=middle,axis equal,grid=both]
-\addplot coordinates{(-3,1) (6,-2)};
-\end{axis}
-\end{tikzpicture}
-\end{document}
-$$
+```functionplot
+---
+title: Plano Coordenado
+xLabel: X
+yLabel: Y
+bounds: [-10,10,-10,10]
+disableZoom: true
+grid: true
+---
+```
