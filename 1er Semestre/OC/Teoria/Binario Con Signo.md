@@ -19,7 +19,7 @@ Los positivos se representan igual que en el sistema [Binario Sin Signo](Binario
 Ejemplo de 4 bits:
 
 Rango = [-7...7]
-Resolucion = 1
+Resoluciòn = 1
 
-4<sub>10</sub> = 0100<sub>2 BCS</sub>
--4<sub>10</sub> = 1100<sub>2 BCS</sub>
+$4_{10}=0100_{2\ BCS}$
+$-4_{10}=1100_{2\ BCS}$

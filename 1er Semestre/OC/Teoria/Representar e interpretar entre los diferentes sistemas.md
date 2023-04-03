@@ -10,7 +10,9 @@
 		1. [Dividiendo](#dividiendo)
 		2. [Restando potencias de 2](#restando%20potencias%20de%202)
 	2. [Parte Decimal](#parte%20decimal)
-5. [Decimal a Hexadecimal](#decimal%20a%20hexadec) 
+5. [Decimal a Hexadecimal](#decimal%20a%20hexadecimal)
+6. [Binario a Hexadecimal](#binario%20a%20hexadecimal)
+7. [Hexadecimal a Binario](#hexadecimal%20a%20binario)
 
 ## Tabla de equivalencias
 
@@ -76,7 +78,8 @@ Ejemplo:
 $0.375_2=0.375*2=0.75*2=1.5*2=1.0$
 $0.375_{10}=0.011_2$
 
-## Decimal a Hexadeciaml
+%% TODO %%
+## Decimal a Hexadecimal
 
 
 ## Binario a Hexadecimal
@@ -87,3 +90,5 @@ Lo que hay que hacer es dividir el numero en binario en bloques de 4 dígitos, e
 
 Ejemplo: 10100101<sub>2</sub> = A5<sub>16</sub>
 
+%% TODO %%
+## Hexadecimal a Binario
