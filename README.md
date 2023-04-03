@@ -6,6 +6,7 @@
 
 ---
 <h2 align="center">📝 Materias</h2>
+
 | Materia                                                                            | Inicio Cursada | Finalización Cursada | Nota final |
 | ---------------------------------------------------------------------------------- | -------------- |:-------------------- |:---------- |
 | [COC](https://github.com/vicen621/UNLP-Informatica/tree/main/Ingreso/COC)          | 12-09-2022     | 02-12-2022           | 9          |
