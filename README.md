@@ -4,7 +4,6 @@
  </div>
 <br>
 
----
 <h2 align="center">📝 Materias</h2>
 
 | Materia                                                                            | Inicio Cursada | Finalización Cursada | Nota final |
