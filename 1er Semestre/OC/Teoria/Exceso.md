@@ -26,7 +26,7 @@ Ejemplo:
 $$\begin{eqnarray}
 0100_{2\ Ex2} &=& 4_{10} \\ \\
 0100_2 &=& 4_{10\ BSS} \\
-&=& 4 - 8 \to \text{ Exceso}\\
+&=& 4 - 8 \Rightarrow \text{ Exceso}\\
 &=& -4
 \end{eqnarray}$$
 
@@ -38,7 +38,9 @@ $$\begin{eqnarray}
 Ejemplo:
 $$\begin{eqnarray}
 -7_{10} &=& 0001_{2\ Ex2} \\ \\
--7_{}
+-7_{10} &\to& -7 +8 \Rightarrow \text{ Exceso} \\
+&=& 1_{10} \\
+&=& 0001_{2\ BSS}
 \end{eqnarray}$$
 
 -7<sub>10</sub> = 0001<sub>2 Ex2</sub>
