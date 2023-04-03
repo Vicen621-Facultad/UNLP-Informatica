@@ -8,7 +8,7 @@ abreviatura: BCD
 ## Desempaquetado
 
 Se usa para comunicaciones entre perfericos
-Cada digito ocupa un byte, se escribe `1111` adelante de cada digito
+Cada digito ocupa un byte, se escribe `1111` adelante de cada digito, el digito se escribe en [Binario Sin SIgno](Binario)
 
 ### Sin Signo
 
@@ -55,6 +55,12 @@ El signo se agrega despues del ultimo numero, no pueden quedar bytes incompletos
 Como en BCD solo se usan los dígitos del 0 al 9, nos quedan 6 combinaciones de bits sin usar. Es por esto que si la suma de 2 números en BCD da un numero mayor a 9<sub>10</sub> se le tiene que sumar 6<sub>10</sub> (0110<sub>2</sub>)
 
 Ejemplos:
-   15  |     0001  0101
-\+ 27  | + 0010  0111
-\= 42  | = 0011    1100
+   15<sub>10</sub>  |     0001  0101<sub>2</sub>
+\+ 27<sub>10</sub>  | + 0010   0111<sub>2</sub>
+\= 42<sub>10</sub>  | = 0011    1100<sub>2</sub>
+                       3<sub>10</sub>       12<sub>10</sub> -> Se le suma 6<sub>10</sub> (0110<sub>2</sub>)
+
+\     0011  1100<sub>2</sub>
+\+  0000 0110<sub>2</sub>
+\= 0100   0010<sub>2</sub>
+      4<sub>10</sub>       2<sub>10</sub>
