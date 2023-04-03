@@ -1,0 +1,190 @@
+{
+  "main": {
+    "id": "611de780b73aa088",
+    "type": "split",
+    "children": [
+      {
+        "id": "188ade40b587b9a7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c9b50c5ba1198d21",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "638ebc9381b09d80",
+    "type": "split",
+    "children": [
+      {
+        "id": "23311464c913aa44",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "de71279917bb012a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "73604f03b24e254a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "20f61aebb8fe6d17",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "b6e20520af725fdc",
+    "type": "split",
+    "children": [
+      {
+        "id": "27c6a5f79d18393e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9fac6e3394616a03",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "a94ff1f70fa45129",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "f83caef7c49927e0",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "0747881b525e895a",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "ac1f9530efe17889",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          },
+          {
+            "id": "9e97257bf4ce53da",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
+    }
+  },
+  "active": "c9b50c5ba1198d21",
+  "lastOpenFiles": [
+    "Shadow's End/Cambios/Days 10-19.md",
+    "Shadow's End/Cambios/Day 0-9.md",
+    "Regalo de fin de año para Martu.md",
+    "Shadow's End/Shadow's End.md",
+    "Shadow's End/Nombres.md",
+    "Kaleidoscope.md",
+    "Reglas del Mao.md",
+    "Shadow's End/Cambios",
+    "INSTALAR TODAS LAS FONT DE RUBIK Y JETBRAINS MONO.md",
+    "Shadow's End",
+    "Falcon.md",
+    "Martu.md",
+    "Juegos jugados en 2023.md",
+    "Series y películas/The Truman Show.md",
+    "Series y películas/Saving Private Ryan.md",
+    "Series y películas/Once Upon a Time in Hollywood.md",
+    "Series y películas/Kill Bill Vol. 1.md",
+    "Series y películas/Inglourious Basterds.md",
+    "Series y películas/Avatar.md",
+    "Games/Hollow Knight.md",
+    "Games/The Binding Of Isaac.md",
+    "Daily/23-04-02.md",
+    "Daily/23-03-29.md",
+    "30 Days of Python",
+    "30 Days of Python/Untitled",
+    "Daily/23-03-27.md",
+    "Templates/Movies template.md",
+    "Templates/Game Template.md",
+    "Series y películas 2023.md",
+    "Daily/23-02-08.md"
+  ]
+}

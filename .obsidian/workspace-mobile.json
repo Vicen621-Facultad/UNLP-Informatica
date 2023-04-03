@@ -1,0 +1,166 @@
+{
+  "main": {
+    "id": "e7b3afd1ee4e140e",
+    "type": "split",
+    "children": [
+      {
+        "id": "7081709ad27aff43",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e0594094e0c6003a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Daily/23-03-09.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8ea31646151f36fc",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "8ba05d105caff150",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "3a5c68df0d03cbe6",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "98f67ed295b5f0ea",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true
+          }
+        }
+      },
+      {
+        "id": "f20da9e5168dca0b",
+        "type": "leaf",
+        "state": {
+          "type": "starred",
+          "state": {}
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "9502bb855099077d",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "256081edfd4c121b",
+        "type": "leaf",
+        "state": {
+          "type": "calendar",
+          "state": {}
+        }
+      },
+      {
+        "id": "25250941887505dd",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "Daily/23-03-09.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "a1692379f853232b",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "Daily/23-03-09.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "11e5927d4bba0018",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "Daily/23-03-09.md"
+          }
+        }
+      },
+      {
+        "id": "563f4d0d768912d3",
+        "type": "leaf",
+        "state": {
+          "type": "advanced-tables-toolbar",
+          "state": {}
+        }
+      }
+    ],
+    "currentTab": 4
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "e0594094e0c6003a",
+  "lastOpenFiles": [
+    "Daily/23-02-17.md",
+    "Daily/23-03-09.md",
+    "Series y películas 2023.md",
+    "Daily/23-02-11.md",
+    "Series y películas/Once Upon a Time in Hollywood.md",
+    "Daily/23-02-10.md",
+    "Series y películas vistas en 2023.md",
+    "Series y películas/Kill Bill.md",
+    "Series y películas/Inglorious Basterds.md",
+    "Series y películas/Avatar.md",
+    "Templates/Movies template.md",
+    "Templates/Daily template.md"
+  ]
+}
