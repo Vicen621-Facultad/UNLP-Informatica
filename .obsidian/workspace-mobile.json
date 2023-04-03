@@ -13,9 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1er Semestre/OC/Teoria/Exceso.md",
+                "file": "1er Semestre/OC/Teoria/Sistemas de representacion en binario.md",
                 "mode": "preview",
-                "source": false
+                "source": true
               }
             }
           }
@@ -85,7 +85,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "1er Semestre/OC/Teoria/Exceso.md",
+            "file": "1er Semestre/OC/Teoria/Sistemas de representacion en binario.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "1er Semestre/OC/Teoria/Exceso.md",
+            "file": "1er Semestre/OC/Teoria/Sistemas de representacion en binario.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -114,7 +114,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "1er Semestre/OC/Teoria/Exceso.md"
+            "file": "1er Semestre/OC/Teoria/Sistemas de representacion en binario.md"
           }
         }
       },
@@ -141,8 +141,9 @@
   },
   "active": "8968db907174dc99",
   "lastOpenFiles": [
-    "1er Semestre/OC/Teoria/Complemento a 2.md",
+    "1er Semestre/OC/Teoria/Exceso.md",
     "1er Semestre/OC/Teoria/Sistemas de representacion en binario.md",
+    "1er Semestre/OC/Teoria/Complemento a 2.md",
     "1er Semestre/MAT1/Teoria/Plano coordenado.md",
     "1er Semestre/CADP/Teoria/Tipos de datos.md",
     "1er Semestre/CADP/Teoria/Maximos y minimos.md",
@@ -153,7 +154,6 @@
     "1er Semestre/OC/Teoria/Binario Sin Signo.md",
     "1er Semestre/OC/Teoria/Binario Con Signo.md",
     "1er Semestre/OC/Teoria/Binario Codificado Decimal.md",
-    "1er Semestre/OC/Teoria/Exceso.md",
     "UNLP-Informatica.zip",
     "README.md",
     "1er Semestre/MAT1",
