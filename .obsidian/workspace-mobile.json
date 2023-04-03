@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1er Semestre/OC/Teoria/Exceso.md",
-                "mode": "source",
+                "file": "1er Semestre/MAT1/Teoria/Plano coordenado.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "1er Semestre/OC/Teoria/Exceso.md",
+            "file": "1er Semestre/MAT1/Teoria/Plano coordenado.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "1er Semestre/OC/Teoria/Exceso.md",
+            "file": "1er Semestre/MAT1/Teoria/Plano coordenado.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -114,7 +114,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "1er Semestre/OC/Teoria/Exceso.md"
+            "file": "1er Semestre/MAT1/Teoria/Plano coordenado.md"
           }
         }
       },
@@ -141,6 +141,16 @@
   },
   "active": "8968db907174dc99",
   "lastOpenFiles": [
+    "1er Semestre/CADP/Teoria/Tipos de datos.md",
+    "1er Semestre/CADP/Teoria/Maximos y minimos.md",
+    "1er Semestre/CADP/Teoria/Estructura de Pascal.md",
+    "1er Semestre/CADP/Teoria/Estructuras de control.md",
+    "1er Semestre/OC/Teoria/Representar e interpretar entre los diferentes sistemas.md",
+    "1er Semestre/OC/Teoria/Complemento a 1.md",
+    "1er Semestre/OC/Teoria/Binario Sin Signo.md",
+    "1er Semestre/OC/Teoria/Binario Con Signo.md",
+    "1er Semestre/OC/Teoria/Binario Codificado Decimal.md",
+    "1er Semestre/OC/Teoria/Exceso.md",
     "UNLP-Informatica.zip",
     "1er Semestre/OC/Teoria/Sistemas de representacion en binario.md",
     "README.md",
@@ -154,20 +164,9 @@
     "Ingreso/EPA/Cap-2/ejemplos/Sol-3.2.1.ri",
     "Ingreso/EPA/Cap-2/ejemplos/Sol-3.1.2.ri",
     "Ingreso/EPA/Cap-2/ejemplos/Cap2Ejemplo10.ri",
-    "Ingreso/EPA/Cap-2/ejemplos/Sol-3.2.2.ri",
     "Ingreso/MAT0/Cap1 - Actividades.md",
-    "1er Semestre/OC/Teoria/Complemento a 1.md",
-    "1er Semestre/OC/Teoria/Binario Con Signo.md",
-    "1er Semestre/OC/Teoria/Representar e interpretar entre los diferentes sistemas.md",
     "1er Semestre/OC/Teoria/Flags.md",
-    "1er Semestre/OC/Teoria/Binario Codificado Decimal.md",
-    "1er Semestre/OC/Teoria/Binario Sin Signo.md",
-    "1er Semestre/OC/Teoria/Exceso.md",
     "1er Semestre/OC/Teoria/Complemento a 2.md",
-    "1er Semestre/CADP/Teoria/Tipos de datos.md",
-    "1er Semestre/CADP/Teoria/Maximos y minimos.md",
-    "1er Semestre/CADP/Teoria/Estructura de Pascal.md",
-    "1er Semestre/CADP/Teoria/Estructuras de control.md",
     "_assets/DecimalToBinaryEx.png",
     "Ingreso/COC/Cap3/Practica.md",
     "Ingreso/COC/Cap2/Teoria.md",
