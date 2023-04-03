@@ -54,8 +54,13 @@ Ejemplo:
 
 Esta forma es mas simple, tenés que restarle la potencia de 2 mas alta posible, el bit que de esa potencia va a ser 1.
 
-Ejemplo:
-319<sub>10</sub> = 256-
+Ejemplo: $210_{10}=128+64+16+2=11010010_2$
+
+### Parte decimal
+
+Para pasar la parte decimal es simple, tenés que multiplicar la parte decimal por 2 hasta que la misma sea 0 o se empiece a repetir. Tenes que anotar la parte entera del resultado, una vez lo anotes volves a multiplicar la **parte decimal** por 2 otra vez.
+
+Ej: $0.375_2=0.375*2=0.75*2=1.5*2=1.0$
 
 ## Binario a Hexadecimal
 
