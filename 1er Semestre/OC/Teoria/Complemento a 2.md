@@ -25,7 +25,7 @@ $4_{10}=0100_{2\ Ca2}$
 $-4_{10}=1100_{2\ Ca2}$
 
 Siguiendo esta formula tambien podemos pasar los numeros: $$Ca2=2^n-N$$
-$Ca1 = 2^4-(-4) = 8+4$
+$Ca2 = 2^4-(-4) = 8+4$
 $1000_2 + 0100_2 = 1100_2$ 
 
 ### Pasos para representar negativos en este sistema
