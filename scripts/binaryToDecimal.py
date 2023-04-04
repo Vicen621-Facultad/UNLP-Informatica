@@ -1,9 +1,11 @@
 t = True
+
 while t:
     binary = input('Ingresa el numero en binario: ')
     mode = input('Ingresa el sistema de representacion, posibles: bss, bcs, ca1, ca2 y ex2: ')
     decimal = 0;
 
+    sign = 1 if (binary[0] == '0') else -1
 
     match mode:
         case 'bss':
@@ -13,7 +15,6 @@ while t:
                 i-=1
 
         case 'bcs':
-            sign = 1 if (binary[0] == '0') else -1
             binary = binary[1:]
             
             i = len(binary) - 1
@@ -23,7 +24,6 @@ while t:
             decimal *= sign
         
         case 'ca1':
-            sign = 1 if (binary[0] == '0') else -1
             binary = binary[1:]
             
             i = len(binary) - 1
@@ -35,6 +35,11 @@ while t:
                 decimal += x*(2**i)
                 i-=1
             decimal *= sign
+        
+        case 'ca2':
+            binary = binary[1:]
+
+            
 
     print(decimal)
-    t = True if input('Queres ingresar otro numero? \n y/n: ').lower == 'y' else False
+    t = input('Queres ingresar otro numero? \ny/n: ').lower() == 'y'
