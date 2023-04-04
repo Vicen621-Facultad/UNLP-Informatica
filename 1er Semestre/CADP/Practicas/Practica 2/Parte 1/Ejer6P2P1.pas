@@ -4,13 +4,13 @@ procedure numeroParMasAlto;
     var
         value, max: integer;
     begin
-        max := -999;
+        max := -1;
 
-        repeat
+        while (value >= 0) do begin
             readln(value);
             if (value MOD 2 = 0) and (value > max) then
                 max := value;
-        until value < 0;
+        end;
 
         writeln('El numero par mas alto fue: ', max);
     end;
