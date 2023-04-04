@@ -36,7 +36,11 @@ while t:
 
         case 'ca2':
             partition = binary[::-1].partition('1')
-            ca2 = partition[0]
+            print(f'part 1: {partition[0]}, part 2: {partition[1]}, part 3: {partition[2]}')
+            ca2 = f'{partition[0]}{partition[1]}'.join('1' if c == '0' else '0' for c in partition[2])
+            print(f'{ca2}')
+            decimal = dec_to_bss(ca2[::-1]) * sign
+
 
     print(decimal)
     t = input('Queres ingresar otro numero? \ny/n: ').lower() == 'y'
