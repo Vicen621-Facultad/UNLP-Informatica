@@ -197,7 +197,6 @@
   },
   "active": "346e751ed8e1c900",
   "lastOpenFiles": [
-    "scripts/binaryToDecimal.py.123e9cab0bc6ab5118d4979189a99686.tmp",
     "scripts/build/BinaryToDecimal/EXE-00.toc",
     "scripts/dist/BinaryToDecimal",
     "scripts/build/BinaryToDecimal/PKG-00.toc",
@@ -208,6 +207,7 @@
     "scripts/build/BinaryToDecimal/localpycs/pyimod03_ctypes.pyc",
     "scripts/build/BinaryToDecimal/localpycs/pyimod02_importers.pyc",
     "scripts/build/BinaryToDecimal/localpycs/pyimod01_archive.pyc",
+    "scripts/build/BinaryToDecimal/localpycs",
     "1er Semestre/OC/Teoria/Complemento a 2.md",
     "1er Semestre/OC/Teoria/Complemento a 1.md",
     "1er Semestre/OC/Teoria/Exceso.md",
