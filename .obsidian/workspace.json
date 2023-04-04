@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1er Semestre/OC/Teoria/Complemento a 2.md",
+                "file": "1er Semestre/OC/Teoria/Exceso.md",
                 "mode": "source",
                 "source": false
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1er Semestre/OC/Teoria/Complemento a 2.md",
+                "file": "1er Semestre/OC/Teoria/Exceso.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1er Semestre/OC/Teoria/Complemento a 2.md",
+                "file": "1er Semestre/OC/Teoria/Exceso.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -173,7 +173,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1er Semestre/OC/Teoria/Complemento a 2.md"
+                "file": "1er Semestre/OC/Teoria/Exceso.md"
               }
             }
           }
@@ -198,13 +198,13 @@
   "active": "346e751ed8e1c900",
   "lastOpenFiles": [
     "scripts/binaryToDecimal.py.123e9cab0bc6ab5118d4979189a99686.tmp",
+    "1er Semestre/OC/Teoria/Complemento a 2.md",
     "1er Semestre/OC/Teoria/Complemento a 1.md",
     "scripts/binaryToDecimal.py",
     "scripts",
     "1er Semestre/OC/Teoria/Exceso.md",
     "1er Semestre/OC/binaryToDecimal.py",
     "1er Semestre/OC/Teoria/Flags.md",
-    "1er Semestre/OC/Teoria/Complemento a 2.md",
     "1er Semestre/OC/Teoria/Representar e interpretar entre los diferentes sistemas.md",
     "1er Semestre/MAT1/Teoria/Plano coordenado.md",
     "1er Semestre/MAT1/Teoria",
