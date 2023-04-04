@@ -40,7 +40,8 @@ while t:
             decimal = dec_to_ca1(binary)
 
         case 'ca2':
-            decimal = bin(dec_to_ca1(binary) + 1)
+            i = len(binary) - 1
+            decimal = (dec_to_bss(binary) - 2**i) * sign
 
     print(decimal)
     t = input('Queres ingresar otro numero? \ny/n: ').lower() == 'y'
