@@ -10,15 +10,6 @@ def dec_to_bss(binary):
     return dec
 
 
-def dec_to_ca1(binary):
-    binary = binary[1:]
-
-    ca1_bin = ''.join('1' if c == '0' else '0' for c in binary)
-    decimal = dec_to_bss(ca1_bin)
-    decimal *= sign
-    return decimal
-
-
 while t:
     binary = input('Ingresa el numero en binario: ')
     mode = input(
@@ -37,11 +28,14 @@ while t:
             decimal *= sign
 
         case 'ca1':
-            decimal = dec_to_ca1(binary)
+            binary = binary[1:]
+
+            ca1_bin = ''.join('1' if c == '0' else '0' for c in binary)
+            decimal = dec_to_bss(ca1_bin)
+            decimal *= sign
 
         case 'ca2':
-            i = len(binary) - 1
-            decimal = (dec_to_bss(binary) - 2**i) * sign
+            ca2 = 
 
     print(decimal)
     t = input('Queres ingresar otro numero? \ny/n: ').lower() == 'y'
