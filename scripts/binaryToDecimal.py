@@ -35,7 +35,8 @@ while t:
             decimal *= sign
 
         case 'ca2':
-            ca2 = 
+            partition = binary[::-1].partition('1')
+            ca2 = partition[0]
 
     print(decimal)
     t = input('Queres ingresar otro numero? \ny/n: ').lower() == 'y'
