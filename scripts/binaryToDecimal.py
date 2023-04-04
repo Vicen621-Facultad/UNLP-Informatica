@@ -1,10 +1,12 @@
 t = True
 
-def bss(binary):
+def dec_to_bss(binary):
     i = len(binary) - 1
+    dec = 0
     for x in binary:
-        decimal += int(x)*(2**i)
+        dec += int(x)*(2**i)
         i-=1
+    return dec;
 
 while t:
     binary = input('Ingresa el numero en binario: ')
@@ -15,18 +17,11 @@ while t:
 
     match mode:
         case 'bss':
-            i = len(binary) - 1
-            for x in binary:
-                decimal += int(x)*(2**i)
-                i-=1
-
+            decimal = dec_to_bss(binary);
+        
         case 'bcs':
             binary = binary[1:]
-            
-            i = len(binary) - 1
-            for x in binary:
-                decimal += int(x)*(2**i)
-                i-=1
+            decimal = dec_to_bss(binary)
             decimal *= sign
         
         case 'ca1':
@@ -34,15 +29,15 @@ while t:
             
             i = len(binary) - 1
             for x in binary:
-                x = int(x)
-                if (sign == -1):
-                    x = 1 - x
+                
+                x = 1 - x
                 
                 decimal += x*(2**i)
                 i-=1
             decimal *= sign
         
         case 'ca2':
+            print()
 
     print(decimal)
     t = input('Queres ingresar otro numero? \ny/n: ').lower() == 'y'
