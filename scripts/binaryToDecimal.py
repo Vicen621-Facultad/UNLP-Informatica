@@ -38,7 +38,7 @@ while t:
             partition = binary[::-1].partition('1')
             print(f'part 0: {partition[0]}, part 1: {partition[1]}, part 2: {partition[2]}')
             print(f'write until first 1: {partition[0]}{partition[1]}')
-            ca2 = f'{partition[0]}{partition[1]}'.join('1' if c == '0' else '0' for c in partition[2])
+            ca2 = f'{partition[0]}{partition[1]}'
             print(f'part 2 flipped: '.join('1' if c == '0' else '0' for c in partition[2]))
             print(f'ca2: {ca2}')
             decimal = dec_to_bss(ca2[::-1]) * sign
