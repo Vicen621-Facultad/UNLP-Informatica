@@ -51,7 +51,6 @@ while loop:
 
         case 'ex2':
             EXCESS = 2**(len(binary)-1)
-            print(EXCESS)
             decimal = bss_to_dec(binary) - EXCESS
 
         case other:
