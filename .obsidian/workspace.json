@@ -197,6 +197,8 @@
   },
   "active": "346e751ed8e1c900",
   "lastOpenFiles": [
+    "scripts/main.py.14518d61a0f3000c9c2876bb0a2d5ba7.tmp",
+    "scripts/__pycache__/main.cpython-311.pyc",
     "scripts/main.py",
     "1er Semestre/OC/Teoria/Flags.md",
     "1er Semestre/OC/Teoria/Exceso.md",
@@ -211,8 +213,6 @@
     "scripts/build/BinaryToDecimal/PKG-00.toc",
     "scripts/build/BinaryToDecimal/BinaryToDecimal.pkg",
     "scripts/build/BinaryToDecimal/PYZ-00.toc",
-    "scripts/build/BinaryToDecimal/PYZ-00.pyz",
-    "scripts/build/BinaryToDecimal/localpycs/struct.pyc",
     "1er Semestre/OC/Teoria/Complemento a 2.md",
     "1er Semestre/OC/Teoria/Complemento a 1.md",
     "1er Semestre/OC/Teoria/Representar e interpretar entre los diferentes sistemas.md",

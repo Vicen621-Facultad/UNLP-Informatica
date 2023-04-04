@@ -1,3 +1,5 @@
+import main
+
 systems = {
     'bss': 'Binario Sin Signo',
     'bcs': 'Binario Con Signo',
@@ -50,3 +52,5 @@ def run():
         print(
             f'\n{binary_print}₂ interpretado en {systems[mode]} es: {decimal}₁₀ \n')
         loop = input('Queres ingresar otro numero? \ns/n: ').lower() == 's'
+    
+    main.run()
