@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1er Semestre/OC/Teoria/Flags.md",
+                "file": "1er Semestre/OC/Teoria/Exceso.md",
                 "mode": "source",
                 "source": false
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1er Semestre/OC/Teoria/Flags.md",
+                "file": "1er Semestre/OC/Teoria/Exceso.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1er Semestre/OC/Teoria/Flags.md",
+                "file": "1er Semestre/OC/Teoria/Exceso.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -173,7 +173,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1er Semestre/OC/Teoria/Flags.md"
+                "file": "1er Semestre/OC/Teoria/Exceso.md"
               }
             }
           }
@@ -197,6 +197,7 @@
   },
   "active": "346e751ed8e1c900",
   "lastOpenFiles": [
+    "1er Semestre/OC/Teoria/Flags.md",
     "1er Semestre/OC/Teoria/Complemento a 2.md",
     "1er Semestre/OC/Teoria/Representar e interpretar entre los diferentes sistemas.md",
     "1er Semestre/OC/Teoria/Exceso.md",
@@ -207,7 +208,6 @@
     "1er Semestre/MAT1/Teoria/Plano de coordenadas.md",
     "1er Semestre/MAT1/Teoria",
     "1er Semestre/OC/Teoria/Sistemas de representacion en binario.md",
-    "1er Semestre/OC/Teoria/Flags.md",
     "1er Semestre/OC/Teoria/Binario Codificado Decimal.md",
     "1er Semestre/OC/Teoria/Binario Con Signo.md",
     "1er Semestre/OC/Teoria/Binario Sin Signo.md",
