@@ -1,5 +1,4 @@
 loop = True
-system_recognized = True
 
 def dec_to_bss(binary):
     i = len(binary) - 1
@@ -11,11 +10,11 @@ def dec_to_bss(binary):
 
 
 while loop:
-    if (not system_recognized)
-        binary = input('Ingresa el numero en binario: ')
+    binary = input('Ingresa el numero en binario: ')
     mode = input(
         'Ingresa el sistema de representacion, posibles: bss, bcs, ca1, ca2 y ex2: ')
     decimal = 0
+    binary_print = binary;
 
     sign = 1 if (binary[0] == '0') else -1
 
@@ -39,13 +38,11 @@ while loop:
             partition = binary[::-1].partition('1')
             flip = ''.join('1' if c == '0' else '0' for c in partition[2])
             ca2 = f'{partition[0]}{partition[1]}{flip}'
-            print(f'part 2 flipped: {flip}')
-            print(f'ca2: {ca2}')
             decimal = dec_to_bss(ca2[::-1]) * sign
         
         case other:
             print('Sistema no reconocido, por favor ingrese un sistema valido')
             continue
 
-    print(decimal)
-    loop = input('Queres ingresar otro numero? \ny/n: ').lower() == 'y'
+    print(f'{binary_print}₂ interpretado en {mode} es: {decimal}₁₀')
+    loop = input('Queres ingresar otro numero? \ns/n: ').lower() == 's'
