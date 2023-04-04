@@ -45,14 +45,14 @@ while loop:
             partition = binary[::-1].partition('1')
             flip = ''.join('1' if c == '0' else '0' for c in partition[2])
             ca2 = f'{partition[0]}{partition[1]}{flip}'
-            decimal = dec_to_bss(ca2[::-1]) * sign
+            decimal = dec_to_bss(ca2[::-1] if sign == -1 else binary) * sign
         
         case 'ex2':
-
+            print()
         
         case other:
             print('Sistema no reconocido, por favor ingrese un sistema valido')
             continue
 
-    print(f'{binary_print}₂ interpretado en mode} es: {decimal}₁₀')
+    print(f'\n{binary_print}₂ interpretado en {systems[mode]} es: {decimal}₁₀ \n')
     loop = input('Queres ingresar otro numero? \ns/n: ').lower() == 's'
