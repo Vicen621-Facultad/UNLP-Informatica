@@ -2,12 +2,7 @@ loop = True
 
 
 def bss_to_dec(binary):
-    i = len(binary) - 1
-    dec = 0
-    for x in binary:
-        dec += int(x)*(2**i)
-        i -= 1
-    return dec
+    return int(binary, 2);
 
 
 systems = {
@@ -29,29 +24,29 @@ while loop:
 
     match mode:
         case 'bss':
-            decimal = bss_to_dec(binary)
+            decimal = int(binary, 2)
 
         case 'bcs':
             binary = binary[1:]
-            decimal = bss_to_dec(binary)
+            decimal = int(binary, 2)
             decimal *= sign
 
         case 'ca1':
             binary = binary[1:]
 
             ca1_bin = ''.join('1' if c == '0' else '0' for c in binary)
-            decimal = bss_to_dec(ca1_bin)
+            decimal = int(ca1_bin, 2)
             decimal *= sign
 
         case 'ca2':
             partition = binary[::-1].partition('1')
             flip = ''.join('1' if c == '0' else '0' for c in partition[2])
             ca2 = f'{partition[0]}{partition[1]}{flip}'
-            decimal = bss_to_dec(ca2[::-1] if sign == -1 else binary) * sign
+            decimal = int(ca2[::-1] if sign == -1 else binary, 2) * sign
 
         case 'ex2':
             EXCESS = 2**(len(binary)-1)
-            decimal = bss_to_dec(binary) - EXCESS
+            decimal = int(binary, 2) - EXCESS
 
         case other:
             print('Sistema no reconocido, por favor ingrese un sistema valido')
