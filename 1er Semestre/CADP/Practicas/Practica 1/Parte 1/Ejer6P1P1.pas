@@ -26,6 +26,6 @@ BEGIN
 	
 	writeln('Alumnos: ', totalAlu);
 	writeln('Promedios mayor a 6.5: ', promedioMayor6);
-	writeln('Porcenatje de alumnos destacados: ', destacados*100/totalAlu, '%');
+	writeln('Porcenatje de alumnos destacados: ', destacados*100/totalAlu:1:2, '%');
 END.
 
