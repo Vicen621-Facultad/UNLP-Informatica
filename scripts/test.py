@@ -1,1 +1,3 @@
-print(f"{int('01110110',2)}, {int('01110001',2)}")
+import BinaryToDecimal
+
+BinaryToDecimal.run()
