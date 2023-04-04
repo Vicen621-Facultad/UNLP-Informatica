@@ -1,7 +1,5 @@
 loop = True
 
-print(f'The function $f(x) = \frac{17}{x-4}$ has a discontinuity at $x = 4$.')
-
 def dec_to_bss(binary):
     i = len(binary) - 1
     dec = 0
@@ -10,11 +8,18 @@ def dec_to_bss(binary):
         i -= 1
     return dec
 
+systems = {
+    'bss': 'Binario Sin Signo',
+    'bcs': 'Binario Con Signo',
+    'ca1': 'Complemento a 1',
+    'ca2': 'Complemento a 2',
+    'ex2': 'Exceso'
+}
 
 while loop:
     binary = input('Ingresa el numero en binario: ')
     mode = input(
-        'Ingresa el sistema de representacion, posibles: bss, bcs, ca1, ca2 y ex2: ')
+        'Ingresa el sistema de representacion, posibles: bss, bcs, ca1, ca2 y ex2: ').lower()
     decimal = 0
     binary_print = binary;
 
@@ -42,9 +47,12 @@ while loop:
             ca2 = f'{partition[0]}{partition[1]}{flip}'
             decimal = dec_to_bss(ca2[::-1]) * sign
         
+        case 'ex2':
+
+        
         case other:
             print('Sistema no reconocido, por favor ingrese un sistema valido')
             continue
 
-    print(f'{binary_print}₂ interpretado en {mode} es: {decimal}₁₀')
+    print(f'{binary_print}₂ interpretado en mode} es: {decimal}₁₀')
     loop = input('Queres ingresar otro numero? \ns/n: ').lower() == 's'
