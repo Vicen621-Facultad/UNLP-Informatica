@@ -24,7 +24,7 @@ Ejemplo con un sistema de 4 bits:
 $4_{10}=0100_{2\ Ca2}$
 $-4_{10}=1100_{2\ Ca2}$
 
-Siguiendo esta formula tambien podemos pasar los numeros: $$Ca2=2^n-N$
+Siguiendo esta formula tambien podemos pasar los números: $$Ca2=2^n-N$
 $$$$\begin{eqnarray}
 Ca2 &=& 2^4-(-4) = 8+4 \\ 
 1100_2 &=& 1000_2 + 0100_2

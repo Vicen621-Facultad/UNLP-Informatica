@@ -1,5 +1,7 @@
 loop = True
 
+print(f'The function $f(x) = \frac{17}{x-4}$ has a discontinuity at $x = 4$.')
+
 def dec_to_bss(binary):
     i = len(binary) - 1
     dec = 0
