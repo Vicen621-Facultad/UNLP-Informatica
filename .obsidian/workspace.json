@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1er Semestre/OC/Teoria/Representar e interpretar entre los diferentes sistemas.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1er Semestre/OC/Teoria/Representar e interpretar entre los diferentes sistemas.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1er Semestre/OC/Teoria/Representar e interpretar entre los diferentes sistemas.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -173,7 +173,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1er Semestre/OC/Teoria/Representar e interpretar entre los diferentes sistemas.md"
+                "file": "README.md"
               }
             }
           }
@@ -197,6 +197,7 @@
   },
   "active": "346e751ed8e1c900",
   "lastOpenFiles": [
+    "1er Semestre/OC/Teoria/Representar e interpretar entre los diferentes sistemas.md",
     "scripts/main.py.14518d61a0f3000c9c2876bb0a2d5ba7.tmp",
     "scripts/__pycache__/main.cpython-311.pyc",
     "scripts/main.py",
@@ -212,10 +213,8 @@
     "scripts/dist/BinaryToDecimal",
     "scripts/build/BinaryToDecimal/PKG-00.toc",
     "scripts/build/BinaryToDecimal/BinaryToDecimal.pkg",
-    "scripts/build/BinaryToDecimal/PYZ-00.toc",
     "1er Semestre/OC/Teoria/Complemento a 2.md",
     "1er Semestre/OC/Teoria/Complemento a 1.md",
-    "1er Semestre/OC/Teoria/Representar e interpretar entre los diferentes sistemas.md",
     "1er Semestre/MAT1/Teoria/Plano coordenado.md",
     "1er Semestre/MAT1/Teoria/Plano de coordenadas.md",
     "1er Semestre/OC/Teoria/Binario Codificado Decimal.md",

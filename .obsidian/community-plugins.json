@@ -8,5 +8,8 @@
   "obsidian-git",
   "obsidian-linter",
   "obsidian-regex-replace",
-  "obsidian-functionplot"
+  "obsidian-functionplot",
+  "obsidian-admonition",
+  "buttons",
+  "templater-obsidian"
 ]
