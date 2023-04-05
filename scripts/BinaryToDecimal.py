@@ -1,25 +1,44 @@
-import main
+import os
 
-systems = {
-    'bss': 'Binario Sin Signo',
-    'bcs': 'Binario Con Signo',
-    'ca1': 'Complemento a 1',
-    'ca2': 'Complemento a 2',
-    'ex2': 'Exceso'
-}
+
+def clear():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
 
 def run():
+    print('Script hecho por: Vicen621\n')
+
     loop = True
+
+    systems = {
+        'bss': 'Binario Sin Signo',
+        'bcs': 'Binario Con Signo',
+        'ca1': 'Complemento a 1',
+        'ca2': 'Complemento a 2',
+        'ex2': 'Exceso'
+    }
+
+    options = ['bss', 'bcs', 'ca1', 'ca2', 'ex2']
+
     while loop:
         binary = input('Ingresa el numero en binario: ')
-        mode = input(
-            'Ingresa el sistema de representacion, posibles: bss, bcs, ca1, ca2 y ex2: ').lower()
+        system = ''
+        input_message = "\nElige el sistema de representacion:\n"
+
+        for index, item in enumerate(options):
+            input_message += f'{index+1}) {item}\n'
+
+        input_message += 'Tu elección: '
+
+        while system.lower() not in options:
+            system = input(input_message)
+
         decimal = 0
         binary_print = binary
 
         sign = 1 if (binary[0] == '0') else -1
 
-        match mode:
+        match system:
             case 'bss':
                 decimal = int(binary, 2)
 
@@ -50,7 +69,10 @@ def run():
                 continue
 
         print(
-            f'\n{binary_print}₂ interpretado en {systems[mode]} es: {decimal}₁₀ \n')
+            f'\n{binary_print}₂ interpretado en {systems[system]} es: {decimal}₁₀ \n')
         loop = input('Queres ingresar otro numero? \ns/n: ').lower() == 's'
-    
-    main.run()
+        clear()
+
+
+if __name__ == '__main__':
+    run()
