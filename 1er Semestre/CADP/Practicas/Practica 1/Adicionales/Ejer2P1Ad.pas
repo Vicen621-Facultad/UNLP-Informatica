@@ -85,8 +85,8 @@ begin
       legajomax102 := legajo;
     end;
 
-    writeln('Ingresantes en condicion de rendir el parcial: ', parcialIng, ' (', totalIng/parcialIng*100,'%)');
-    writeln('Recursantes en condicion de rendir el parcial: ', parcialRe, ' (', totalRe/parcialRe*100,'%)');
+    writeln('Ingresantes en condicion de rendir el parcial: ', parcialIng, ' (', totalIng/parcialIng*100:1:2,'%)');
+    writeln('Recursantes en condicion de rendir el parcial: ', parcialRe, ' (', totalRe/parcialRe*100:1:2,'%)');
     writeln('Alumnos que aprobaron todas las evaluaciones: ', passAll);
     writeln('Alumnos con promedio mejor a 6.5: ', avg6);
     writeln('Alumnos que obtuvieron 0 en almenos una evaluacion: ', zInOneCount);

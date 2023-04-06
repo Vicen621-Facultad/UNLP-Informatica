@@ -1,13 +1,10 @@
 import os
 
-
 def clear():
     os.system('cls' if os.name == 'nt' else 'clear')
 
 
 def run():
-    print('Script hecho por: Vicen621\n')
-
     loop = True
 
     systems = {
@@ -21,6 +18,7 @@ def run():
     options = ['bss', 'bcs', 'ca1', 'ca2', 'ex2']
 
     while loop:
+        print('Script hecho por: Vicen621\n')
         binary = input('Ingresa el numero en binario: ')
         system = ''
         input_message = "\nElige el sistema de representacion:\n"
