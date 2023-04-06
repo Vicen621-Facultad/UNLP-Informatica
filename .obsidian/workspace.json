@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1er Semestre/OC/Teoria/Sistemas de representacion en binario.md",
-                "mode": "preview",
+                "file": "Ingreso/COC/Cap2/Practica.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -25,9 +25,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1er Semestre/OC/Teoria/Sistemas de representacion en binario.md",
-                "mode": "source",
-                "source": false
+                "file": "1er Semestre/OC/Teoria/Binario Sin Signo.md",
+                "mode": "preview",
+                "source": true
               }
             }
           },
@@ -51,7 +51,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -117,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1er Semestre/OC/Teoria/Sistemas de representacion en binario.md",
+                "file": "1er Semestre/OC/Teoria/Binario Sin Signo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1er Semestre/OC/Teoria/Sistemas de representacion en binario.md",
+                "file": "1er Semestre/OC/Teoria/Binario Sin Signo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -173,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1er Semestre/OC/Teoria/Sistemas de representacion en binario.md"
+                "file": "1er Semestre/OC/Teoria/Binario Sin Signo.md"
               }
             }
           }
@@ -196,18 +197,19 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "346e751ed8e1c900",
+  "active": "c6f1e73abf8cc25c",
   "lastOpenFiles": [
-    "1er Semestre/OC/Teoria/Complemento a 2.md",
-    "1er Semestre/OC/Teoria/Exceso.md",
+    "README.md",
     "1er Semestre/OC/Teoria/Sistemas de representacion en binario.md",
+    "Ingreso/COC/Cap2/Practica.md",
+    "1er Semestre/OC/Teoria/Exceso.md",
+    "1er Semestre/OC/Teoria/Complemento a 2.md",
     "1er Semestre/OC/Teoria/Flags.md",
     "1er Semestre/OC/Teoria/Representar e interpretar entre los diferentes sistemas.md",
     "1er Semestre/CADP/Teoria/Tipos de datos.md",
     "1er Semestre/CADP/Teoria/Maximos y minimos.md",
     "1er Semestre/CADP/Teoria/Estructuras de control.md",
     "1er Semestre/CADP/Teoria/Estructura de Pascal.md",
-    "README.md",
     "scripts/main.py.14518d61a0f3000c9c2876bb0a2d5ba7.tmp",
     "scripts/__pycache__/main.cpython-311.pyc",
     "scripts/main.py",
@@ -233,7 +235,6 @@
     "Regalo de fin de año para Martu.md",
     "Shadow's End/Shadow's End.md",
     "Shadow's End/Nombres.md",
-    "Kaleidoscope.md",
-    "Reglas del Mao.md"
+    "Kaleidoscope.md"
   ]
 }
