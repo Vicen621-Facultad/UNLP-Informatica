@@ -43,7 +43,7 @@ $$\begin{eqnarray}
 &=& 1001_{2\ Ca2}
 \end{eqnarray}$$
 
-#### Otra manera de representar mas facil
+#### Otra manera de representar mas fácil
 
 1. Pasas el decimal a [Binario Sin Signo](Binario%20Sin%20Signo.md)
 2. Escribís los dígitos de derecha a izquierda hasta escribir el primer 1 que aparezca
