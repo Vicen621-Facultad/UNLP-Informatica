@@ -8,9 +8,9 @@ procedure numeroParMasAlto;
 
         readln(value);
         while(value >= 0) begin
-            readln(value);
             if (value MOD 2 = 0) and (value > max) then
                 max := value;
+            readln(value);
         end;
 
         writeln('El numero par mas alto fue: ', max);
