@@ -40,6 +40,13 @@
 ## Binario a Decimal
 
 En este caso hay que usar el Teorema fundamental de la numeración $$N=\sum_{i=-d}^nX_i*B^i$$
+
+$$\begin{eqnarray}
+x-1 \not= x-2 \\
+x-x \not= -2+1 \\
+0 \not=· -1
+\end{eqnarray}$$
+
 Por ejemplo: $10100101_2=1*2^7+0*2^6+1*2^5+0*2^4+0*2^3+1*2^2+0*2^1+1*2^0=165_{10}$
 $1011.011_2=1*2^3+0*2^2+1*2^1+1*2^0+0*2^{-1}+1*2^{-2}+1*2^{-3}=11.375_{10}$
 

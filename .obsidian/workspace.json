@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "1er Semestre/OC/Teoria/Representar e interpretar entre los diferentes sistemas.md",
                 "mode": "source",
                 "source": false
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "1er Semestre/OC/Teoria/Representar e interpretar entre los diferentes sistemas.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "1er Semestre/OC/Teoria/Representar e interpretar entre los diferentes sistemas.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -173,7 +173,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "1er Semestre/OC/Teoria/Representar e interpretar entre los diferentes sistemas.md"
               }
             }
           }
@@ -198,6 +198,12 @@
   },
   "active": "346e751ed8e1c900",
   "lastOpenFiles": [
+    "1er Semestre/OC/Teoria/Sistemas de representacion en binario.md",
+    "1er Semestre/CADP/Teoria/Tipos de datos.md",
+    "1er Semestre/CADP/Teoria/Maximos y minimos.md",
+    "1er Semestre/CADP/Teoria/Estructuras de control.md",
+    "1er Semestre/CADP/Teoria/Estructura de Pascal.md",
+    "README.md",
     "1er Semestre/OC/Teoria/Representar e interpretar entre los diferentes sistemas.md",
     "scripts/main.py.14518d61a0f3000c9c2876bb0a2d5ba7.tmp",
     "scripts/__pycache__/main.cpython-311.pyc",
@@ -206,7 +212,6 @@
     "1er Semestre/OC/Teoria/Exceso.md",
     "1er Semestre/OC/Teoria/Binario Con Signo.md",
     "1er Semestre/OC/Teoria/Binario Sin Signo.md",
-    "1er Semestre/OC/Teoria/Sistemas de representacion en binario.md",
     "scripts/__pycache__/BinaryToDecimal.cpython-311.pyc",
     "scripts/__pycache__",
     "scripts/test.py",
@@ -219,7 +224,6 @@
     "1er Semestre/MAT1/Teoria/Plano coordenado.md",
     "1er Semestre/MAT1/Teoria/Plano de coordenadas.md",
     "1er Semestre/OC/Teoria/Binario Codificado Decimal.md",
-    "README.md",
     "_assets/DecimalToBinaryEx.png",
     "Ingreso/COC.md",
     "Binario Sin Signo..md",
@@ -230,9 +234,6 @@
     "Shadow's End/Shadow's End.md",
     "Shadow's End/Nombres.md",
     "Kaleidoscope.md",
-    "Reglas del Mao.md",
-    "INSTALAR TODAS LAS FONT DE RUBIK Y JETBRAINS MONO.md",
-    "Falcon.md",
-    "Martu.md"
+    "Reglas del Mao.md"
   ]
 }
