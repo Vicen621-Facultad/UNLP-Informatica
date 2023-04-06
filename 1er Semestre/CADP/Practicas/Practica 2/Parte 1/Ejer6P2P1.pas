@@ -6,11 +6,11 @@ procedure numeroParMasAlto;
     begin
         max := -1;
 
-        while (value >= 0) do begin
+        repeat
             readln(value);
             if (value MOD 2 = 0) and (value > max) then
                 max := value;
-        end;
+        until value < 0;
 
         writeln('El numero par mas alto fue: ', max);
     end;
