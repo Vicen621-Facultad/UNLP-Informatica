@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1er Semestre/OC/Teoria/Complemento a 2.md",
-                "mode": "source",
+                "file": "1er Semestre/OC/Teoria/Sistemas de representacion en binario.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -117,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1er Semestre/OC/Teoria/Complemento a 2.md",
+                "file": "1er Semestre/OC/Teoria/Sistemas de representacion en binario.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1er Semestre/OC/Teoria/Complemento a 2.md",
+                "file": "1er Semestre/OC/Teoria/Sistemas de representacion en binario.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -173,7 +173,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1er Semestre/OC/Teoria/Complemento a 2.md"
+                "file": "1er Semestre/OC/Teoria/Sistemas de representacion en binario.md"
               }
             }
           }
@@ -198,10 +198,11 @@
   },
   "active": "346e751ed8e1c900",
   "lastOpenFiles": [
+    "1er Semestre/OC/Teoria/Complemento a 2.md",
     "1er Semestre/OC/Teoria/Exceso.md",
+    "1er Semestre/OC/Teoria/Sistemas de representacion en binario.md",
     "1er Semestre/OC/Teoria/Flags.md",
     "1er Semestre/OC/Teoria/Representar e interpretar entre los diferentes sistemas.md",
-    "1er Semestre/OC/Teoria/Sistemas de representacion en binario.md",
     "1er Semestre/CADP/Teoria/Tipos de datos.md",
     "1er Semestre/CADP/Teoria/Maximos y minimos.md",
     "1er Semestre/CADP/Teoria/Estructuras de control.md",
@@ -219,7 +220,6 @@
     "scripts/dist/BinaryToDecimal",
     "scripts/build/BinaryToDecimal/PKG-00.toc",
     "scripts/build/BinaryToDecimal/BinaryToDecimal.pkg",
-    "1er Semestre/OC/Teoria/Complemento a 2.md",
     "1er Semestre/OC/Teoria/Complemento a 1.md",
     "1er Semestre/MAT1/Teoria/Plano coordenado.md",
     "1er Semestre/MAT1/Teoria/Plano de coordenadas.md",
