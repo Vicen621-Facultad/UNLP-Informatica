@@ -26,8 +26,8 @@ Ejemplo:
 Sistema 5 bits de mantisa fraccionaria y 3 bits de exponente, ambos en BSS: 01010011
 $$\begin{eqnarray}
 \color{cyan}0,\color{lightgreen}01010\color{lightgray}*2\color{red}^{011} &=& \\
-\color{cyan}0,\color{lightgreen}3125\color{lightgray}*2\color{red}^3 &=& \\
-\color{cyan}0,\color{lightgreen}3125\color{lightgray}*8 
+\color{lightgreen}0,3125\color{lightgray}*2\color{red}^3 &=& \\
+\color{lightgreen}0,3125\color{lightgray}*8 
 &=& 2,5
 \end{eqnarray}$$
 
@@ -36,18 +36,32 @@ Cuando el sistema tiene signo el bit del signo se saca de la mantisa y te quedas
 Ejemplos:
 1. 1001101\. 4 Bits Mantisa fraccionaria BCS, 3 exponente BCS $$\begin{eqnarray}
 -\color{cyan}0,\color{lightgreen}001\color{lightgray}*2\color{red}^{101} &=& \\
--\color{cyan}0,\color{lightgreen}125\color{lightgray}*2\color{red}^{-1} &=& \\
--\color{cyan}0,\color{lightgreen}125\color{lightgray}*0,5
+-\color{lightgreen}0,125\color{lightgray}*2\color{red}^{-1} &=& \\
+-\color{lightgreen}0,125\color{lightgray}*0,5
 &=& -0,0625
 \end{eqnarray}$$
 
 2. 01011010\. 4 Bits Mantisa Fraccionaria BCS, 4 exponente BSS $$\begin{eqnarray}
 +\color{cyan}0,\color{lightgreen}101\color{lightgray}*2\color{red}^{1010} &=& \\
-\color{cyan}0,\color{lightgreen}625\color{lightgray}*2\color{red}^{10} &=& \\
-\color{cyan}0,\color{lightgreen}625\color{lightgray}*1024
+\color{lightgreen}0,625\color{lightgray}*2\color{red}^{10} &=& \\
+\color{lightgreen}0,625\color{lightgray}*1024
 &=& 640
 \end{eqnarray}$$
 
 ## Mantisa fraccionaria normalizada
 
-Ya que hay muchas maneras de poder representar un mismo numero con el sistema de Punto flotante se creo la Mantisa Fraccionaria normalizada, con esta representacion la mantisa siempre debe comenzar con $0,1$, de no ser asi no se puede representar el nu
+Ya que hay muchas maneras de poder representar un mismo numero con el sistema de Punto flotante se creo la Mantisa Fraccionaria normalizada, con esta representacion la mantisa siempre debe comenzar con $0,1$, de no ser asi no se puede representar el numero. 
+
+Se representa de la misma manera que la Mantisa Fraccionaria
+
+Ejemplos:
+1. 1000101\, 4 bits Mantisa fraccionaria normalizada BSS, 3 exponente BCS $$\begin{eqnarray}
+\color{cyan}0,1\color{lightgreen}000\color{lightgray}*2\color{red}^{101} &=& \\
+\color{lightgreen}0,5\color{lightgray}*2\color{red}^{-1} &=& \\
+\color{lightgreen}0,5\color{lightgray}*0,5
+&=& 0,25
+\end{eqnarray}$$
+2. 0101110\. 4 bits mantisa fraccionaria normalizada BSS, 3 exponente Ca2.
+    No se puede representar ya que la mantisa no está normalizada.
+
+3. 011100\. 4 bits Mantisa fraccionaria normalizada BCS
