@@ -10,5 +10,13 @@ Siendo la Mantisa (M), el Exponente (E) y la Base del sistema (B), en nuestro ca
 A la hora de interpretar binarios escritos en este sistema siempre tenemos que saber cuantos bits hay en la Mantisa, cuantos en el Exponente y en que sistema estan representados cada uno.
 
 Ejemplo:
-01101001 4 Bits de Mantisa representado en BSS y 4 bits de Exponente representado en BSS.
-$$$$
+1101001 4 Bits de Mantisa representado en BSS y 3 bits de Exponente representado en BSS.
+$$\begin{eqnarray}
+1101*2^{001} &=& \\
+13*2^1 &=& 13*2
+&=& 26
+\end{eqnarray}$$
+
+## Mantisa fraccionaria
+
+Cuando la mantisa es fraccionaria se le agrega un $0,$ adelante de la mantisa, quedando la ecuacion final de esta manera: $$\color{cyan}0,\color{lightgreen}M\color{lightgray}*B\color{red}^E$$
