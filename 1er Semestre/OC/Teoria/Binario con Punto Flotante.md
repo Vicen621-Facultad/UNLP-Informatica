@@ -12,11 +12,20 @@ A la hora de interpretar binarios escritos en este sistema siempre tenemos que s
 Ejemplo:
 1101001 4 Bits de Mantisa representado en BSS y 3 bits de Exponente representado en BSS.
 $$\begin{eqnarray}
-1101*2^{001} &=& \\
-13*2^1 &=& 13*2
+\color{lightgreen}1101\color{lightgray}*2\color{red}^{001} &=& \\
+\color{lightgreen}13\color{lightgray}*2\color{red}^1 &=& \color{lightgreen}13\color{lightgray}*2
 &=& 26
 \end{eqnarray}$$
 
 ## Mantisa fraccionaria
 
-Cuando la mantisa es fraccionaria se le agrega un $0,$ adelante de la mantisa, quedando la ecuacion final de esta manera: $$\color{cyan}0,\color{lightgreen}M\color{lightgray}*B\color{red}^E$$
+Cuando la mantisa es fraccionaria se le agrega un $0,$ adelante de la mantisa, quedando la ecuación final de esta manera: 
+$$\color{cyan}0,\color{lightgreen}M\color{lightgray}*B\color{red}^E$$
+
+Ejemplo: 
+Sistema 5 bits de mantisa fraccionaria y 3 bits de exponente, ambos en BSS: 01010011
+$$\begin{eqnarray}
+\color{cyan}0,\color{lightgreen}01010\color{lightgray}*2\color{red}^{011} &=& \\
+\color{cyan}0,\color{lightgreen}3125\color{lightgray}*2\color{red}^1 &=& \color{lightgreen}13\color{lightgray}*2
+&=& 26
+\end{eqnarray}$$
