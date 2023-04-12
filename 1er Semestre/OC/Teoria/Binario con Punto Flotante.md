@@ -87,4 +87,4 @@ Ejemplo:
 ## Rango
 
 Si mi sistema tiene N bits, se pueden representar $2^N$ números.
-El rango va a ser []
+El rango va a ser [Mínimo; Máximo positivo] No se especifica que mínimo ya que hay sistemas donde no se pueden representar negativos. Se usa el mínimo mas mínimo que exista.![[Captura de pantalla 2023-04-12 a la(s) 01.15.32.png]]
