@@ -78,4 +78,13 @@ Ejemplo:
 \color{lightgreen}0,75\color{lightgray}*2\color{red}^{-1} &=& \\
 \color{lightgreen}0,75\color{lightgray}*0,5 &=& 0,375
 \end{eqnarray}$$
-2. 01100\. 2 bits Mantisa fraccionaria normalizada con **bit implícito** BSS, 3 exponente BSS $$ $$
+2. 01100\. 2 bits Mantisa fraccionaria normalizada con **bit implícito** BSS, 3 exponente BSS $$\begin{eqnarray}
++\color{cyan}0,1\color{lightgreen}01\color{lightgray}*2\color{red}^{100} &=& \\
+\color{lightgreen}0,625\color{lightgray}*2\color{red}^4 &=& \\
+\color{lightgreen}0,625\color{lightgray}*16 &=& 10
+\end{eqnarray}$$
+
+## Rango
+
+Si mi sistema tiene N bits, se pueden representar $2^N$ números.
+El rango va a ser []
