@@ -26,8 +26,20 @@
               "type": "markdown",
               "state": {
                 "file": "1er Semestre/OC/Teoria/Binario Sin Signo.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": true
+              }
+            }
+          },
+          {
+            "id": "4771fcc064a2950d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1er Semestre/OC/Teoria/Binario con Punto Flotante.md",
+                "mode": "source",
+                "source": false
               }
             }
           },
@@ -52,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -118,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1er Semestre/OC/Teoria/Binario Sin Signo.md",
+                "file": "1er Semestre/OC/Teoria/Binario con Punto Flotante.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1er Semestre/OC/Teoria/Binario Sin Signo.md",
+                "file": "1er Semestre/OC/Teoria/Binario con Punto Flotante.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -174,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1er Semestre/OC/Teoria/Binario Sin Signo.md"
+                "file": "1er Semestre/OC/Teoria/Binario con Punto Flotante.md"
               }
             }
           }
@@ -197,8 +209,12 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "c6f1e73abf8cc25c",
+  "active": "4771fcc064a2950d",
   "lastOpenFiles": [
+    "1er Semestre/OC/Teoria/Binario Codificado Decimal.md",
+    "1er Semestre/OC/Teoria/Binario con Punto Flotante.md",
+    "1er Semestre/OC/Teoria/Binario Sin Signo.md",
+    "1er Semestre/OC/Teoria/Binario Con Signo.md",
     "README.md",
     "1er Semestre/OC/Teoria/Sistemas de representacion en binario.md",
     "Ingreso/COC/Cap2/Practica.md",
@@ -213,8 +229,6 @@
     "scripts/main.py.14518d61a0f3000c9c2876bb0a2d5ba7.tmp",
     "scripts/__pycache__/main.cpython-311.pyc",
     "scripts/main.py",
-    "1er Semestre/OC/Teoria/Binario Con Signo.md",
-    "1er Semestre/OC/Teoria/Binario Sin Signo.md",
     "scripts/__pycache__/BinaryToDecimal.cpython-311.pyc",
     "scripts/__pycache__",
     "scripts/test.py",
@@ -225,7 +239,6 @@
     "1er Semestre/OC/Teoria/Complemento a 1.md",
     "1er Semestre/MAT1/Teoria/Plano coordenado.md",
     "1er Semestre/MAT1/Teoria/Plano de coordenadas.md",
-    "1er Semestre/OC/Teoria/Binario Codificado Decimal.md",
     "_assets/DecimalToBinaryEx.png",
     "Ingreso/COC.md",
     "Binario Sin Signo..md",
@@ -234,7 +247,6 @@
     "Shadow's End/Cambios/Day 0-9.md",
     "Regalo de fin de año para Martu.md",
     "Shadow's End/Shadow's End.md",
-    "Shadow's End/Nombres.md",
-    "Kaleidoscope.md"
+    "Shadow's End/Nombres.md"
   ]
 }
