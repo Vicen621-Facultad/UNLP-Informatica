@@ -48,7 +48,7 @@ Ejemplos:
 &=& 640
 \end{eqnarray}$$
 
-## Mantisa fraccionaria normalizada
+### Mantisa fraccionaria normalizada
 
 Ya que hay muchas maneras de poder representar un mismo numero con el sistema de Punto flotante se creo la Mantisa Fraccionaria normalizada, con esta representacion la mantisa siempre debe comenzar con $0,1$, de no ser asi no se puede representar el numero. 
 
@@ -64,4 +64,14 @@ Ejemplos:
 2. 0101110\. 4 bits mantisa fraccionaria normalizada BSS, 3 exponente Ca2.
     No se puede representar ya que la mantisa no está normalizada.
 
-3. 011100\. 4 bits Mantisa fraccionaria normalizada BCS
+3. 011100\. 4 bits Mantisa fraccionaria normalizada BCS, 2 exponente BSS. $$\begin{eqnarray}
++\color{cyan}0,1\color{lightgreen}11\color{lightgray}*2\color{red}^{00} &=& \\
+\color{lightgreen}0,875\color{lightgray}*2\color{red}^{0} &=& \\
+\color{lightgreen}0,875\color{lightgray}*1
+&=& 0,875
+\end{eqnarray}$$
+Al primer bit ser el signo, la mantisa si comienza con 1 y se puede representar.
+
+#### Mantisa fraccionaria normalizada c/ bit implicito
+
+Ya que todas las mantisas normalizadas comienzan con $\color{cyan}0,1$ no es necesario almacenar ese 1, ganando así un bit mas en la mantisa. Con el bit implícito la ecuación final se modifica quedando así de esta manera:  $$\color{cyan}0,1\color{lightgreen}M\color{lightgray}*B\color{red}$$
