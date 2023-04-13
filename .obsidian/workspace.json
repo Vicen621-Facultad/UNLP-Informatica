@@ -32,6 +32,18 @@
             }
           },
           {
+            "id": "4771fcc064a2950d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1er Semestre/OC/Teoria/Binario con Punto Flotante.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "2f7cfe3ce4592f01",
             "type": "leaf",
             "state": {
@@ -52,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -118,6 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "1er Semestre/OC/Teoria/Binario con Punto Flotante.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,6 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "1er Semestre/OC/Teoria/Binario con Punto Flotante.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -171,7 +185,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "1er Semestre/OC/Teoria/Binario con Punto Flotante.md"
+              }
             }
           }
         ],
@@ -193,11 +209,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "de71279917bb012a",
+  "active": "4771fcc064a2950d",
   "lastOpenFiles": [
-    "1er Semestre/OC/Teoria/Binario con Punto Flotante.md",
     "Captura de pantalla 2023-04-12 a la(s) 01.15.32.png",
     "_assets/Captura de pantalla 2023-04-12 a la(s) 01.15.32.png",
+    "1er Semestre/OC/Teoria/Binario con Punto Flotante.md",
     "1er Semestre/OC/Teoria/Binario Codificado Decimal.md",
     "1er Semestre/OC/Teoria/Complemento a 2.md",
     "1er Semestre/OC/Teoria/Complemento a 1.md",
@@ -209,10 +225,10 @@
     "1er Semestre/OC/Teoria/Exceso.md",
     "1er Semestre/OC/Teoria/Flags.md",
     "1er Semestre/OC/Teoria/Representar e interpretar entre los diferentes sistemas.md",
-    "1er Semestre/CADP/Practica 1/Teoria/Tipos de datos.md",
-    "1er Semestre/CADP/Practica 1/Teoria/Maximos y minimos.md",
-    "1er Semestre/CADP/Practica 1/Teoria/Estructuras de control.md",
-    "1er Semestre/CADP/Practica 2/Estructura de Pascal.md",
+    "1er Semestre/CADP/Teoria/Tipos de datos.md",
+    "1er Semestre/CADP/Teoria/Maximos y minimos.md",
+    "1er Semestre/CADP/Teoria/Estructuras de control.md",
+    "1er Semestre/CADP/Teoria/Estructura de Pascal.md",
     "scripts/main.py.14518d61a0f3000c9c2876bb0a2d5ba7.tmp",
     "scripts/__pycache__/main.cpython-311.pyc",
     "scripts/main.py",
