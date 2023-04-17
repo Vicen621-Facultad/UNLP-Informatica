@@ -16,3 +16,6 @@
 | [OC](https://github.com/vicen621/UNLP-Informatica/tree/main/1er%20Semestre/OC)     | 20-03-2023     | -                    | -          |
 | [CADP](https://github.com/vicen621/UNLP-Informatica/tree/main/1er%20Semestre/CADP) | 20-03-2023     | -                    | -          |
 | [MAT1](https://github.com/vicen621/UNLP-Informatica/tree/main/1er%20Semestre/MAT1) | 20-03-2023     | -                    | -          |
+
+### **[DISCLAIMER]**
+Esta es toda la parte practica, la teoria se encuentra en el siguiente repositorio: [vicen621/unlp-apuntes](https://github.com/vicen621/unlp-apuntes)
