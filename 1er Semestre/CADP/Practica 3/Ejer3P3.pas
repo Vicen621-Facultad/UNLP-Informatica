@@ -48,7 +48,7 @@ begin
     cueMin1 := 999;
     cant := 0;
 
-    {Se inicializa para que cuando a nameMin2 se le asigne nameMin1 no se le asigne basura}
+    // Se inicializa para que cuando a nameMin2 se le asigne nameMin1 no se le asigne basura
     nameMin1 := '';
 
     for i := 1 to 2400 do begin
