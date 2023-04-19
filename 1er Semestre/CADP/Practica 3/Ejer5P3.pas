@@ -10,7 +10,7 @@ procedure readCar(var c: car);
     begin
       WriteLn('Ingrese la marca del auto'); ReadLn(c.brand);
       WriteLn('Ingrese el modelo del auto'); ReadLn(c.model);
-      WriteLn('Ingrese el precio del auto'); WriteLn(c.price);
+      WriteLn('Ingrese el precio del auto'); ReadLn(c.price);
     end;
 
 procedure expensivestCar(c: car; var maxPrice: real; var maxModel, maxBrand: string);
@@ -47,5 +47,7 @@ begin
         end;
 
         avgPrice := avgPrice / totalCars;
+        writeln('Precio promedio de la marca ', currentBrand, ' ', avgPrice:0:2);
     end;
+    writeln('El auto mas caro es: ', maxBrand, ' ', maxModel, ' (', maxPrice:0:2, ')')
 end.
