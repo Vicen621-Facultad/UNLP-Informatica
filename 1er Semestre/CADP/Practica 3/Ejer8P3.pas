@@ -58,8 +58,9 @@ function equalOddAndEven(int: integer): boolean;
 			digit := int MOD 10;
 			int := int DIV 10;
 
-			if (isOdd(digit)) then
+			if (isOdd(digit)) then begin
 				odd := odd + 1;
+            end
 			else
 				even := even + 1;
 		end;
