@@ -1,9 +1,0 @@
-{
-  "spellcheck": true,
-  "promptDelete": false,
-  "spellcheckLanguages": [
-    "es-AR"
-  ],
-  "alwaysUpdateLinks": true,
-  "showLineNumber": true
-}
