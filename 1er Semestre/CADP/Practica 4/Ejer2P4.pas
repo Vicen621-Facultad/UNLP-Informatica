@@ -8,16 +8,14 @@ type
 
 procedure cargarVector(var v: vdatos; var dimL: integer);
 var
-    i: integer;
     val: real;
 begin
-    for i:= 1 to cant_datos do begin
-        readln(val);
-
-        if (val <> 0) then
-            v[i] := val
-        else
-            dimL := i - 1;
+    dimL := 0;
+    readln(val);
+    while(val <> 0) and (dimL < cant_datos) do begin
+        dimL := dimL + 1;
+        v[dimL] := val;
+        read(val);
     end;
 end;
 
