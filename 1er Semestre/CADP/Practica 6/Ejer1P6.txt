@@ -1,0 +1,3 @@
+1. a. Arma una lista con los numeros leidos de teclado hasta que el valor 0 sea ingresado
+b. 48 13 21 10
+c. 
