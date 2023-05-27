@@ -31,9 +31,8 @@ begin
     aux^.data := p;
     aux^.sig := nil;
 
-    if (l <> nil) then begin
-        l := aux;
-    end
+    if (l <> nil) then
+        l := aux
     else begin
         aux^.sig := l;
         l := aux;
