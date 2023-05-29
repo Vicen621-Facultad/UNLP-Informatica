@@ -75,7 +75,7 @@ begin
     avgCost := avgCost / count;
 end;
 
-procedure recorrer(l: list; avgDuration, avgCost: real; var expensivestProbe: string; var countDuration: integer);
+procedure loopThroughList(l: list; avgDuration, avgCost: real; var expensivestProbe: string; var countDuration: integer);
 var
     max: real;
 begin
