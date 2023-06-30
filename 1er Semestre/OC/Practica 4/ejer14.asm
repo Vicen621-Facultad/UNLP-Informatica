@@ -8,14 +8,14 @@ RESUL_H DW 0
 
 org 2000h
 MOV AX, NUM1_L ; Muevo la parte baja de num1 a AX
+MOV CX, NUM1_H ; Muevo la parte alta de num1 a CX
 MOV BX, NUM2_L ; Muevo la parte baja de num2 a BX
-ADD AX, BX ; Sumo la parte baja de num1 con la parte baja de num2 y se guarda en AX
+MOV DX, NUM2_H ; Muevo la parte alta de num2 a DX
+
+ADD AX, BX ; Sumo las partes bajas y se guardan en AX
+ADC CX, DX ; Sumo las partes altas + el carry de las partes bajas
+
 MOV RESUL_L, AX ; Guardo la parte baja del resultado en RESUL_L
-
-MOV AX, NUM1_H ; Muevo la parte alta de num1 a AX
-MOV BX, NUM2_H ; Muevo la parte alta de num2 a BX
-ADD AX, BX ; Sumo la parte alta de num1 con la parte alta de num2 y se guarda en AX
-MOV RESUL_H, AX ; Guardo la parte alta del resultado en RESUL_H
-
+MOV RESUL_H, CX ; Guardo la parte alta del resultado en RESUL_H
 hlt
 end
