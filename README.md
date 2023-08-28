@@ -7,7 +7,7 @@
 <h2 align="center">📝 Materias</h2>
 
 %% TODO: Pasar apuntes de MAT1 acá %%
-> [!INFO]
+> [!NOTE]
 > CALLOUT TEST
 
 | Materia                                                                            | Inicio Cursada | Finalización Cursada | Nota final |
