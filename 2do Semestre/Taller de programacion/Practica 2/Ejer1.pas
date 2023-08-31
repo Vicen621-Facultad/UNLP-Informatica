@@ -40,24 +40,24 @@ begin
 end;
 
 // Impresion recursivo
-procedure imprimirVectorRec(v: vectorCar; dimL, i: integer);
+procedure imprimirVectorRec(v: vectorCar; dimL: integer);
 begin
-    if (i <= dimL) then begin
-        writeln(i, ': ', v[i]);
-        imprimirVectorRec(v, dimL, i + 1);
+    if (dimL > 0) then begin
+        imprimirVectorRec(v, dimL - 1);
+        writeln(dimL, ': ', v[dimL]);
     end;
 end;
 
 // Contar caracteres ingresados hata '.' recursivo
-function cantCars(caracteres: integer): integer;
+function cantCars(): integer;
 var
     car: char;
 begin
     readln(car);
     if (car <> '.') then
-        caracteres := cantCars(caracteres + 1);
-
-    cantCars := caracteres;
+        cantCars := 1 +cantCars() 
+	else
+		cantCars := 0;
 end;
 
 procedure agregarAdelante(car: char; var l: lista);
@@ -91,10 +91,10 @@ end;
 
 procedure imprimirListaInverso(l: lista);
 begin
-    if (l^.sig <> nil) then
-        imprimirListaInverso(l^.sig);
-    
-    writeln(l^.dato);
+	if (l <> nil) then begin
+		imprimirListaInverso(l^.sig);
+		writeln(l^.dato);
+	end;
 end;
 
 var
@@ -103,11 +103,12 @@ var
     l: lista;
 
 begin
+    writeln('inicio del programa');
     dimL := 0;
     leerCarsVector(v, dimL);
-    imprimirVectorRec(v, dimL, 1);
+    imprimirVectorRec(v, dimL);
 
-    writeln('Cantidad de caracteres leidos: ', cantCars(0))
+    {writeln('Cantidad de caracteres leidos: ', cantCars(0))}
 
     leerCarsLista(l);
     writeln('------- LISTA -------');
