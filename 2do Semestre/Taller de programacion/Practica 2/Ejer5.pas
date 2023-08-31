@@ -27,8 +27,24 @@ var
 begin
 	num := Random(100);
 	if (num <> 0) then begin
-		agregarVector(num, v, dimL);
+        agregarVector(num, v, dimL);
 		generarVector(v, dimL);
+	end
+end;
+
+procedure insercion(var v: vector; dimL: integer);
+var
+	i, j: indice;
+	actual: integer;
+begin
+	for i := 2 to dimL do begin
+		actual := v[i];
+		j := i - 1;
+		while (j > 0) and (v[j] > actual) do begin
+			v[j + 1] := v[j];
+			j := j - 1;
+		end;
+		v[j + 1] := actual;
 	end;
 end;
 
@@ -38,16 +54,16 @@ var
 begin
     medio := (ini + fin) DIV 2;
 
-    while (ini <= fin) and (dato <> v[medio]) do begin
-        if (dato < v[medio]) then
-            fin := medio - 1
+    while (fin >= ini) and (dato <> v[medio]) do begin
+        if (dato > v[medio]) then
+            ini := medio + 1
         else
-            ini := medio + 1;
+            fin := medio - 1;
         
         medio := (ini + fin) DIV 2;
     end;
 
-    if (ini <= fin) and (dato = v[medio]) then
+    if (fin >= ini) and (dato = v[medio]) then
         pos := medio
     else
         pos := -1;
@@ -60,7 +76,12 @@ var
 
 begin
 	Randomize;
+    dimL := 0;
 	generarVector(v, dimL);
+    writeln('----------- VECTOR -----------');
+    imprimirVector(v, dimL);
+    insercion(v, dimL);
+    writeln('------- VECTOR ORDENADO -------');
     imprimirVector(v, dimL);
     busquedaDicotomica(v, 1, dimL, 10, pos);
     writeln('Posicion del 10 en el vector: ', pos);
