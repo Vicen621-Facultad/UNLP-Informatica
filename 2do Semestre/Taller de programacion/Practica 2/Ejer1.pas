@@ -108,7 +108,7 @@ begin
     leerCarsVector(v, dimL);
     imprimirVectorRec(v, dimL);
 
-    {writeln('Cantidad de caracteres leidos: ', cantCars(0))}
+    writeln('Cantidad de caracteres leidos: ', cantCars(0));
 
     leerCarsLista(l);
     writeln('------- LISTA -------');

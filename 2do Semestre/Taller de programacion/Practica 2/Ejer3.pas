@@ -67,14 +67,6 @@ begin
 	end
 	else
 		buscar := false;
-	
-	{while (l <> nil) do begin
-		if (l^.dato = valor) then
-			buscar := true
-		
-		l := l^.sig;
-	end;
-	buscar := false;}
 end;
 
 procedure imprimirLista(l: lista);
