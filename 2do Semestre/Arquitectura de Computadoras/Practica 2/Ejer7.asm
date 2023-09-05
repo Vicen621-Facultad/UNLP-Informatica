@@ -4,14 +4,6 @@
         IMPRIMIR DB ?
 
         org 3000h
-  ; Recibe en BX La direccion a la cual guardar lo ingresado
-  ; Lee un numero y guarda el valor numerico del caracter
-  LEER: INT 6 ; Leo caracter numerico
-        MOV CL, [BX] ; Guardo en CL para operar
-        SUB CL, 30h ; Le resto 30h para obtener el valor numero del caracter
-        MOV [BX], CL ; Guardo el resultado en la dir pasada
-        RET
-        
  PRINT: MOV BX, OFFSET IMPRIMIR ; Muevo la dir de memoria de IMPRIMIR para guardar el primer valor
         MOV AL, 1 ; Inicializo AL en 1
         CMP CH, 10 ; Comparo CH con 10
@@ -29,9 +21,9 @@ PRT_CH: ADD CH, 30h ; Le sumo 30h a CH para obtener el caracter del numero
 
         org 2000h
         MOV BX, OFFSET NUM1 ; Guardo la dir de memoria de num1 para leer caracter 1
-        CALL LEER
+        INT 6
         MOV BX, OFFSET NUM2 ; Guardo la dir de memoria de num2 para leer caracter 2
-        CALL LEER
+        INT 6
 
         MOV CL, NUM1 ; Muevo Num1 a CL para operar
         MOV CH, NUM2 ; Muevo Num2 a CH para operar
