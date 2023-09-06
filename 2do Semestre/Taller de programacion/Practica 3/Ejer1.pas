@@ -1,202 +1,213 @@
-program Ejer1;
-type
-	socio = record
-		edad, num: integer;
-		nombre: string;
-	end;
-	
-	arbol = ^nodo;
-	nodo = record
-		dato: socio;
-		HI: arbol;
-		HD: arbol;
-	end;
-	
-procedure agregarArbol(var a: arbol; s: socio);
-begin
-	if (a = nil) then begin
-		new(a);
-		a^.dato:=s;
-		a^.HI:=nil;
-		a^.HD:=nil;
-	end
-	else if (s.num <= a^.dato.num) then 
-		agregarArbol(a^.HI,s)
-	else
-		agregarArbol(a^.HD,s);
-end;
-procedure leerSocio(var s: socio);
-begin
-	write('Ingrese numero de socio: ');
-	readln(s.num);
-	if (s.num <> 0) then begin
-		s.edad := Random(100);
-		writeln('Edad asignadas: ', s.edad);
-		write('Ingrese nombre: ');
-		readln(s.nombre);
-	end;
-end;
-procedure generarArbol(var a: arbol);
-var
-	s:socio;
-begin
-	leerSocio(s);
-	while (s.num <> 0) do begin 
-		agregarArbol(a,s);
-		leerSocio(s);
-	end;
-end;
 
-function maximo(a: arbol):integer;
-begin
-	if(a^.HD = nil)then
-		maximo := a^.dato.num
-	else
-		maximo := maximo(a^.HD);
-end;
+Program Ejer1;
 
-procedure imprimirSocio(s: socio);
-begin
-	writeln('numero de socio: ', s.num);
-	writeln('edad: ', s.edad);
-	writeln('nombre: ', s.nombre);
-end;
+Type 
+    socio =   Record
+        edad, num:   integer;
+        nombre:   string;
+    End;
 
-procedure minimo(a: arbol);
-begin
-	if (a^.HI = nil)then
-		imprimirSocio(a^.dato)
-	else
-		minimo(a^.HI);
-end;
+    arbol =   ^nodo;
+    nodo =   Record
+        dato:   socio;
+        HI:   arbol;
+        HD:   arbol;
+    End;
 
-function max(a,b: integer): integer;
-begin
-	if (a > b) then
-		max := a
-	else
-		max := b;
-end;
+Procedure agregarArbol(Var a: arbol; s: socio);
+Begin
+    If (a = Nil) Then
+        Begin
+            new(a);
+            a^.dato := s;
+            a^.HI := Nil;
+            a^.HD := Nil;
+        End
+    Else If (s.num <= a^.dato.num) Then
+             agregarArbol(a^.HI,s)
+    Else
+        agregarArbol(a^.HD,s);
+End;
+Procedure leerSocio(Var s: socio);
+Begin
+    write('Ingrese numero de socio: ');
+    readln(s.num);
+    If (s.num <> 0) Then
+        Begin
+            s.edad := Random(100);
+            writeln('Edad asignadas: ', s.edad);
+            write('Ingrese nombre: ');
+            readln(s.nombre);
+        End;
+End;
+Procedure generarArbol(Var a: arbol);
 
-function tresMax(a,b,c: integer): integer;
-begin
-	tresMax := max(a, max(b,c));
-end;
+Var 
+    s:   socio;
+Begin
+    leerSocio(s);
+    While (s.num <> 0) Do
+        Begin
+            agregarArbol(a,s);
+            leerSocio(s);
+        End;
+End;
 
-function mayorEdad(a: arbol): integer;
-begin
-	if (a <> nil) then
-		mayorEdad := tresMax(
-			a^.dato.edad, 
-			mayorEdad(a^.HI), 
-			mayorEdad(a^.HD)
-		)
-	else
-		mayorEdad := -1;
-end;
+Function maximo(a: arbol):   integer;
+Begin
+    If (a^.HD = Nil)Then
+        maximo := a^.dato.num
+    Else
+        maximo := maximo(a^.HD);
+End;
 
-procedure aumentarEdad(a: arbol);
-begin
-	if (a <> nil) then begin
-		aumentarEdad(a^.HI);
-		a^.dato.edad := a^.dato.edad + 1;
-		aumentarEdad(a^.HD);
-	end;
-end;
+Procedure imprimirSocio(s: socio);
+Begin
+    writeln('numero de socio: ', s.num);
+    writeln('edad: ', s.edad);
+    writeln('nombre: ', s.nombre);
+End;
 
-function existe(a: arbol; val: integer): boolean;
-begin
-	if (a <> nil) then begin
-		existe := (a^.dato.num = val) or existe(a^.HI, val) or existe(a^.HD, val);
-	end
-	else
-		existe := false;
-end;
+Procedure minimo(a: arbol);
+Begin
+    If (a^.HI = Nil)Then
+        imprimirSocio(a^.dato)
+    Else
+        minimo(a^.HI);
+End;
 
-function existeNombre(a: arbol; val: string): boolean;
-begin
-	if (a <> nil) then begin
-		existeNombre := (a^.dato.nombre = val) or existeNombre(a^.HI, val) or existeNombre(a^.HD, val);
-	end
-	else
-		existeNombre := false;
-end;
+Function max(a,b: integer):   integer;
+Begin
+    If (a > b) Then
+        max := a
+    Else
+        max := b;
+End;
 
-function contarArbol(a: arbol): integer;
-begin
-	if (a <> nil) then begin
-		contarArbol := 1 + contarArbol(a^.HD) + contarArbol(a^.HI);
-	end
-	else
-		contarArbol := 0;
-end;
+Function tresMax(a,b,c: integer):   integer;
+Begin
+    tresMax := max(a, max(b,c));
+End;
 
-function calcularPromedio(val: integer; totalNum: integer): real;
-begin
-	calcularPromedio := val / totalNum;
-end;
+Function mayorEdad(a: arbol):   integer;
+Begin
+    If (a <> Nil) Then
+        mayorEdad := tresMax(
+                     a^.dato.edad,
+                     mayorEdad(a^.HI),
+                     mayorEdad(a^.HD)
+                     )
+    Else
+        mayorEdad := -1;
+End;
 
-function sumarEdades(a: arbol): integer;
-begin
-	if (a <> nil) then begin
-		sumarEdades := a^.dato.edad + sumarEdades(a^.HD) + sumarEdades(a^.HI);
-	end
-	else
-		sumarEdades := 0;
-end;
+Procedure aumentarEdad(a: arbol);
+Begin
+    If (a <> Nil) Then
+        Begin
+            aumentarEdad(a^.HI);
+            a^.dato.edad := a^.dato.edad + 1;
+            aumentarEdad(a^.HD);
+        End;
+End;
 
-function calcularPromedioEdades(a: arbol): real;
-begin
-	calcularPromedioEdades := calcularPromedio(sumarEdades(a), contarArbol(a));
-end;
+Function existe(a: arbol; val: integer):   boolean;
+Begin
+    If (a <> Nil) Then
+        existe := (a^.dato.num = val) Or existe(a^.HI, val) Or existe(a^.HD, val)
+    Else
+        existe := false;
+End;
 
-procedure imprimirCreciente(a: arbol);
-begin
-	if (a <> nil) then begin
-		imprimirCreciente(a^.HI);
-		writeln(a^.dato.num);
-		imprimirCreciente(a^.HD);
-	end;
-end;
+Function existeNombre(a: arbol; val: String):   boolean;
+Begin
+    If (a <> Nil) Then
+        Begin
+            existeNombre := (a^.dato.nombre = val) Or existeNombre(a^.HI, val) Or existeNombre(a^.HD, val);
+        End
+    Else
+        existeNombre := false;
+End;
 
-procedure imprimirDecreciente(a: arbol);
-begin
-	if (a <> nil) then begin
-		imprimirDecreciente(a^.HD);
-		writeln(a^.dato.num);
-		imprimirDecreciente(a^.HI);
-	end;
-end;
+Function contarArbol(a: arbol):   integer;
+Begin
+    If (a <> Nil) Then
+        Begin
+            contarArbol := 1 + contarArbol(a^.HD) + contarArbol(a^.HI);
+        End
+    Else
+        contarArbol := 0;
+End;
+
+Function calcularPromedio(val: integer; totalNum: integer):   real;
+Begin
+    calcularPromedio := val / totalNum;
+End;
+
+Function sumarEdades(a: arbol):   integer;
+Begin
+    If (a <> Nil) Then
+        Begin
+            sumarEdades := a^.dato.edad + sumarEdades(a^.HD) + sumarEdades(a^.HI);
+        End
+    Else
+        sumarEdades := 0;
+End;
+
+Function calcularPromedioEdades(a: arbol):   real;
+Begin
+    calcularPromedioEdades := calcularPromedio(sumarEdades(a), contarArbol(a));
+End;
+
+Procedure imprimirCreciente(a: arbol);
+Begin
+    If (a <> Nil) Then
+        Begin
+            imprimirCreciente(a^.HI);
+            writeln(a^.dato.num);
+            imprimirCreciente(a^.HD);
+        End;
+End;
+
+Procedure imprimirDecreciente(a: arbol);
+Begin
+    If (a <> Nil) Then
+        Begin
+            imprimirDecreciente(a^.HD);
+            writeln(a^.dato.num);
+            imprimirDecreciente(a^.HI);
+        End;
+End;
 
 
-var
-	a: arbol;
-	nombre: string;
-	num: integer;
-begin
-	Randomize;
-	generarArbol(a);
-	writeln('Maximo: ', maximo(a));
-	
-	writeln('---------- Minimo ---------- ');
-	minimo(a);
-	
-	writeln('Mayor edad: ', mayorEdad(a));
-	aumentarEdad(a);
-	
-	write('Numero a buscar: ');
-	readln(num);
-	writeln('Existe ', num, ': ', existe(a, num));
-	
-	write('Nombre a buscar: ');
-	readln(nombre);
-	writeln('Existe ', nombre, ': ', existeNombre(a, nombre));
-	
-	writeln('Numero de nodos: ', contarArbol(a));
-	writeln('Promedio de edades: ', calcularPromedioEdades(a):2:2);
-	
-	writeln('------- Arbol Creciente -------');
-	imprimirCreciente(a);
-	writeln('------ Arbol Decreciente ------');
-	imprimirDecreciente(a);
-end.
+Var 
+    a:   arbol;
+    nombre:   string;
+    num:   integer;
+Begin
+    Randomize;
+    generarArbol(a);
+    writeln('Maximo: ', maximo(a));
+
+    writeln('---------- Minimo ---------- ');
+    minimo(a);
+
+    writeln('Mayor edad: ', mayorEdad(a));
+    aumentarEdad(a);
+
+    write('Numero a buscar: ');
+    readln(num);
+    writeln('Existe ', num, ': ', existe(a, num));
+
+    write('Nombre a buscar: ');
+    readln(nombre);
+    writeln('Existe ', nombre, ': ', existeNombre(a, nombre));
+
+    writeln('Numero de nodos: ', contarArbol(a));
+    writeln('Promedio de edades: ', calcularPromedioEdades(a):   2:   2);
+
+    writeln('------- Arbol Creciente -------');
+    imprimirCreciente(a);
+    writeln('------ Arbol Decreciente ------');
+    imprimirDecreciente(a);
+End.

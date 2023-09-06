@@ -1,53 +1,114 @@
-program ejer2;
 
-type
-    venta = record
-        cod, cant: integer;
-        fecha: integer;
-    end;
+Program ejer2;
 
-    arbol = ^nodo;
-    nodo = record
-        dato: venta;
-        HI: arbol;
-        HD: arbol;
-    end;
+Type 
+    venta =   Record
+        cod, cant:   integer;
+        fecha:   integer;
+    End;
 
-procedure agregarArbol(var a: arbol; v: venta);
-begin
-    if (a = nil) then begin
-        new(a);
-        a^.dato := v;
-        a^.HI := nil;
-        a^.HD := nil;
-    end
-    else if (v.cod <= a^.dato.cod) then
-        agregarArbol(a^.HI, v)
-    else
+    arbol =   ^nodo;
+    nodo =   Record
+        dato:   venta;
+        HI:   arbol;
+        HD:   arbol;
+    End;
+
+Procedure agregarArbol(Var a: arbol; v: venta);
+Begin
+    If (a = Nil) Then
+        Begin
+            new(a);
+            a^.dato := v;
+            a^.HI := Nil;
+            a^.HD := Nil;
+        End
+    Else If (v.cod <= a^.dato.cod) Then
+             agregarArbol(a^.HI, v)
+    Else
         agregarArbol(a^.HD, v);
-end;
+End;
 
-procedure leerVenta(var v: venta);
-begin
+Procedure leerVenta(Var v: venta);
+Begin
     write('Ingrese codigo de producto: ');
     readln(v.cod);
-    if (v.cod <> 0) then begin
-        v.cant := Random(50) + 1;
-        v.fecha := random(31) + 1;
-    end;
-end;
+    If (v.cod <> 0) Then
+        Begin
+            v.cant := Random(50) + 1;
+            writeln('Cant ventas: ', v.cant);
+            v.fecha := random(31) + 1;
+        End;
+End;
 
-procedure cargarArboles(var aVentas, aProd: arbol);
-var
-    v: venta;
-begin
+Procedure cargarArbolVentas(Var a: arbol);
+
+Var 
+    v:   venta;
+Begin
     leerVenta(v);
-    while (v.cod <> 0) do begin
-        agregarArbol(aVentas, v);
-        leerVenta(v);
-    end;
-end;
+    While (v.cod <> 0) Do
+        Begin
+            agregarArbol(a, v);
+            leerVenta(v);
+        End;
+End;
 
-begin
+Function existe(a: arbol; val: integer):   boolean;
+Begin
+    If (a <> Nil) Then
+        existe := (a^.dato.cod = val) Or existe(a^.HI, val) Or existe(a^.HD, val)
+    Else
+        existe := false;
+End;
 
-end.
+Function cantVentas(a: arbol; val: integer):   integer;
+Begin
+    If (a <> Nil) Then
+        Begin
+            If (a^.dato.cod = val) Then
+                cantVentas := a^.dato.cant + cantVentas(a^.HI, val)
+            Else
+                cantVentas := cantVentas(a^.HI, val) + cantVentas(a^.HD, val);
+        End
+    Else
+        cantVentas := 0;
+End;
+
+// Corte de control, Leer todos los del mismo cod, sumarlo y agregarlo a aVentas 
+// Cuando cambia, pasar al siguiente corte de control
+Procedure cargarArbolProductos(Var aProd: arbol; aVentas: arbol);
+
+Var 
+    v:   venta;
+Begin
+    If (aVentas <> Nil) And (Not existe(aProd, aVentas^.dato.cod)) Then
+        Begin
+            v.cod := aVentas^.dato.cod;
+            v.cant := cantVentas(aVentas, aVentas^.dato.cod);
+            agregarArbol(aProd, v);
+        End;
+End;
+
+Procedure cargarArboles(Var aVentas, aProd: arbol);
+Begin
+    cargarArbolVentas(aVentas);
+    cargarArbolProductos(aProd, aVentas);
+End;
+
+Function buscar(a: arbol; val: integer):   integer;
+Begin
+    If (a = Nil) Then buscar := 0
+    Else If (a^.dato.cod = val) Then buscar := a^.dato.cant
+    Else If (val > a^.dato.cod) Then buscar := buscar(a^.HD, val)
+    Else buscar := buscar(a^.HI, val);
+End;
+
+Var 
+    aProd, aVentas:   arbol;
+Begin
+    Randomize;
+    cargarArboles(aVentas, aProd);
+    writeln('Cantidad de ventas de producto 1: ', cantVentas(aVentas, 1));
+    writeln('Cantidad de ventas de producto 2: ', buscar(aProd, 2));
+End.
