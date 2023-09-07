@@ -98,8 +98,8 @@ begin
 	if (a <> nil) then begin
 		imprimirArbol(a^.HI);
 		writeln('cod: ', a^.dato.cod, 
-				'  total: ', a^.dato.total, 
-				'  monto: ', a^.dato.monto:4:2
+				'  total: ', a^.dato.total
+				//'  monto: ', a^.dato.monto:4:2
 		);
 		imprimirArbol(a^.HD);
 	end;
@@ -124,10 +124,25 @@ function contarMenores(a: arbol; cod: integer): integer;
 begin
 	if (a = nil) then
 		contarMenores := 0
-	else if (a^.dato.cod <= cod) then
+	else if (a^.dato.cod < cod) then
 		contarMenores := 1 + contarMenores(a^.HI, cod) + contarMenores(a^.HD, cod)
 	else
-		contarMenores := contarMenores(a^.HD, cod);
+		contarMenores := contarMenores(a^.HI, cod);
+end;
+
+function contarEntre(a: arbol; cod1, cod2: integer): integer;
+begin
+	if (a = nil) then
+	  	contarEntre := 0
+		
+	else if (cod1 <= a^.dato.cod) and (a^.dato.cod < cod2) then
+		contarEntre := 1 + contarEntre(a^.HI, cod1, cod2) + contarEntre(a^.HD, cod1, cod2)
+
+	else if (a^.dato.cod > cod2) then
+		contarEntre := contarEntre(a^.HI, cod1, cod2)
+
+	else if (a^.dato.cod <= cod1) then
+		contarEntre := contarEntre(a^.HD, cod1, cod2);
 end;
 
 var
@@ -143,5 +158,6 @@ begin
 	writeln('');
 	maximoVentas(a, max);
 	writeln('Codigo de producto con mas ventas: ', max.cod);
-	writeln('Cantidad de codigos menores que 8: ', contarMenores(a, 8));
+	writeln('Cantidad de codigos menores que 2: ', contarMenores(a, 2));
+	writeln('Cantidad de codigos entre 3 y 5: ', contarEntre(a, 3, 5));
 end.
