@@ -87,6 +87,8 @@ Begin
             v.cod := aVentas^.dato.cod;
             v.cant := cantVentas(aVentas, aVentas^.dato.cod);
             agregarArbol(aProd, v);
+            cargarArbolVentas(aProd, aVentas^.HI);
+            cargarArbolVentas(aProd, aVentas^.HD);
         End;
 End;
 
