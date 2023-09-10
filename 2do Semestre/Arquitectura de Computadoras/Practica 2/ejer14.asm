@@ -30,8 +30,8 @@
           OUT PIC + 1, AL ; PIC: registro IMR
           POP AX ; Restauro AX
    RESET: INT 7
-          MOV AL, 0
-          OUT TIMER, AL
+          MOV AL, 0 ; Reinicio timer
+          OUT TIMER, AL ; TIMER: Registo CONT
           MOV AL, EOI
           OUT PIC, AL
           POP AX
@@ -48,11 +48,11 @@
           OUT PIC + 1, AL ; PIC: registro IMR
           JMP RET_F10
 
- RESTART: MOV SEG, '0' ; Restarteo segundos
+ RESTART: MOV SEG, '0' ; Reinicio segundos
           MOV SEG + 1, '0'
           MOV AL, 11111100b ; Desenmascaro INT1
           OUT PIC + 1, AL ; PIC: registro IMR
-          MOV AL, 0 ; Reseteo timer
+          MOV AL, 0 ; Reinicio timer
           OUT TIMER, AL ; Timer: registro CONT
           
  RET_F10: MOV AL, EOI
@@ -73,7 +73,7 @@
           MOV AL, 0
           OUT TIMER, AL ; TIMER: registro CONT
           MOV BX, OFFSET SEG
-           MOV AL, OFFSET FIN - OFFSET SEG
+          MOV AL, OFFSET FIN - OFFSET SEG
           STI
     LOOP: JMP LOOP
           INT 0
