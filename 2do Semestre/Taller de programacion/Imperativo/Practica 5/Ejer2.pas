@@ -170,13 +170,13 @@ end;
 // C) Contar Marca Arbol Marcas
 function contarMarcasAM(aMarcas: arbolM; nombre: string): integer;
 var
-	aux: arbolM;
+	nodo: arbolM;
 begin
-	aux := encontrarNodo(aMarcas, nombre);
-	if (aux = nil) then
+	nodo := encontrarNodo(aMarcas, nombre);
+	if (nodo = nil) then
 		contarMarcasAM := 0
 	else
-		contarMarcasAM := contarNodosLista(aux^.dato.autos);
+		contarMarcasAM := contarNodosLista(nodo^.dato.autos);
 end;
 
 procedure inicializarListas(var v: vector);
