@@ -124,13 +124,15 @@ function contarNodosEntre(a: arbol; codMin, codMax: integer): integer;
 begin
     if (a = nil) then
         contarNodosEntre := 0
-    else if (a^.dato.info.cod <= codMax) and (a^.dato.info.cod >= codMin) then
-        contarNodosEntre := 1 + contarNodosEntre(a^.HI, codMin, codMax) + contarNodosEntre(a^.HD, codMin, codMax)
     else if (a^.dato.info.cod < codMin) then
         contarNodosEntre := contarNodosEntre(a^.HD, codMin, codMax)
     else if (a^.dato.info.cod > codMax) then
-        contarNodosEntre := contarNodosEntre(a^.HI, codMin, codMax);
+        contarNodosEntre := contarNodosEntre(a^.HI, codMin, codMax)
+    else
+        contarNodosEntre := 1 + contarNodosEntre(a^.HI, codMin, codMax) + contarNodosEntre(a^.HD, codMin, codMax)
 end;
+
+
 
 procedure cantEntreCods(v: vector; codMin, codMax: integer; var cants: vector_i);
 var
