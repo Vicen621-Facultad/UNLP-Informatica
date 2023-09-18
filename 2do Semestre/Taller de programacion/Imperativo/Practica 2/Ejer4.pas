@@ -62,15 +62,13 @@ begin
 end;
 
 function sumarVector(v: vector; dimL: integer): integer;
-var
-	total: integer;
 begin
-	if (dimL = 0) then
-		total := 0
-	else
-		total := v[dimL] + sumarVector(v, dimL - 1);
-	
-	sumarVector := total;
+	if (dimL <= dimF) then begin
+		if (dimL = 0) then
+			sumarVector := 0
+		else
+			sumarVector := v[dimL] + sumarVector(v, dimL - 1);
+	end;
 end;
 
 var

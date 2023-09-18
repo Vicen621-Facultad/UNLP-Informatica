@@ -21,11 +21,22 @@ type
         prestamos: lista;
     end;
 
+    libro_cant = record
+        isbn: integer;
+        cant: integer;
+    end;
+
     arbolL = ^nodoL;
     nodoL = record
         dato: libro;
         HI: arbolL;
         HD: arbolL;
+    end;
+
+    arbolCL = ^nodoCL;
+    nodoCL = record
+        dato: libro_cant;
+        HI, HD: arbolCL;
     end;
 
     arbolP = ^nodoP;
@@ -166,7 +177,7 @@ begin
         presPorSocio := 0;
 end;
 
-function contarLista(l: lista; num: integer): integer;
+function contarListaNum(l: lista; num: integer): integer;
 var
     cant: integer;
 begin
@@ -183,16 +194,78 @@ end;
 function presPorSocioLibros(a: arbolL; num: integer): integer;
 begin
     if (a <> nil) then
-        presPorSocioLibros := contarLista(a^.dato.prestamos, num) + presPorSocioLibros(a^.HI, num) + presPorSocioLibros(a^.HD, num)
+        presPorSocioLibros := contarListaNum(a^.dato.prestamos, num) + presPorSocioLibros(a^.HI, num) + presPorSocioLibros(a^.HD, num)
     else
         presPorSocioLibros := 0;
 end;
 
+procedure cargarArbolCantLibrosP(var a: arbolCL; isbn: integer);
+begin
+    if (a = nil) then begin
+        new(a);
+        a^.dato.isbn := isbn;
+        a^.dato.cant := 1;
+        a^.HI := nil;
+        a^.HD := nil;
+    end
+    else if (isbn = a^.dato.isbn) then
+        a^.dato.cant := a^.dato.cant + 1
+    else if (isbn < a^.dato.isbn) then
+        cargarArbolCantLibros(a^.HI, isbn)
+    else
+        cargarArbolCantLibros(a^.HD, isbn);
+end;
 
+function contarLista(l: lista): integer;
+var
+    cant: integer;
+begin
+    cant := 0;
+    while (l <> nil) do begin
+        cant := cant + 1;
+        l := l^.sig;
+    end;
+
+    contarLista := cant;
+end;
+
+procedure cargarArbolCantLibrosL(var a: arbolCL; l: libro);
+begin
+    if (a = nil) then begin
+        new(a);
+        a^.dato.isbn := l.isbn;
+        a^.dato.cant := contarLista(l.prestamos);
+        a^.HI := nil;
+        a^.HD := nil;
+    end
+    else if (isbn <= a^.dato.isbn) then
+        cargarArbolCantLibros(a^.HI, l.isbn)
+    else
+        cargarArbolCantLibros(a^.HD, l.isbn);
+end;
+
+procedure generarArbolCantLibrosP(a: arbolCL; aPrestamos: arbolP);
+begin
+    if (a <> nil) then begin
+        generarArbolCantLibros(a^.HI, aPrestamos);
+        cargarArbolCantLibrosP(a, aPrestamos^.dato.isbn);
+        generarArbolCantLibros(a^.HD, aPrestamos);
+    end;
+end;
+
+procedure generarArbolCantLibrosL(a: arbolCL; aLibros: arbolL);
+begin
+    if (a <> nil) then begin
+        generarArbolCantLibros(a^.HI, aPrestamos);
+        cargarArbolCantLibrosL(a, aPrestamos^.dato.isbn);
+        generarArbolCantLibros(a^.HD, aPrestamos);
+    end;
+end;
 
 var
     prestamos: arbolP;
     libros: arbolL;
+    cantLibrosP, cantLibrosL: arbolCL;
 begin
     Randomize;
     cargarArboles(prestamos, libros);
@@ -200,4 +273,6 @@ begin
     writeln('ISBN mas chico: ', minArbol(libros));
     writeln('Cantidad de prestamos para 4: ', presPorSocio(prestamos, 4));
     writeln('Cantidad de prestamos para 8: ', presPorSocioLibros(libros, 8));
+    generarArbolCantLibrosP(cantLibrosP, prestamos);
+    generarArbolCantLibrosL(cantLibrosL, libros);
 end.
