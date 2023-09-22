@@ -1,8 +1,8 @@
               PIC EQU 20h
               DATA EQU 40h
               STATE EQU 41h
-              N_HAND_FW EQU 1
-              N_HAND_BW EQU 2
+              N_HAND_FW EQU 1 ; Hand Forward
+              N_HAND_BW EQU 2 ; Hand Backward
     
               ORG 4
               IP_HAND_FW DW RUT_HAND_FW
