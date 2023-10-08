@@ -1,4 +1,4 @@
-	.data
+        .data
                 A: .word 20
                 B: .word 20
                 C: .word 10
