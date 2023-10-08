@@ -28,7 +28,7 @@ public class Habitacion {
         return costo;
     }
     
-    public double setCosto(double costo) {
+    public void setCosto(double costo) {
         this.costo = costo;
     }
 
