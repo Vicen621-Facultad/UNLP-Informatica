@@ -1,17 +1,23 @@
-.data
-        tabla: .word 20, 1, 14, 3, 2, 58, 18, 7, 12, 11
-        num: .word 7
-        long: .word 10
-.code
-        ld r1, long(r0)
-        ld r2, num(r0)
-        dadd r3, r0, r0
-        dadd r10, r0, r0
-  loop: ld r4, tabla(r3)
-        beq r4, r2, listo
-        daddi r1, r1, -1
-        daddi r3, r3, 8
-        bnez r1, loop
-        j fin
- listo: daddi r10, r0, 1
-   fin: halt 
+	.data
+		A: .word 20
+		B: .word 20
+		C: .word 10
+		D: .space 1
+
+	.text
+		ld $t0, A($0) ; $t0 = A
+		ld $t1, B($0) ; $t1 = B
+		ld $t2, c($0) ; $t2 = C
+    
+		beq $t0, $t1, t0_eq_t1
+		beq $t1, $t2, two_equals
+		bne $t0, $t2, final ; Si no son iguales, ninguno de los 3 son iguales
+		
+    two_equals: daddi $t3, $0, 2
+    		j final ; No comparo $t0 y $t2 ya que $t1 y $t0 son diferentes
+
+      t0_eq_t1: daddi $t3, $0, 2
+      		bne $t0, $t2, final
+  		daddi $t3, $t3, 1 ; Si no salta, los 3 numeros son iguales
+
+	 final: sd $t3, D($0) ; D = $t3
