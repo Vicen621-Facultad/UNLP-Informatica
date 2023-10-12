@@ -2,9 +2,9 @@ package practica4.ejer06;
 
 public class Estacion {
     private String nombre;
-    private double latitud, longitud;
-    private double[][] registroTemp;
-    int anios, inicio;
+    private final double latitud, longitud;
+    private final double[][] registroTemp;
+    private int anios, inicio;
     
     public Estacion(String nombre, double latitud, double longitud, int anios, int inicio) {
         this.nombre = nombre;
@@ -31,18 +31,26 @@ public class Estacion {
         return latitud;
     }
 
-    public void setLatitud(double latitud) {
-        this.latitud = latitud;
-    }
-
     public double getLongitud() {
         return longitud;
     }
 
-    public void setLongitud(double longitud) {
-        this.longitud = longitud;
-    }
-    
+	public int getAnios() {
+		return anios;
+	}
+
+	public void setAnios(int anios) {
+		this.anios = anios;
+	}
+
+	public int getInicio() {
+		return inicio;
+	}
+
+	public void setInicio(int inicio) {
+		this.inicio = inicio;
+	}
+	
     public void setTemperatura(double temp, int mes, int anio) {
         registroTemp[mes - 1][anio - inicio] = temp;
     }
@@ -52,11 +60,23 @@ public class Estacion {
     }
     
     public String getFechaMayorTemperatura() {
-        int mes = 0;
-        int anio = 0;
-        int max = -1;
+        double max = -1;
+		String maxString = null;
+		
+		for (int i = 0; i < anios; i++)
+			for (int j = 0; j < 12; j++) {
+				double temp = this.registroTemp[j][i];
+				if (temp > max) {
+					max = temp;
+					maxString = (j + 1) + "/" + (i + getInicio());
+				}
+			}
         
-        return "";
+        return maxString;
     }
-
+	
+	@Override
+	public String toString() {
+		return getNombre() + "(" + getLatitud() + " S - " + getLongitud() + " O)";
+	}
 }
