@@ -1,14 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package practica3.ejer04;
 
-/**
- *
- * @author alumnos
- */
 public class Hotel {
     private int dimF;
     private Habitacion[] habitaciones;
@@ -18,7 +9,7 @@ public class Hotel {
         this.habitaciones = new Habitacion[this.dimF];
         
         for (int i = 0; i < dimF; i++)
-            this.habitaciones[i] = new Habitacion();
+            this.habitaciones[i] = new Habitacion(i + 1);
     }
     
     public void asignarHabitacion(Persona persona, int numHabitacion) {
@@ -40,17 +31,7 @@ public class Hotel {
             if (!ret.equals(""))
                 ret += "\n";
             
-            ret += String.format(
-                    "{Habitacion %d: %.2f, %s",
-                    i + 1,
-                    habitaciones[i].getCosto(), 
-                    habitaciones[i].isOcupada() ? "Ocupada" : "Libre"
-            );
-            
-            if (habitaciones[i].isOcupada())
-                ret += ", " + habitaciones[i].getPersona().toString();
-            
-            ret += "}";
+            ret += habitaciones[i].toString();
         }
         
         return ret;
