@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package practica4;
+package practica4.ejer01;
 
 
 public abstract class Figura {
@@ -17,23 +17,33 @@ public abstract class Figura {
     
     public String toString(){
         String aux = "Area: " + this.calcularArea() +
-                     " CR: "  + getColorRelleno() + 
-                      " CL: " + getColorLinea();             
-             return aux;
+                " Perimetro: " + this.calcularPerimetro() +
+                " CR: "  + getColorRelleno() + 
+                " CL: " + getColorLinea();
+        
+        return aux;
        }
 
     
     public String getColorRelleno(){
         return colorRelleno;       
     }
+    
     public void setColorRelleno(String unColor){
         colorRelleno = unColor;       
     }
+    
     public String getColorLinea(){
         return colorLinea;       
     }
+    
     public void setColorLinea(String unColor){
         colorLinea = unColor;       
+    }
+    
+    public void despintar() {
+        setColorLinea("negro");
+        setColorRelleno("blanco");
     }
     
     public abstract double calcularArea();

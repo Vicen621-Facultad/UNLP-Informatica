@@ -1,4 +1,4 @@
-package practica4;
+package practica4.ejer01;
 
 
 public class Cuadrado extends Figura{

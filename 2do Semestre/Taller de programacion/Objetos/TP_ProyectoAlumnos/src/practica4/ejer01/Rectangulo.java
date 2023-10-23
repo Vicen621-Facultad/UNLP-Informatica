@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package practica4;
+package practica4.ejer01;
 
 public class Rectangulo extends Figura {
     private double base;
