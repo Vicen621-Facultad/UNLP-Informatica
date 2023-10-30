@@ -1,0 +1,55 @@
+programa Ejer1
+procesos
+  proceso juntarFlores(ES flores: numero)
+  comenzar
+    mientras HayFlorEnLaEsquina
+      tomarFlor
+      flores := flores + 1
+  fin
+  proceso dejarFlores(E flores: numero)
+  comenzar
+    repetir flores
+      depositarFlor
+  fin
+  proceso procesarEsquina(ES flores: numero; ES sinFlor: numero)
+  comenzar
+    si HayFlorEnLaEsquina
+      juntarFlores(flores)
+    sino
+      sinFlor := sinFlor + 1
+  fin
+areas
+  area1: AreaP(1, 1, 1, 100)
+  area2: AreaP(3, 1, 3, 100)
+  area3: AreaP(5, 1, 5, 100)
+robots
+  robot robot1
+  variables
+    flores: numero
+    sinFlor: numero
+  comenzar
+    flores := 0
+    sinFlor := 0
+    
+    repetir 99
+      procesarEsquina(flores, sinFlor)
+      mover
+    
+    procesarEsquina(flores, sinFlor)
+    dejarFlores(flores)
+    Informar(flores)
+    Informar(sinFlor)
+  fin
+variables
+  r1: robot1
+  r2: robot1
+  r3: robot1
+comenzar
+  AsignarArea(r1, area1)
+  AsignarArea(r2, area2)
+  AsignarArea(r3, area3)
+  
+  Iniciar(r1, 1, 1)
+  Iniciar(r2, 3, 1)
+  Iniciar(r3, 5, 1)
+fin
