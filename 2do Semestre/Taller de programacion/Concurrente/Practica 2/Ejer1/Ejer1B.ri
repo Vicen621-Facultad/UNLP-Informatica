@@ -1,0 +1,55 @@
+programa Ejer1
+procesos
+  proceso RecogerFlores(ES flores: numero)
+  comenzar
+    repetir 9
+      mientras HayFlorEnLaEsquina
+        tomarFlor
+        flores := flores + 1
+      mover
+    mientras HayFlorEnLaEsquina
+      tomarFlor
+      flores := flores + 1
+  fin
+
+areas
+  area1: AreaP(1, 1, 1, 10)
+  area2: AreaP(2, 11, 2, 20)
+  area3: AreaP(2, 1, 2, 1)
+  
+robots
+  robot recolector
+  variables
+    flores: numero
+  comenzar
+    RecogerFlores(flores)
+    EnviarMensaje(flores, fiscal)
+  fin
+
+  robot fiscalizador
+  variables
+    flores1, flores2: numero
+  comenzar
+    RecibirMensaje(flores1, *)
+    RecibirMensaje(flores2, *)
+
+    si (flores1 > flores2)
+      Informar(flores1 - flores2)
+    sino
+      Informar(flores2 - flores1)
+  fin
+
+variables
+  rec1: recolector
+  rec2: recolector
+  fiscal: fiscalizador
+
+comenzar
+  AsignarArea(rec1, area1)
+  AsignarArea(rec2, area2)
+  AsignarArea(fiscal, area3)
+
+  Iniciar(rec1, 1, 1)
+  Iniciar(rec2, 2, 11)
+  Iniciar(fiscal, 2, 1)
+fin
