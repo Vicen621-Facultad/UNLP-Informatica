@@ -1,0 +1,75 @@
+programa Ejer4
+procesos
+  proceso LimpiarEsquina(ES total: numero)
+  comenzar
+    mientras HayPapelEnLaEsquina
+      tomarPapel
+      total := total + 1
+    mientras HayFlorEnLaEsquina
+      tomarFlor
+      total := total + 1
+  fin
+  proceso EnviarIDs
+  comenzar
+    EnviarMensaje(1, rec1)
+    EnviarMensaje(2, rec2)
+    EnviarMensaje(3, rec3)
+    EnviarMensaje(4, rec4)
+  fin
+  proceso EnviarMensajeRec(E id: numero)
+  comenzar
+    si id = 1
+      EnviarMensaje(V, rec1)
+    sino
+      si id = 2
+        EnviarMensaje(V, rec2)
+      sino
+        si id = 3
+          EnviarMensaje(V, rec3)
+        sino
+          EnviarMensaje(V, rec4)
+  fin
+  proceso RecibirMensajeRec(E id: numero; ES total: numero)
+  comenzar
+    si id = 1
+      RecibirMensaje(V, rec1)
+    sino
+      si id = 2
+        RecibirMensaje(V, rec2)
+      sino
+        si id = 3
+          RecibirMensaje(V, rec3)
+        sino
+          RecibirMensaje(V, rec4)
+  fin
+areas
+  compartida: AreaPC(25, 25, 75, 75)
+  area1: AreaP(1, 25, 1, 25)
+  area2: AreaP(1, 30, 1, 30)
+  area3: AreaP(1, 35, 1, 35)
+  area4: AreaP(1, 40, 1, 40)
+  area5: AreaP(1, 1, 1, 1)
+robots
+  robot recolector
+  comenzar
+    {Recibir id}
+  fin
+variables
+  rec1, rec2, rec3, rec4: recolector
+  fiscal: fiscalizador
+comenzar
+  AsignarArea(rec1, area1)
+  AsignarArea(rec2, area2)
+  AsignarArea(rec3, area3)
+  AsignarArea(rec4, area4)
+  AsignarArea(fiscal, area5)
+  AsignarArea(rec1, compartida)
+  AsignarArea(rec2, compartida)
+  AsignarArea(rec3, compartida)
+  AsignarArea(rec4, compartida)
+  Iniciar(fiscal, 1, 1)
+  Iniciar(rec1, 1, 25)
+  Iniciar(rec2, 1, 30)
+  Iniciar(rec3, 1, 35)
+  Iniciar(rec4, 1, 40)
+fin
