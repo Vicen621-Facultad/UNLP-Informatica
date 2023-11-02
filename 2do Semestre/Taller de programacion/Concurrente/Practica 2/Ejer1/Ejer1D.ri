@@ -11,6 +11,34 @@ procesos
       tomarFlor
       flores := flores + 1
   fin
+  proceso EnviarIDs
+  comenzar
+    EnviarMensaje(1, rec1)
+    EnviarMensaje(2, rec2)
+    EnviarMensaje(3, rec3)
+    EnviarMensaje(4, rec4)
+    EnviarMensaje(5, rec5)
+    EnviarMensaje(6, rec6)
+  fin
+  proceso RecibirMensajeRec(E id: numero; ES total: numero)
+  comenzar
+    si id = 1
+      RecibirMensaje(total, rec1)
+    sino
+      si id = 2
+        RecibirMensaje(total, rec2)
+      sino
+        si id = 3
+          RecibirMensaje(total, rec3)
+        sino
+          si id = 4
+            RecibirMensaje(total, rec4)
+          sino
+            si id = 5
+              RecibirMensaje(total, rec5)
+            sino
+              RecibirMensaje(total, rec6)
+  fin
 
 areas
   area1: AreaP(1, 1, 1, 10)
@@ -36,22 +64,17 @@ robots
   variables
     max, maxId, flores, id: numero
   comenzar
-    EnviarMensaje(1, rec1)
-    EnviarMensaje(2, rec2)
-    EnviarMensaje(3, rec3)
-    EnviarMensaje(4, rec4)
-    EnviarMensaje(5, rec5)
-    EnviarMensaje(6, rec6)
+    EnviarIDs
 
     repetir 6
       RecibirMensaje(id, *)
-      RecibirMensaje(flores, *)
+      RecibirMensajeRec(id, flores)
       si (flores > max)
         max := flores
         maxId := id
 
-    Informar('ID del ganador', maxId)
-    Informar('Flores del ganador', max)
+    Informar('ID', maxId)
+    Informar('Flores', max)
   fin
 
 variables
