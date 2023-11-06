@@ -1,0 +1,233 @@
+{Intersecciones: (5,8), (8,5), (9, 15), (15, 9)}
+programa Ejer6A
+procesos
+  {Procesos de Juntar}
+  proceso JuntarFlores(ES flores: numero)
+  comenzar
+    mientras HayFlorEnLaEsquina
+      tomarFlor
+      flores := flores + 1
+  fin
+  proceso JuntarPapeles(ES papeles: numero)
+  comenzar
+    mientras HayPapelEnLaEsquina
+      tomarPapel
+      papeles := papeles + 1
+  fin
+  proceso JuntarFloresYPapeles(ES flores: numero; ES papeles: numero)
+  comenzar
+    JuntarFlores(flores)
+    JuntarPapeles(papeles)
+  fin
+
+  {Procesos de lados}
+  {Juntan lo que hay en la esquina y despues mueven sin juntar la ultima esquina}
+  proceso LadoFlores(E lado: numero; ES flores: numero)
+  comenzar
+    repetir lado
+      JuntarFlores(flores)
+      mover
+  fin
+  proceso LadoPapeles(E lado: numero; ES papeles: numero)
+  comenzar
+    repetir lado
+      JuntarPapeles(papeles)
+      mover
+  fin
+  proceso LadoFloresYPapeles(E lado: numero; ES flores: numero; ES papeles: numero)
+  comenzar
+    repetir lado
+      JuntarFlores(flores)
+      JuntarPapeles(papeles)
+      mover
+  fin
+  proceso LadoConBloqueoFlores(ES flores: numero; E av: numero; E ca: numero)
+  comenzar
+    LadoFlores(2, flores) {Limpio las primeras 2 esquinas y quedo parado en la esquina 3}
+    JuntarFlores(flores)  {Limpio la esquina 3}
+    BloquearEsquina(av, ca) {Bloqueo esquina 4}
+    mover                 {Voy a la esquina 4}
+    LadoFlores(1, flores)         {Limpio la esquina 4 y paso a la 5}
+    LiberarEsquina(av, ca)  {Libero esquina 4}
+    LadoFlores(2, flores) {Limpio esquinas 5 y 6}
+  fin
+
+  {Procesos de Mensajes}
+  proceso EnviarIDs
+  comenzar
+    EnviarMensaje(1, rec1)
+    EnviarMensaje(3, rec2)
+    EnviarMensaje(2, rec3)
+  fin
+  proceso MensajeFin(E id: numero)
+  variables
+    calle: numero
+  comenzar
+    EnviarMensaje(id, fiscal)
+    RecibirMensaje(calle, fiscal)
+    derecha
+    Pos(1, calle)
+  fin
+  proceso EnviarCalle(ES calle: numero; E id: numero)
+  comenzar
+    si id = 1
+      EnviarMensaje(calle, rec1)
+    sino
+      si id = 2
+        EnviarMensaje(calle, rec2)
+      sino
+        EnviarMensaje(calle, rec3)
+
+    calle := calle + 1
+  fin
+areas
+  recolectora: AreaPC(2, 2, 16, 16)
+  calles: AreaPC(1, 20, 100, 22)
+  aFiscal: AreaP(1, 2, 1, 2)
+robots
+  robot recolector1
+  variables
+    flores, id: numero
+  comenzar
+    flores := 0
+    RecibirMensaje(id, fiscal)
+
+    LadoFlores(6, flores)
+    derecha
+    LadoConBloqueoFlores(flores, 5, 8)
+    derecha
+    LadoConBloqueoFlores(flores, 8, 5)
+    derecha
+    LadoFlores(6, flores)
+    derecha
+    MensajeFin(id)
+
+    mientras (PosAv < 100) & (HayFlorEnLaBolsa)
+      depositarFlor
+      mover
+
+    si (HayFlorEnLaBolsa)
+      depositarFlor
+  fin
+  robot recolector2
+  variables
+    papeles, flores, id: numero
+  comenzar
+    papeles := 0
+    flores := 0
+    RecibirMensaje(id, fiscal)
+
+    {Lado 1}
+    LadoFloresYPapeles(2, flores, papeles)
+    JuntarFloresYPapeles(flores, papeles)
+    BloquearEsquina(5, 8)
+    mover
+    LadoFloresYPapeles(1, flores, papeles)
+    LiberarEsquina(5, 8)
+    LadoFloresYPapeles(6, flores, papeles)
+
+    derecha {Lado 2}
+    LadoFloresYPapeles(3, flores, papeles)
+    JuntarFloresYPapeles(flores, papeles)
+    BloquearEsquina(9, 15)
+    mover
+    LadoFloresYPapeles(1, flores, papeles)
+    LiberarEsquina(9, 15)
+    LadoFloresYPapeles(5, flores, papeles)
+
+    derecha {Lado 3}
+    LadoFloresYPapeles(5, flores, papeles)
+    JuntarFloresYPapeles(flores, papeles)
+    BloquearEsquina(15, 9)
+    mover
+    LadoFloresYPapeles(1, flores, papeles)
+    LiberarEsquina(15, 9)
+    LadoFloresYPapeles(3, flores, papeles)
+
+    derecha {Lado 4}
+    LadoFloresYPapeles(6, flores, papeles)
+    JuntarFloresYPapeles(flores, papeles)
+    BloquearEsquina(8, 5)
+    mover
+    LadoFloresYPapeles(1, flores, papeles)
+    LiberarEsquina(8, 5)
+    LadoFloresYPapeles(2, flores, papeles)
+    derecha
+    MensajeFin(id)
+
+    mientras (PosAv < 100) & HayFlorEnLaBolsa & HayPapelEnLaBolsa
+      depositarFlor
+      depositarPapel
+      mover
+
+    si HayFlorEnLaBolsa & HayPapelEnLaBolsa
+      depositarFlor
+      depositarPapel
+  fin
+  robot recolector3
+  variables
+    papeles, id: numero
+  comenzar
+    papeles := 0
+    RecibirMensaje(id, fiscal)
+
+    {Lado 1}
+    LadoPapeles(5, papeles)
+    JuntarPapeles(papeles)
+    BloquearEsquina(9, 15)
+    mover
+    LadoPapeles(1, papeles)
+    LiberarEsquina(9, 15)
+
+    derecha {Lado 2}
+    LadoPapeles(7, papeles)
+
+    derecha {Lado 3}
+    LadoPapeles(7, papeles)
+
+    derecha
+    JuntarPapeles(papeles)
+    BloquearEsquina(15, 9)
+    mover
+    LadoPapeles(1, papeles)
+    LiberarEsquina(15, 9)
+    LadoPapeles(5, papeles)
+    derecha
+    MensajeFin(id)
+
+    mientras (PosAv < 100) & (HayPapelEnLaBolsa)
+      depositarPapel
+      mover
+
+    si (HayPapelEnLaBolsa)
+      depositarPapel
+  fin
+  robot rFiscal
+  variables
+    ca, id: numero
+  comenzar
+    ca := 20
+    EnviarIDs
+    repetir 3
+      RecibirMensaje(id, *)
+      EnviarCalle(ca, id)
+  fin
+variables
+  rec1: recolector1
+  rec2: recolector2
+  rec3: recolector3
+  fiscal: rFiscal
+comenzar
+  AsignarArea(rec1, recolectora)
+  AsignarArea(rec2, recolectora)
+  AsignarArea(rec3, recolectora)
+  AsignarArea(rec1, calles)
+  AsignarArea(rec2, calles)
+  AsignarArea(rec3, calles)
+  AsignarArea(fiscal, aFiscal)
+
+  Iniciar(rec1, 2, 2)
+  Iniciar(rec2, 5, 5)
+  Iniciar(rec3, 9, 9)
+  Iniciar(fiscal, 1, 2)
+fin
