@@ -1,0 +1,80 @@
+programa Ejer4
+procesos
+  proceso MoverFlor(E av: numero; E ca: numero; ES juntar: boolean)
+  comenzar
+    BloquearEsquina(10, 10)
+    Pos(10, 10)
+    si HayFlorEnLaEsquina
+      tomarFlor
+      BloquearEsquina(11, 11)
+      Pos(11, 11)
+      LiberarEsquina(10, 10)
+      depositarFlor
+      Pos(av, ca)
+      LiberarEsquina(11, 11)
+    sino
+      Pos(av, ca)
+      LiberarEsquina(10, 10)
+      juntar := F
+  fin
+  proceso JuntarFlores
+  comenzar
+    mientras HayFlorEnLaEsquina
+      tomarFlor
+  fin
+  proceso EnviarIDs
+  comenzar
+    EnviarMensaje(1, rec1)
+    EnviarMensaje(2, rec2)
+    EnviarMensaje(3, rec3)
+    EnviarMensaje(4, rec4)
+  fin
+areas
+  areaFlores: AreaPC(10, 10, 11, 11)
+  areaIni: AreaC(9, 9, 9, 12)
+  areaJefe: AreaP(1, 1, 1, 1)
+robots
+  robot rRecolector
+  variables
+    id, avIni, caIni: numero
+    juntar: boolean
+  comenzar
+    avIni := PosAv
+    caIni := PosCa
+    juntar := V
+    RecibirMensaje(id, jefe)
+    mientras juntar
+      MoverFlor(avIni, caIni, juntar)
+    EnviarMensaje(id, jefe)
+  fin
+  robot rJefe
+  variables
+    idUlt: numero
+  comenzar
+    EnviarIDs
+    repetir 4
+      RecibirMensaje(idUlt, *)
+    Informar('IdUlt', idUlt)
+    Pos(11, 11)
+    JuntarFlores
+  fin
+variables
+  rec1, rec2, rec3, rec4: rRecolector
+  jefe: rJefe
+comenzar
+  AsignarArea(rec1, areaFlores)
+  AsignarArea(rec2, areaFlores)
+  AsignarArea(rec3, areaFlores)
+  AsignarArea(rec4, areaFlores)
+  AsignarArea(jefe, areaFlores)
+  AsignarArea(rec1, areaIni)
+  AsignarArea(rec2, areaIni)
+  AsignarArea(rec3, areaIni)
+  AsignarArea(rec4, areaIni)
+  AsignarArea(jefe, areaJefe)
+  Iniciar(jefe, 1, 1)
+  Iniciar(rec1, 9, 9)
+  Iniciar(rec2, 9, 10)
+  Iniciar(rec3, 9, 11)
+  Iniciar(rec4, 9, 12)
+fin

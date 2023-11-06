@@ -1,0 +1,107 @@
+programa Ejer3
+procesos
+  proceso JuntarFlor(ES flores: numero; ES juntar: boolean)
+  comenzar
+    si HayFlorEnLaEsquina
+      tomarFlor
+      flores := flores + 1
+    sino
+      juntar := F
+  fin
+  proceso EnviarIDs
+  comenzar
+    EnviarMensaje(1, rec1)
+    EnviarMensaje(2, rec2)
+    EnviarMensaje(3, rec3)
+    EnviarMensaje(4, rec4)
+  fin
+  proceso EnviarPos(E av: numero; E ca: numero)
+  comenzar
+    EnviarMensaje(av, rec1)
+    EnviarMensaje(ca, rec1)
+    EnviarMensaje(av, rec2)
+    EnviarMensaje(ca, rec2)
+    EnviarMensaje(av, rec3)
+    EnviarMensaje(ca, rec3)
+    EnviarMensaje(av, rec4)
+    EnviarMensaje(ca, rec4)
+  fin
+  proceso RecibirFlores(ES flores: numero; E id: numero)
+  comenzar
+    si id = 1
+      RecibirMensaje(flores, rec1)
+    sino
+      si id = 2
+        RecibirMensaje(flores, rec2)
+      sino
+        si id = 3
+          RecibirMensaje(flores, rec3)
+        sino
+          RecibirMensaje(flores, rec4)
+  fin
+  proceso CalcularMax(ES max: numero; ES maxId: numero; E aux: numero; E id: numero)
+  comenzar
+    si (aux > max)
+      max := aux
+      maxId := id
+  fin
+areas
+  areaPC: AreaPC(2, 2, 10, 10)
+  areaIni: AreaC(1, 1, 5, 1)
+robots
+  robot rRecolector
+  variables
+    id, flores, av, ca, avIni, caIni: numero
+    juntar: boolean
+  comenzar
+    avIni := PosAv
+    caIni := PosCa
+    flores := 0
+    juntar := V
+    RecibirMensaje(id, jefe)
+    RecibirMensaje(av, jefe)
+    RecibirMensaje(ca, jefe)
+    mientras juntar
+      BloquearEsquina(av, ca)
+      Pos(av, ca)
+      JuntarFlor(flores, juntar)
+      Pos(avIni, caIni)
+      LiberarEsquina(av, ca)
+    EnviarMensaje(id, jefe)
+    EnviarMensaje(flores, jefe)
+  fin
+  robot rJefe
+  variables
+    max, maxId, aux, idAct, av, ca: numero
+  comenzar
+    Random(av, 2, 10)
+    Random(ca, 2, 10)
+    max := -1
+    EnviarIDs
+    EnviarPos(av, ca)
+    repetir 4
+      RecibirMensaje(idAct, *)
+      RecibirFlores(aux, idAct)
+      CalcularMax(max, maxId, aux, idAct)
+    Informar('id', maxId)
+  fin
+variables
+  rec1, rec2, rec3, rec4: rRecolector
+  jefe: rJefe
+comenzar
+  AsignarArea(rec1, areaPC)
+  AsignarArea(rec2, areaPC)
+  AsignarArea(rec3, areaPC)
+  AsignarArea(rec4, areaPC)
+  AsignarArea(rec1, areaIni)
+  AsignarArea(rec2, areaIni)
+  AsignarArea(rec3, areaIni)
+  AsignarArea(rec4, areaIni)
+  AsignarArea(jefe, areaIni)
+  
+  Iniciar(jefe, 1, 1)
+  Iniciar(rec1, 2, 1)
+  Iniciar(rec2, 3, 1)
+  Iniciar(rec3, 4, 1)
+  Iniciar(rec4, 5, 1)
+fin
