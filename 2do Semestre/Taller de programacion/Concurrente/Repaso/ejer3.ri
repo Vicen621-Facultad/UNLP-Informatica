@@ -1,0 +1,94 @@
+programa Ejer3
+procesos
+  {Ejecuta un ciclo de limpieza, hasta que avance 5 esquinas o junte 10 flores}
+  proceso EjecutarCiclo
+  variables
+    flores, esquinas: numero
+  comenzar
+    esquinas := 0
+    flores := 0
+    mientras (PosAv <> 100) & (esquinas < 5) & (flores <> 10)
+      mientras ((HayFlorEnLaEsquina) & (flores <> 10))
+        tomarFlor
+        flores := flores + 1
+      esquinas := esquinas + 1
+      mover
+  fin
+  proceso DejarEnDeposito
+  variables
+    calle, avenida: numero
+  comenzar
+    calle := PosCa
+    avenida := PosAv
+    BloquearEsquina(10, 10)
+    Pos(10, 10)
+    DejarFlores
+    Pos(avenida, calle)
+    LiberarEsquina(10, 10)
+  fin
+  proceso DejarFlores
+  comenzar
+    mientras HayFlorEnLaBolsa
+      depositarFlor
+  fin
+  proceso JuntarDeposito(ES flores: numero)
+  variables
+    calle, avenida: numero
+  comenzar
+    calle := PosCa
+    avenida := PosAv
+    BloquearEsquina(10, 10)
+    Pos(10, 10)
+    JuntarFlores(flores)
+    Pos(avenida, calle)
+    LiberarEsquina(10, 10)
+  fin
+  proceso JuntarFlores(ES flores: numero)
+  comenzar
+    mientras HayFlorEnLaEsquina
+      tomarFlor
+      flores := flores + 1
+  fin
+areas
+  calle3: AreaP(1, 3, 100, 3)
+  calle4: AreaP(1, 4, 100, 4)
+  aCosechador: AreaP(1, 5, 1, 5)
+  deposito: AreaPC(10, 10, 10, 10)
+robots
+  robot recolector
+  comenzar
+    derecha
+    mientras (PosAv <> 100)
+      EjecutarCiclo
+      DejarEnDeposito
+      EnviarMensaje(1, cosechador)
+    EnviarMensaje(0, cosechador)
+  fin
+  robot rCosechador
+  variables
+    flores, terminados, aux: numero
+  comenzar
+    terminados := 0
+    mientras (terminados <> 2)
+      RecibirMensaje(aux, *)
+      si (aux = 0)
+        terminados := terminados + 1
+      sino
+        JuntarDeposito(flores)
+    Informar('flores', flores)
+  fin
+variables
+  rec1, rec2: recolector
+  cosechador: rCosechador
+comenzar
+  AsignarArea(rec1, calle3)
+  AsignarArea(rec2, calle4)
+  AsignarArea(cosechador, aCosechador)
+  AsignarArea(rec1, deposito)
+  AsignarArea(rec2, deposito)
+  AsignarArea(cosechador, deposito)
+  {Inicio de robots}
+  Iniciar(rec1, 1, 3)
+  Iniciar(rec2, 1, 4)
+  Iniciar(cosechador, 1, 5)
+fin
