@@ -1,0 +1,96 @@
+programa Ejer5
+procesos
+  proceso JuntarPapel
+  variables
+    avenidaInicial, calleInicial: numero
+  comenzar
+    avenidaInicial := PosAv
+    calleInicial := PosCa
+    BloquearEsquina(100, 1)
+    Pos(100, 1)
+    tomarPapel
+    Pos(avenidaInicial, calleInicial)
+    LiberarEsquina(100, 1)
+  fin
+  proceso DejarPapeles(E papeles: numero)
+  variables
+    avenidaInicial, calleInicial: numero
+  comenzar
+    avenidaInicial := PosAv
+    calleInicial := PosCa
+    BloquearEsquina(100, 1)
+    Pos(100, 1)
+    repetir papeles
+      depositarPapel
+    Pos(avenidaInicial, calleInicial)
+    LiberarEsquina(100, 1)
+  fin
+  proceso EnviarMensajeId(E id: numero; E val: numero)
+  comenzar
+    si (id = 1)
+      EnviarMensaje(val, cliente1)
+    sino
+      si (id = 2)
+        EnviarMensaje(val, cliente2)
+      sino
+        EnviarMensaje(val, cliente3)
+  fin
+  proceso PedirPapeles(E id: numero; ES papeles: numero)
+  comenzar
+    EnviarMensaje(id, servidor)
+    RecibirMensaje(papeles, servidor)
+  fin
+  proceso EnviarIDs
+  comenzar
+    EnviarMensaje(1, cliente1)
+    EnviarMensaje(2, cliente2)
+    EnviarMensaje(3, cliente3)
+  fin
+areas
+  esq1001: AreaPC(100, 1, 100, 1)
+  aCl1: AreaP(10, 1, 10, 1)
+  aCl2: AreaP(11, 1, 11, 1)
+  aCl3: AreaP(12, 1, 12, 1)
+  aServidor: AreaP(13, 1, 13, 1)
+robots
+  robot cliente
+  variables
+    papeles, id, aux: numero
+  comenzar
+    RecibirMensaje(id, servidor)
+    repetir 4
+      PedirPapeles(id, papeles)
+      RecibirMensaje(aux, servidor)
+      repetir papeles
+        JuntarPapel
+  fin
+  robot rServidor
+  variables
+    id, papeles, pedidos: numero
+  comenzar
+    pedidos := 0
+    EnviarIDs
+    repetir 12
+      RecibirMensaje(id, *)
+      Random(papeles, 1, 5)
+      EnviarMensajeId(id, papeles)
+      DejarPapeles(papeles)
+      EnviarMensajeId(id, 1)
+  fin
+variables
+  cliente1, cliente2, cliente3: cliente
+  servidor: rServidor
+comenzar
+  AsignarArea(cliente1, aCl1)
+  AsignarArea(cliente2, aCl2)
+  AsignarArea(cliente3, aCl3)
+  AsignarArea(servidor, aServidor)
+  AsignarArea(cliente1, esq1001)
+  AsignarArea(cliente2, esq1001)
+  AsignarArea(cliente3, esq1001)
+  AsignarArea(servidor, esq1001)
+  Iniciar(cliente1, 10, 1)
+  Iniciar(cliente2, 11, 1)
+  Iniciar(cliente3, 12, 1)
+  Iniciar(servidor, 13, 1)
+fin
