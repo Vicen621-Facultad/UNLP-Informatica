@@ -1,0 +1,126 @@
+programa Ejer4
+procesos
+  proceso JuntarFlores(ES flores: numero)
+  comenzar
+    mientras (HayFlorEnLaEsquina)
+      tomarFlor
+      flores := flores + 1
+  fin
+  proceso LimpiarEsquina(E avenida: numero; E calle: numero; ES flores: numero)
+  variables
+    avenidaInicio, calleInicio: numero
+  comenzar
+    avenidaInicio := PosAv
+    calleInicio := PosCa
+    BloquearEsquina(avenida, calle)
+    Pos(avenida, calle)
+    JuntarFlores(flores)
+    Pos(avenidaInicio, calleInicio)
+    LiberarEsquina(avenida, calle)
+  fin
+  proceso DepositarFlores(E flores: numero)
+  comenzar
+    repetir flores
+      depositarFlor
+  fin
+  proceso DepositarEn1010(E flores: numero)
+  variables
+    avenidaInicio, calleInicio: numero
+  comenzar
+    avenidaInicio := PosAv
+    calleInicio := PosCa
+    BloquearEsquina(10, 10)
+    Pos(10, 10)
+    DepositarFlores(flores)
+    Pos(avenidaInicio, calleInicio)
+    LiberarEsquina(10, 10)
+  fin
+  proceso RecibirEsquina(ES avenida: numero; ES calle: numero)
+  comenzar
+    RecibirMensaje(avenida, fiscal)
+    RecibirMensaje(calle, fiscal)
+  fin
+  proceso EnviarEsquina(E id: numero; E avenida: numero; E calle: numero)
+  comenzar
+    si (id = 1)
+      EnviarMensaje(V, florero1)
+      EnviarMensaje(avenida, florero1)
+      EnviarMensaje(calle, florero1)
+    sino
+      si (id = 2)
+        EnviarMensaje(V, florero2)
+        EnviarMensaje(avenida, florero2)
+        EnviarMensaje(calle, florero2)
+      sino
+        EnviarMensaje(V, florero3)
+        EnviarMensaje(avenida, florero3)
+        EnviarMensaje(calle, florero3)
+  fin
+  proceso EnviarEsquinaRandom
+  variables
+    avenida, calle, id: numero
+  comenzar
+    Random(avenida, 40, 60)
+    Random(calle, 40, 60)
+    Random(id, 1, 3)
+    EnviarEsquina(id, avenida, calle)
+  fin
+  proceso EnviarTerminado
+  comenzar
+    EnviarMensaje(F, florero1)
+    EnviarMensaje(F, florero2)
+    EnviarMensaje(F, florero3)
+  fin
+areas
+  aFlor1: AreaP(1, 1, 1, 1)
+  aFlor2: AreaP(2, 1, 2, 1)
+  aFlor3: AreaP(3, 1, 3, 1)
+  aFiscal: AreaP(4, 1, 4, 1)
+  esq1010: AreaPC(10, 10, 10, 10)
+  aLimpiar: AreaPC(40, 40, 60, 60)
+robots
+  robot florero
+  variables
+    flores, avenida, calle: numero
+    limpiando: boolean
+  comenzar
+    RecibirMensaje(limpiando, fiscal)
+    mientras limpiando
+      RecibirEsquina(avenida, calle)
+      LimpiarEsquina(avenida, calle, flores)
+      RecibirMensaje(limpiando, fiscal)
+    DepositarEn1010(flores)
+    EnviarMensaje(flores, fiscal)
+  fin
+  robot rFiscal
+  variables
+    flores, aux: numero
+  comenzar
+    flores := 0
+    repetir 8
+      EnviarEsquinaRandom
+    EnviarTerminado
+    repetir 3
+      RecibirMensaje(aux, *)
+      flores := flores + aux
+    Informar('flores', flores)
+  fin
+variables
+  florero1, florero2, florero3: florero
+  fiscal: rFiscal
+comenzar
+  AsignarArea(florero1, aFlor1)
+  AsignarArea(florero2, aFlor2)
+  AsignarArea(florero3, aFlor3)
+  AsignarArea(florero1, esq1010)
+  AsignarArea(florero2, esq1010)
+  AsignarArea(florero3, esq1010)
+  AsignarArea(florero1, aLimpiar)
+  AsignarArea(florero2, aLimpiar)
+  AsignarArea(florero3, aLimpiar)
+  AsignarArea(fiscal, aFiscal)
+  Iniciar(florero1, 1, 1)
+  Iniciar(florero2, 2, 1)
+  Iniciar(florero3, 3, 1)
+  Iniciar(fiscal, 4, 1)
+fin
