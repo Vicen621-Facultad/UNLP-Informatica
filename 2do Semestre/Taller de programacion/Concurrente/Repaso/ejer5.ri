@@ -60,22 +60,19 @@ robots
     RecibirMensaje(id, servidor)
     repetir 4
       PedirPapeles(id, papeles)
-      RecibirMensaje(aux, servidor)
       repetir papeles
         JuntarPapel
   fin
   robot rServidor
   variables
-    id, papeles, pedidos: numero
+    id, papeles: numero
   comenzar
-    pedidos := 0
     EnviarIDs
     repetir 12
       RecibirMensaje(id, *)
       Random(papeles, 1, 5)
-      EnviarMensajeId(id, papeles)
       DejarPapeles(papeles)
-      EnviarMensajeId(id, 1)
+      EnviarMensajeId(id, papeles)
   fin
 variables
   cliente1, cliente2, cliente3: cliente
