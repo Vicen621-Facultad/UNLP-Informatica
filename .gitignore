@@ -4,6 +4,7 @@
 
 .DS_Store
 
+temp/
 *.o
 *.exe
 *.dat

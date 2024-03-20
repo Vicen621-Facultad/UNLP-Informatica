@@ -3,7 +3,8 @@ program P1E3;
 type
     empleado = record
         num, edad: integer;
-        dni, nombre, apellido: String[40];
+        dni: String[8];
+        nombre, apellido: String[40];
     end;
 
     archEmpleados = file of empleado;
@@ -96,7 +97,8 @@ begin
     leerEmpleado(emp);
     while (emp.apellido <> 'fin') do begin
         exists := false;
-
+        
+        Seek(arch, 0); // Vuelvo al principio del archivo para ver si el empleado existe
         while (not eof(arch)) and (not exists) do begin
             read(arch, other);
             if (other.num = emp.num) then
@@ -105,8 +107,10 @@ begin
 
         if (exists) then
             WriteLn('--- ERROR: Ese empleado ya existe! ---')
-        else
+        else begin
+            Seek(arch, fileSize(arch));
             write(arch, emp);
+        end;
 
         leerEmpleado(emp);
     end;
@@ -127,16 +131,14 @@ begin
     
     while(not eof(arch)) and (not found) do begin
         read(arch, emp);
-        if (emp.num = aux) then begin
+        if (emp.num = aux) then
             found := true;
-            // Vuelvo a la posicion del registro que acabo de leer
-            Seek(arch, filePos(arch) - 1);
-        end;
     end;
 
     if (found) then begin
-        Write('Ingrese la nueva edad del empleado: '); ReadLn(aux);
-        emp.edad := aux;
+        // Vuelvo a la posicion del registro que acabo de leer
+        Seek(arch, filePos(arch) - 1);
+        Write('Ingrese la nueva edad del empleado: '); ReadLn(emp.edad);
         Write(arch, emp);
         WriteLn('--- Edad del empleado ', emp.num, ' actualizada con exito! ---');
     end
