@@ -1,3 +1,9 @@
 [submodule "3er Semestre/AYED"]
 	path = 3er Semestre/AYED
 	url = https://github.com/Vicen621-Facultad/AYED
+[submodule "3er Semestre/Rust"]
+	path = 3er Semestre/Rust
+	url = https://github.com/Vicen621-Facultad/Rust
+[submodule "3er Semestre/FOD"]
+	path = 3er Semestre/FOD
+	url = https://github.com/Vicen621-Facultad/FOD
